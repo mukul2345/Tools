@@ -1,0 +1,63 @@
+{
+  "name": "task-implementer",
+  "description": "Implements selected tasks from a Kiro spec (tasks.md) on an already-cloned GitLab repo, enforcing coding + unit-test + MR standards as hard gates, then pushes the branch, optionally opens an MR, and reports back on the Jira subtask. Driven by the deterministic run_task_pipeline.py spine, which hands it a task-brief.json.",
+  "prompt": "file://__KIRO_HOME__/agents/task-implementer-prompt.md",
+  "model": "claude-opus-4.8",
+  "includeMcpJson": true,
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "@atlassian-rovo",
+    "@Gitlab",
+    "@fetch"
+  ],
+  "allowedTools": [
+    "read",
+    "write",
+    "shell",
+    "@atlassian-rovo/getJiraIssue",
+    "@atlassian-rovo/searchJiraIssuesUsingJql",
+    "@atlassian-rovo/getAccessibleAtlassianResources",
+    "@atlassian-rovo/addCommentToJiraIssue",
+    "@Gitlab/get_file_contents",
+    "@Gitlab/get_repository_tree",
+    "@Gitlab/list_commits",
+    "@Gitlab/get_merge_request",
+    "@Gitlab/get_users",
+    "@Gitlab/create_merge_request"
+  ],
+  "toolsSettings": {
+    "write": {
+      "allowedPaths": ["/tmp/kiro-task/**", "./**"]
+    },
+    "shell": {
+      "autoAllowReadonly": true,
+      "deniedCommands": [
+        "git push .*--force.*",
+        "git push .*--force-with-lease.*",
+        "git push( .*)? -f( |$)",
+        "git reset --hard.*",
+        "git merge .*",
+        "git rebase .*",
+        "rm -rf /( |$|\\*)",
+        "rm -rf ~",
+        "rm -rf \\$HOME",
+        "rm -rf /(bin|etc|usr|var|lib|opt|sbin|System|Library|Users|home|private|Applications)(/| |$)"
+      ]
+    }
+  },
+  "resources": [
+    "file://__KIRO_HOME__/agents/merge-request-process-vpt.md",
+    "file://__KIRO_HOME__/steering/coding-guideline.md",
+    "file://__KIRO_HOME__/steering/unit-test-guidelines.md"
+  ],
+  "hooks": {
+    "agentSpawn": [
+      { "command": "echo \"[task-implementer] spawned at $(date -u) in $(pwd)\" >> /tmp/task-implementer.log" }
+    ],
+    "preToolUse": [
+      { "matcher": "execute_bash", "command": "{ echo \"$(date -u) - shell:\"; cat; echo; } >> /tmp/task-implementer.log" }
+    ]
+  }
+}

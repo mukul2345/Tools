@@ -1,0 +1,13 @@
+# Force include sample-report.pdf (override parent .gitignore)
+!sample-report.pdf
+
+# Exclude all files in widgets and configs folders but keep the empty folders
+widgets/*
+!widgets/.gitkeep
+
+configs/*
+!configs/.gitkeep
+# Exclude .html and .json files
+*.html
+report*
+images/**/*

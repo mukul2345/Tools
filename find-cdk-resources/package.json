@@ -1,0 +1,21 @@
+{
+  "name": "find-cdk-resources",
+  "version": "1.0.0",
+  "description": "Find CDK resources in a service",
+  "main": "./index.ts",
+  "bin": {
+    "find-cdk-resources": "index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ts-morph": "^27"
+  },
+  "scripts": {
+    "start": "ts-node index.ts",
+    "run": "ts-node index.ts"
+  }
+}

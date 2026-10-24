@@ -1,0 +1,38 @@
+{
+  "title": "Authorization Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "authorization-service [200] /permissions/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/permissions/",
+        "environment": "production",
+        "serviceName": "authorization-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authorization-service [200] /roles/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/roles/:id",
+        "environment": "production",
+        "serviceName": "authorization-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

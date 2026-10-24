@@ -1,0 +1,86 @@
+{
+  "title": "Notifications Service API Errors",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "notifications-service [500] /notification/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/notification/",
+        "environment": "production",
+        "serviceName": "notifications-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "notifications-service [500] /notification/email/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/notification/email/",
+        "environment": "production",
+        "serviceName": "notifications-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "notifications-service [400] /notification/sms/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/notification/sms/",
+        "environment": "production",
+        "serviceName": "notifications-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "notifications-service [400] /notification/email/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/notification/email/",
+        "environment": "production",
+        "serviceName": "notifications-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "notifications-service [400] /notification/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/notification/",
+        "environment": "production",
+        "serviceName": "notifications-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "notifications-service [500] /notification/webhook/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/notification/webhook/",
+        "environment": "production",
+        "serviceName": "notifications-service",
+        "statusCode": "500"
+      }
+    }
+  ]
+}

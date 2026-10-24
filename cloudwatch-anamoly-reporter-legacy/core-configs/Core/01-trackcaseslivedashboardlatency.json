@@ -1,0 +1,23 @@
+{
+  "title": "TrackCasesLiveDashboardLatency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Average",
+      "dimensions": {
+        "QueueName": "dashboard-analytics"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "git-worktree-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server to discover git repos recursively, pull master into a separated central worktree, and manage per-branch worktrees",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}

@@ -1,0 +1,859 @@
+[
+  {
+    "vrId": "VerificationRequest@2db849cf-5f95-48ab-8d02-0cbb25dc7762",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@b8abf4ac-ac3d-4b13-922e-8022b91ed706",
+    "status": "COMPLETED",
+    "newWorkflowId": "N006-250714-472FF",
+    "existingWorkflowId": "N006-250409-C9EF7",
+    "parentVrId": "VerificationRequest@f2ca1cf9-4677-42dd-8546-da19335e069f",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@3a5ffd7a-5c33-43d1-82e9-1e729b9cb1b2"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@b98904e5-465b-4d44-a8c3-424c9d37fff1"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@000c6525-ba01-4ba4-a173-2b85fd865e25",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-250811-6276F",
+    "existingWorkflowId": "NDOH-250212-4A644",
+    "parentVrId": "VerificationRequest@e7110d7e-837b-40c0-8e37-fdb68ce8e80b",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@f0009af5-aaaf-4573-8103-220be307f6db"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@ff84050c-e43a-4397-b467-e336d380ce45"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@59bfd077-4e69-4355-8908-2820a2437dec",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-251010-AD884",
+    "existingWorkflowId": "NDOH-250912-DAE5B",
+    "parentVrId": "VerificationRequest@d8dc3cb6-2bd6-4866-9116-819e27a95825",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@37cf2ef2-24c5-495a-8a60-7c94bec68afc"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@86d53ed6-35fa-4dbe-a7a9-59b07148db25"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@c459a26c-5922-430b-9f72-5793d46dc5c2",
+    "status": "ERROR",
+    "reason": "Workflow patch failed: Request failed with status code 500"
+  },
+  {
+    "vrId": "VerificationRequest@692b4817-e2d1-4527-bc59-369522670b3d",
+    "status": "COMPLETED",
+    "newWorkflowId": "H002-260113-69017",
+    "existingWorkflowId": "H002-251127-94A96",
+    "parentVrId": "VerificationRequest@bea39823-d3f1-436d-b3b2-6cb851520ce5",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@664ec4b8-2695-42b6-ba1f-e0aa88349477"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@f2bb7b83-6c86-438a-ac4d-61f3b69a106f"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@7d97d2ef-e527-4d95-9be6-5c93b5915e8a",
+    "status": "COMPLETED",
+    "newWorkflowId": "NMCN-260127-21220",
+    "existingWorkflowId": "NMCN-251114-FA993",
+    "parentVrId": "VerificationRequest@15c744c7-258a-46a1-8854-877a16e87a83",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@b8c2fdb2-907b-41f7-b268-744fed619e13"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@132047f2-d453-440d-a184-a8679a3ba0d8"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@4b639e0c-34a0-4c57-80e6-b93345ce0534",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260210-A4281",
+    "existingWorkflowId": "NDOH-250217-437DC",
+    "parentVrId": "VerificationRequest@e9bf6204-3fa3-499c-9e45-9afacb99d579",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@5ea64eaa-8b8d-4f23-95c0-3d156781b13f"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@5e6c8cd0-e293-40f8-bb83-d7a72869c082"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@84d098e3-a182-4de0-ab4a-939f70d3603d",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260210-3D05D",
+    "existingWorkflowId": "NDOH-250219-A5C24",
+    "parentVrId": "VerificationRequest@9f6252f8-4cb1-4277-b026-75a7c2df13bc",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@86bf89d5-a12c-4f08-9dfa-cf75a588f94d"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@44376a45-0fdb-4f1e-8933-e28e287ee416"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@2d0be8e8-e7e2-4a2d-9154-6d49d3a64e32",
+    "status": "COMPLETED",
+    "newWorkflowId": "NMCN-260115-6C986",
+    "existingWorkflowId": "NMCN-251110-EF48C",
+    "parentVrId": "VerificationRequest@8190f651-969b-4251-8c30-2bfa16632764",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@40e2afc5-afa8-4fd0-991c-20393840be1c"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@4f7fda0f-78e1-4c3f-a457-3b79edca9ee4"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@f791e5e1-5195-4cce-9ace-e94a3a041649",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260219-134DB",
+    "existingWorkflowId": "NDOH-251117-A5FE8",
+    "parentVrId": "VerificationRequest@1e2aa3a1-564c-4c35-a552-92601950c5bb",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@02c95bdd-ce49-4f1d-b613-9e59d702dd6d"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@4a95cb58-f1f3-4618-9a00-b5d1686848f9"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@8c38f30c-35ff-4cb6-9e90-4e1b82b68418",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260223-33F38",
+    "existingWorkflowId": "NDOH-251224-71978",
+    "parentVrId": "VerificationRequest@cf02f6d1-febf-44f1-b03b-bce79107dde8",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@387ec6e7-c237-42bb-98ca-66507f93a530"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@90390886-2ee7-4f82-a31a-44a5d8c714b0"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d099fe88-5531-4d0b-909f-96b4611be2d0",
+    "status": "COMPLETED",
+    "newWorkflowId": "NMCN-260223-B1C9E",
+    "existingWorkflowId": "NMCN-251101-C796A",
+    "parentVrId": "VerificationRequest@68a5d323-143e-4215-9371-fa67f04df485",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@12eefac7-c835-4c20-9d7f-c0e84c8fa825"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@37347720-31f3-41bf-9039-904e9bdfc0e0"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@f35f6164-822d-411a-b8ca-80495fa70066",
+    "status": "COMPLETED",
+    "newWorkflowId": "O001-260301-13539",
+    "existingWorkflowId": "O001-260102-9BEA5",
+    "parentVrId": "VerificationRequest@64ae7e0b-e7ae-42c3-b1be-2f5d13ece248",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@898e6f0a-24e1-4141-bbab-eed3bd25d399"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@709031a7-a6d8-47f4-8b41-a11329bc5e8e",
+      "ReVerificationInvocationData@a55e9150-d3db-4126-9837-9626d1a735a4"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@740fbe23-a1a8-4217-b29f-2fa5da0a3700",
+    "status": "COMPLETED",
+    "newWorkflowId": "O001-260317-D3928",
+    "existingWorkflowId": "O001-260110-E19EA",
+    "parentVrId": "VerificationRequest@e14932fa-4fd7-4779-a8a7-fcb220eca397",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@f40d5ed0-c7fa-4020-8cd1-2694f1020774"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@df8bc34c-b4fe-4746-b25a-2c2961627ff9",
+      "ReVerificationInvocationData@16aac718-233e-4291-be02-d32a32099962"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@f5594e1b-dfbd-44e5-9969-a166cb1b9bc7",
+    "status": "COMPLETED",
+    "newWorkflowId": "O001-260318-E7504",
+    "existingWorkflowId": "O001-251220-5AD91",
+    "parentVrId": "VerificationRequest@2b0d4d7f-c8e2-46d3-8bfe-14f91fe0c42a",
+    "originalStatus": "VERIFIED_REJECTED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@fc889aeb-c038-4258-b587-fd495a365c01"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@142a49e1-1538-4552-84b0-56cf5ebe06c7"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@dfd0bf62-2c3d-4652-8be0-26d88a1717f9",
+    "status": "COMPLETED",
+    "newWorkflowId": "O002-260405-9F818",
+    "existingWorkflowId": "O002-250723-9A225",
+    "parentVrId": "VerificationRequest@1cfad8eb-10a6-4681-bf97-82c04db40216",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@7a09c311-a8fc-48af-8346-d0453acf46bb"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@dec24aac-1d4c-473a-989d-09818c57aa5f"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@1fa2ed20-3210-47c3-93d3-2da93cf087dd",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@5eaa88d0-c371-4860-b24f-bb560d5e504d",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260408-85907",
+    "existingWorkflowId": "NDOH-260216-7BB37",
+    "parentVrId": "VerificationRequest@54852809-eafb-4f9b-9531-0a1d4cdc7515",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@7c8e2aaf-900a-4d30-8a54-1174fbfe0d12"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@ea707975-37d9-4dfe-b70d-440b00c90933"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@ab8a5e39-0089-4a04-89ef-8c1ce53c4410",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260214-1C35D",
+    "existingWorkflowId": "NDOH-250511-92459",
+    "parentVrId": "VerificationRequest@957e83be-a81c-4e60-a931-34d6139fa003",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@44d44699-a6f0-4bc9-966f-2bc36082bf3a"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@4f3b027c-4ba1-4f3f-8eb0-17da9eddec61",
+      "ReVerificationInvocationData@217ca720-240a-4d15-88bb-8026201a9253"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@a14e04ae-e71b-4f58-a937-71fd2c19f3e1",
+    "status": "COMPLETED",
+    "newWorkflowId": "M004-260416-8489C",
+    "existingWorkflowId": "M004-260219-D948A",
+    "parentVrId": "VerificationRequest@0196309f-fdb5-4454-b7a5-f289baed04df",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@8e99d4f9-8545-4520-8ba5-887ba5780cbb"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@d6db89ad-24ae-4642-8d26-c9110f0bb3ff"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@9e9aeab6-cc90-4780-ae93-d7e15931bdfe",
+    "status": "COMPLETED",
+    "newWorkflowId": "M004-260503-7FB1A",
+    "existingWorkflowId": "M004-260209-D67C9",
+    "parentVrId": "VerificationRequest@929a0fea-db2a-4c8d-b3ce-586af18506f6",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@31898219-469c-4e1a-9080-16bb49096e0d"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@552c937b-b39c-466a-b115-c39c7f2176d9"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@0d184c05-4c32-45f9-aec9-cfc40abe400b",
+    "status": "COMPLETED",
+    "newWorkflowId": "M004-260508-94EF6",
+    "existingWorkflowId": "M004-260209-4C94D",
+    "parentVrId": "VerificationRequest@8489023a-495a-4de6-9542-79df21a969f2",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@9dc36538-4bf8-43f1-a36c-a0020bae92c9"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@e83d3ee1-dc27-4c87-9ade-04cd8a38eeda"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@4268d62c-2fc7-4d00-a222-580ab83faec2",
+    "status": "COMPLETED",
+    "newWorkflowId": "O001-260427-EF1F8",
+    "existingWorkflowId": "O001-260101-2A807",
+    "parentVrId": "VerificationRequest@4038cba8-3cfc-4090-aaa8-098943f09677",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@7856786f-f2db-4b08-8a97-c526353cc0d3"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@1de72dec-b935-4c46-bdb5-1483c817d742"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@be9f5fa9-daeb-4aa8-aed8-2b1cd3bf72a3",
+    "status": "COMPLETED",
+    "newWorkflowId": "H002-260425-FA5CE",
+    "existingWorkflowId": "H002-260122-CA885",
+    "parentVrId": "VerificationRequest@09f71375-16d0-407d-bde8-87ae708dc172",
+    "originalStatus": "VERIFIED_REJECTED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@24911e5f-e877-4f34-bdb6-24e9d1342244"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@d4a1e76d-e9c2-48e2-a2c8-9f53ebc3ad40"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@27d2a047-3f43-45f5-a314-7f137b3518ee",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@e41532b6-d54c-409c-8d44-7e00bb12478a",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260511-B8E51",
+    "existingWorkflowId": "S003-260404-2D73E",
+    "parentVrId": "VerificationRequest@44d72232-ea2c-40e6-9370-bdff1911ce73",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@a7f31897-d647-4bcb-bad1-fe7ea651292d"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@01a2523f-5849-4444-968d-898ef1a6da4f"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d3956f6f-32f6-4e20-9b4f-312ec27ed851",
+    "status": "COMPLETED",
+    "newWorkflowId": "Y001-260517-56D21",
+    "existingWorkflowId": "Y001-260410-DC5BB",
+    "parentVrId": "VerificationRequest@780b7dec-0f3b-4602-a232-4169e7a3188e",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@16eea914-fe3d-47c5-bf8f-b98f4997042d"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@8f0550da-94fc-4fac-9da5-7ea87c5d9f61"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@7c77a9c7-6bad-4bd8-9b75-8bfa55c248a1",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260428-52FA1",
+    "existingWorkflowId": "S003-260311-05281",
+    "parentVrId": "VerificationRequest@5a271226-ee22-4bae-b63f-9906b53474a5",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@f75172bd-a3eb-45be-aa07-d8e898a72e54"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@4e136034-bbd1-4f61-910f-831ed9471511",
+      "ReVerificationInvocationData@0d347401-8cc8-4031-8897-0eca55f8c48b"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d5b07442-108d-4fae-bb5d-11573d74b9b7",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260523-7322A",
+    "existingWorkflowId": "S003-260410-1D04F",
+    "parentVrId": "VerificationRequest@a1f4e75c-14f6-4a38-b432-f30e0f973c3f",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@fb0d0ec4-0cec-4501-9317-d27b0943eb58"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@09b63540-6292-4eae-8306-670120be6d65"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@acbac9fe-501b-4d89-bec7-e3dd29c70308",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@b83ed7f0-4896-4dae-9268-cb413a016ab7",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260524-B0D59",
+    "existingWorkflowId": "S003-260403-DDAD8",
+    "parentVrId": "VerificationRequest@b2263f04-b9fc-4d4d-b2ba-f824920cafd7",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@53a38bd3-f2c8-485f-9702-66f69cbaeadb"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@31885b36-326e-4ce4-bfa7-0ba78f3ec47b"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@c2523749-7877-4a3b-9e24-b78714341cbf",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260601-49282",
+    "existingWorkflowId": "S003-260502-CD307",
+    "parentVrId": "VerificationRequest@c0c0198d-dd58-4a75-a819-2fc781cc6625",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@05b24543-229f-454d-9f59-176823cd83ca"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@f34fdcbf-a850-4ec4-938d-63a7994cd637"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@f0d58748-3e43-4b6f-9281-a97e276a0948",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260506-8AEB4",
+    "existingWorkflowId": "S003-260415-81B49",
+    "parentVrId": "VerificationRequest@cc5737c0-f689-489c-a19c-c79f97900dfe",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@84106ff0-4ef3-41c1-aa07-4bc0af3c3fe9"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@10437cdd-67ad-4bbe-b5a2-b923c5a8f595",
+      "ReVerificationInvocationData@715f37b0-a61a-4bda-987a-e3545f5aba06"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@f7a0d532-aa1a-4c12-ba36-7d1ee563abf0",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260529-642A3",
+    "existingWorkflowId": "S003-260513-41488",
+    "parentVrId": "VerificationRequest@6f8eb8a2-cc07-43a9-ad2b-49084f2b60db",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@6c69fc62-e1ea-47d0-947c-d04f32d1c22c"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@2415dae5-1054-4f38-bce0-e9c3af51568f"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@10d7794c-f5d3-43a9-b09f-553c11ab253c",
+    "status": "ERROR",
+    "reason": "err is not defined"
+  },
+  {
+    "vrId": "VerificationRequest@ad07deff-3cd3-4d28-9bbe-50073d9bcdfb",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@86326d98-df9e-4de4-8fec-be9f0a0c2909",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260421-DD15A",
+    "existingWorkflowId": "S003-260311-EE513",
+    "parentVrId": "VerificationRequest@ebbbd93c-9064-43ac-b780-9f827c71145b",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@7524f2d5-e489-4b41-80c5-3607e368eeb4"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@44a579c3-8de5-4e5f-a8f2-22ea7eb09b70"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@61e13e14-8efb-4cc3-936d-0a57a8328953",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@80344d45-40a1-4b36-9531-001758acaa1a",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260529-2DC60",
+    "existingWorkflowId": "S003-260418-338D9",
+    "parentVrId": "VerificationRequest@ea9aba0c-6b4b-4d92-b3e1-178abb1d9435",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@702adf56-f9e6-4ba7-be15-eeedf797df54"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@a592ad90-5542-4068-ae4d-53604488dd61"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@f5550e79-9da3-43c6-86a4-5390654a1137",
+    "status": "COMPLETED",
+    "newWorkflowId": "M006-260526-BCF2E",
+    "existingWorkflowId": "M006-260406-5180B",
+    "parentVrId": "VerificationRequest@f3b08249-2e25-4566-804e-275b640828bc",
+    "originalStatus": "VERIFIED_REJECTED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@0e9005dd-8925-4e46-b636-c431cd39cef1"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@59ddb666-06ff-4a40-8481-7cf75e572d8b",
+      "ReVerificationInvocationData@c7064b73-011d-4847-ab87-f66458f9bfd7"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d6a9c511-74a9-4808-8f8f-2300122952b6",
+    "status": "COMPLETED",
+    "newWorkflowId": "M004-260505-421C5",
+    "existingWorkflowId": "M004-260408-7CE35",
+    "parentVrId": "VerificationRequest@187cad39-6b42-491a-9e57-2f8f41c0ba28",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@be80530c-7f2a-4da1-a5ba-b14b31a2ce31"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@ab5ee175-b0bb-4a5e-89af-4b927d68c5e3"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d8b4dc2b-ab6b-418f-a613-4585d042035e",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260605-718DB",
+    "existingWorkflowId": "S003-260505-3AD8B",
+    "parentVrId": "VerificationRequest@3a1a5c71-bf68-40c0-a7e5-1f9ef005b7ea",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@2fc7c2b8-432f-419b-bcd6-aa9e79dfa305"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@24a00374-38c4-444d-81c2-c1d80c9768a4"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@acac5522-d146-4f88-a85a-5b4670492970",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260519-22693",
+    "existingWorkflowId": "S003-260401-67CAB",
+    "parentVrId": "VerificationRequest@67a27d00-71ca-42c5-b240-cb25eefb119c",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@1740aaf2-6154-4cf8-acd5-f98cd1098579"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@e6422c9c-e355-4532-b926-e827ba88c6e5"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@9c4ae59f-154f-4c91-bfb3-0f4fe6dcab45",
+    "status": "COMPLETED",
+    "newWorkflowId": "DCAS-260521-540BF",
+    "existingWorkflowId": "DCAS-260303-9331A",
+    "parentVrId": "VerificationRequest@6e883c5d-e05c-4638-bfc4-4cc90d50962d",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@96c9453f-bbf8-4939-9973-028471aa1d55"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@5088c9ac-3db3-4896-8bea-858ce2c40638"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@fa8d224a-a1de-40e6-9260-5bd91de3eca2",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260601-F986C",
+    "existingWorkflowId": "S003-260330-8AF0E",
+    "parentVrId": "VerificationRequest@3adbb4aa-4154-4b1d-b064-b52a626f29a6",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@5dbea76c-1f2a-4660-a872-ce56550f61d6"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@9a477fd0-754b-4575-b853-dd6503a26606"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@cfde0b57-8dd6-4eb2-9e2c-640fe03c767f",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260605-4B789",
+    "existingWorkflowId": "NDOH-260330-0E6FB",
+    "parentVrId": "VerificationRequest@0bffdfe0-dad7-411c-88c9-d94711b452ad",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@a5bfb98c-f5f3-44c6-907d-94fbc69e54c0"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@97731c98-f10f-4aa9-9ecc-da09139798dd"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@fe37077d-3d8e-4046-b6c8-463ecbc7eeca",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260610-F935C",
+    "existingWorkflowId": "S003-260522-0FDF0",
+    "parentVrId": "VerificationRequest@2a0b5e09-ecdc-42bf-89c5-7087e7382f05",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@8aa6a9b8-9ce7-44c0-b341-28b2d4b9b8e5"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@5c8e4759-665a-48d8-9df3-799e99a60adb"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@5f88c870-f349-47d0-b381-de8f2c3c7b31",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@75373e5c-b4b7-4603-a683-d40304b60496",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260614-2C42F",
+    "existingWorkflowId": "S003-260608-1204A",
+    "parentVrId": "VerificationRequest@b3d50cad-ccf7-4564-8aed-e7529224a9fb",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@31b6a2f7-b1b9-4277-ad77-136f22b9a293"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@a27bdc62-4956-4ac0-a59b-290a47401652"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@fed04977-1d0a-43cb-8ed2-6a85f6af7208",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260607-17AFC",
+    "existingWorkflowId": "S003-260425-D7A60",
+    "parentVrId": "VerificationRequest@e5792761-cca4-4ce8-a94f-28a301475dd4",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@8c0ddb7b-db3f-4770-9ea1-a425806d762c"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@95161ed1-2cf5-4478-84e8-32f08929c5f3"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@57b489ea-64b5-4d9b-89e6-2e5b1c586365",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260610-D1184",
+    "existingWorkflowId": "S003-260424-8155F",
+    "parentVrId": "VerificationRequest@6fe39056-1487-4d69-9d38-f65772051c6e",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@a4d61c4e-83d5-4d3b-af0c-31a306fd24a4"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@5cbf3633-1936-47f3-8a41-385910439b84"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@03297fe8-8bfc-4047-97f6-adbe615d1fad",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260517-A3C2F",
+    "existingWorkflowId": "S003-260423-723CF",
+    "parentVrId": "VerificationRequest@0a085e71-2d0e-40dd-9fd1-624a1fddf3d9",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@589e8876-3e81-4379-b106-245a56b83429"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@384c0087-7e46-41f3-a902-d82002dbed8b"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@27135cfb-49f9-4bc5-b1df-f924b3ae1ef8",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@10424930-2553-4f08-9d22-7ecd8b5af4ac",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@e73a15ed-4017-49c4-8f0d-0de0b9495d51",
+    "status": "COMPLETED",
+    "newWorkflowId": "O001-260613-83CBF",
+    "existingWorkflowId": "O001-260508-2E201",
+    "parentVrId": "VerificationRequest@8a5af453-46f1-49c7-97b2-a5e48c577537",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@6adcfedd-4e2d-4850-9cf2-56bd8289f462"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@a433db25-ed7a-4640-9a7c-ff3ac35c9c37"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@8a8b821c-5ce0-42e2-8b7f-aaaab1034c49",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260617-D69DF",
+    "existingWorkflowId": "S003-260604-085AC",
+    "parentVrId": "VerificationRequest@ffb60953-faaa-46bf-959d-6d4b333bd815",
+    "originalStatus": "VERIFIED_APPROVED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@a20967eb-f289-4af5-b670-0a669eb3a84b"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@242d8cef-e2fa-4f9e-880c-3f6f7351872a"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@44901261-0478-43eb-90a7-ecc733a1079b",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@7213c798-c27a-4a9c-8dd0-24395c916ce0",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@97414445-896c-4b0e-9b49-b709863b1d59",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@c1d72d66-0cf4-4140-b42d-f963e86d77a9",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@ad773aa0-2ffe-4e7d-b66f-3f75bc06f93b",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@47eea7c5-027c-4f04-90f8-44b14fe58602",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@b1d52e98-8756-4807-8cc2-9a538a0bea4a",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@42ba0ae6-ac86-4110-bbe2-4c9887cc8be3",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@ac9f674f-ac2f-470d-a30c-54a02e7dab30",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@30e3176e-738e-4467-946b-2b80ddfd94ab",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@d0913405-127f-42ab-bff6-c8d2e032d9b8",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@f32f5331-8b39-4caf-a5e5-ec6e7c8b3d65",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "name": "jira-bug-analyzer",
+  "description": "Independently and factually analyzes a Jira bug: reads the full ticket history, traces all references/call-sites of the buggy code, builds evidence-based root cause, then compares against the ticket's proposed solution. Emits an implementation brief when aligned, or halts with a Jira comment on mismatch. READ-ONLY on code.",
+  "prompt": "file://__KIRO_HOME__/agents/jira-bug-analyzer-prompt.md",
+  "model": "claude-opus-4.8",
+  "includeMcpJson": true,
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "@jira",
+    "@workflow-mcp-server"
+  ],
+  "allowedTools": [
+    "read",
+    "write",
+    "shell",
+    "@jira/jira_get_issue",
+    "@jira/jira_search",
+    "@jira/jira_add_comment",
+    "@workflow-mcp-server/query_audit_trail",
+    "@workflow-mcp-server/search_application_logs",
+    "@workflow-mcp-server/execute_sql_log_query"
+  ],
+  "toolsSettings": {
+    "write": {
+      "allowedPaths": ["/tmp/kiro-bugfix/**", "./**"]
+    },
+    "shell": {
+      "autoAllowReadonly": true,
+      "deniedCommands": [
+        "git push( .*)?",
+        "git commit( .*)?",
+        "git reset --hard.*",
+        "rm -rf /( |$|\\*)",
+        "rm -rf ~",
+        "rm -rf \\$HOME",
+        "rm -rf /(bin|etc|usr|var|lib|opt|sbin|System|Library|Users|home|private|Applications)(/| |$)"
+      ]
+    }
+  },
+  "resources": [
+    "file://__KIRO_HOME__/agents/jira-bug-template-kiro.md",
+    "file://__KIRO_HOME__/agents/component-repo-mapping-kiro.md"
+  ],
+  "hooks": {
+    "agentSpawn": [
+      { "command": "echo \"[jira-bug-analyzer] spawned at $(date -u)\" >> /tmp/jira-bug-fixer.log" }
+    ]
+  }
+}

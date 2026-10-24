@@ -1,0 +1,44 @@
+{
+  "name": "proactive-error-analyser",
+  "version": "1.0.0",
+  "description": "Automated diagnosis system that correlates error data across CloudWatch, application logs, and workflow runtime to identify and classify production issues",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "proactive-error-analyser": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "start": "node dist/cli/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "error-analysis",
+    "cloudwatch",
+    "workflow",
+    "diagnostics",
+    "dev-toolbox"
+  ],
+  "author": "Dev Team",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.490.0",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/uuid": "^9.0.0",
+    "fast-check": "^4.7.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.3.0",
+    "vitest": "^1.6.0"
+  }
+}

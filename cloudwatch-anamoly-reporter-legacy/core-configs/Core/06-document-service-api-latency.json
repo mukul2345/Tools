@@ -1,0 +1,86 @@
+{
+  "title": "Document Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "document-service [200] /document/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/document/",
+        "environment": "production",
+        "serviceName": "document-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-service [200] /document/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/document/:id",
+        "environment": "production",
+        "serviceName": "document-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-service [200] /document/attributes/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/document/attributes/:id",
+        "environment": "production",
+        "serviceName": "document-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-service [200] /document/legacy/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/document/legacy/:id",
+        "environment": "production",
+        "serviceName": "document-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-service [200] /issuing-authority-document/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/issuing-authority-document/",
+        "environment": "production",
+        "serviceName": "document-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-service [200] /issuing-authority-document/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/issuing-authority-document/:id",
+        "environment": "production",
+        "serviceName": "document-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

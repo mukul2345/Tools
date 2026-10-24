@@ -1,0 +1,45 @@
+{
+  "name": "cloudwatch-metrics-reports",
+  "version": "1.0.0",
+  "description": "CloudWatch metrics reporting tool for latency and error analysis",
+  "type": "module",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs --config ./config.json",
+    "report": "node src/index.mjs --config ./config.json --module latency --module errors",
+    "api-status-graphs": "node src/api-status-code-graphs.mjs",
+    "api-status-graphs:top-apis": "node src/api-status-code-graphs.mjs --module=top-apis",
+    "api-status-alarms": "node src/api-status-code-alarms.mjs",
+    "api-status-alarms:dry-run": "node src/api-status-code-alarms.mjs --dry-run",
+    "api-status-alarms:create": "node src/api-status-code-alarms.mjs --create-alarms",
+    "traffic-trend": "node src/index.mjs --config ./config.json --module traffic-trend",
+    "html-report": "node src/generate-html-report.mjs",
+    "email-report": "node src/generate-email-report.mjs",
+    "pdf-report": "node src/export-pdf.mjs",
+    "charts-to-confluence": "node src/export-charts-to-confluence.mjs",
+    "weekly-report": "node src/generate-weekly-report.mjs",
+    "weekly-report:standalone": "node src/generate-weekly-report-standalone.mjs",
+    "publish": "node src/publish-to-confluence.mjs",
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "cloudwatch",
+    "metrics",
+    "reporting",
+    "aws",
+    "dev-toolbox"
+  ],
+  "author": "Dev Team",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.667.0",
+    "@aws-sdk/credential-providers": "^3.667.0",
+    "@aws-sdk/client-cloudwatch-logs": "^3.667.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^25.1.0"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Document Management Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "document-management-service [200] /extractDocument/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/extractDocument/:id",
+        "environment": "production",
+        "serviceName": "document-management-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-management-service [200] /upload/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/upload/",
+        "environment": "production",
+        "serviceName": "document-management-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-management-service [200] /userDocument/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/userDocument/",
+        "environment": "production",
+        "serviceName": "document-management-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-management-service [200] /userDocument/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/userDocument/:id",
+        "environment": "production",
+        "serviceName": "document-management-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-management-service [200] /userDocument/esign",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/userDocument/esign",
+        "environment": "production",
+        "serviceName": "document-management-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "document-management-service [200] /userDocument/generate-preSignedUrls",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/userDocument/generate-preSignedUrls",
+        "environment": "production",
+        "serviceName": "document-management-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "claimItemId": "ClaimItem@e6377131-3725-476d-ac8a-2393675193cc",
+    "failedStep": "fetchAuditTrail",
+    "httpStatus": 500,
+    "error": "fetchAuditTrail: HTTP 500",
+    "responseBody": "\"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<title>Error</title>\\n</head>\\n<body>\\n<pre>Internal Server Error</pre>\\n</body>\\n</html>\\n\""
+  },
+  {
+    "claimItemId": "ClaimItem@ec1c1b0a-83a9-4353-8f7b-ec883ed25687",
+    "failedStep": "fetchAuditTrail",
+    "httpStatus": 500,
+    "error": "fetchAuditTrail: HTTP 500",
+    "responseBody": "\"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<title>Error</title>\\n</head>\\n<body>\\n<pre>Internal Server Error</pre>\\n</body>\\n</html>\\n\""
+  },
+  {
+    "claimItemId": "ClaimItem@901a512e-c577-4041-8ff4-c0a5398fe0a7",
+    "failedStep": "fetchAuditTrail",
+    "httpStatus": 500,
+    "error": "fetchAuditTrail: HTTP 500",
+    "responseBody": "\"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<title>Error</title>\\n</head>\\n<body>\\n<pre>Internal Server Error</pre>\\n</body>\\n</html>\\n\""
+  },
+  {
+    "claimItemId": "ClaimItem@01ceae8a-c37e-4631-95eb-0d30aee3bac2",
+    "failedStep": "fetchAuditTrail",
+    "httpStatus": 500,
+    "error": "fetchAuditTrail: HTTP 500",
+    "responseBody": "\"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<title>Error</title>\\n</head>\\n<body>\\n<pre>Internal Server Error</pre>\\n</body>\\n</html>\\n\""
+  },
+  {
+    "claimItemId": "ClaimItem@13e08772-8d8f-4817-b224-30d7ab8d9c6e",
+    "failedStep": "fetchAuditTrail",
+    "httpStatus": 500,
+    "error": "fetchAuditTrail: HTTP 500",
+    "responseBody": "\"<!DOCTYPE html>\\n<html lang=\\\"en\\\">\\n<head>\\n<meta charset=\\\"utf-8\\\">\\n<title>Error</title>\\n</head>\\n<body>\\n<pre>Internal Server Error</pre>\\n</body>\\n</html>\\n\""
+  }
+]

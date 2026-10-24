@@ -1,0 +1,17 @@
+{
+  "name": "ecs-alarms",
+  "version": "1.0.0",
+  "description": "Create CloudWatch alarms for ECS services (CPU and Memory utilization, with anomaly detection)",
+  "main": "ecs-alarms.js",
+  "scripts": {
+    "start": "node ecs-alarms.js",
+    "run": "node ecs-alarms.js"
+  },
+  "keywords": ["ecs", "cloudwatch", "alarms", "aws"],
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.700.0",
+    "@aws-sdk/client-ecs": "^3.700.0",
+    "dotenv": "^16.4.5"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "dashboardName": "Core_API_Performance",
+  "dashboardArn": "arn:aws:cloudwatch::891377067284:dashboard/Core_API_Performance",
+  "region": "eu-west-1",
+  "profile": "df-prod-v2",
+  "folderName": "Core",
+  "totalWidgets": 13,
+  "exportedConfigs": 11,
+  "includeAllTypes": false,
+  "configs": [
+    {
+      "index": 1,
+      "title": "User Service API Latency",
+      "seriesCount": 9,
+      "file": "01-user-service-api-latency.json",
+      "path": "core-configs/Core/01-user-service-api-latency.json"
+    },
+    {
+      "index": 2,
+      "title": "Authentication Service API Latency",
+      "seriesCount": 14,
+      "file": "02-authentication-service-api-latency.json",
+      "path": "core-configs/Core/02-authentication-service-api-latency.json"
+    },
+    {
+      "index": 3,
+      "title": "Authorization Service API Latency",
+      "seriesCount": 2,
+      "file": "03-authorization-service-api-latency.json",
+      "path": "core-configs/Core/03-authorization-service-api-latency.json"
+    },
+    {
+      "index": 4,
+      "title": "Notifications Service API Latency",
+      "seriesCount": 4,
+      "file": "04-notifications-service-api-latency.json",
+      "path": "core-configs/Core/04-notifications-service-api-latency.json"
+    },
+    {
+      "index": 5,
+      "title": "Document Management Service API Latency",
+      "seriesCount": 6,
+      "file": "05-document-management-service-api-latency.json",
+      "path": "core-configs/Core/05-document-management-service-api-latency.json"
+    },
+    {
+      "index": 6,
+      "title": "Document Service API Latency",
+      "seriesCount": 6,
+      "file": "06-document-service-api-latency.json",
+      "path": "core-configs/Core/06-document-service-api-latency.json"
+    },
+    {
+      "index": 7,
+      "title": "Payment Service API Latency",
+      "seriesCount": 6,
+      "file": "07-payment-service-api-latency.json",
+      "path": "core-configs/Core/07-payment-service-api-latency.json"
+    },
+    {
+      "index": 8,
+      "title": "Geo & Geo Spectrum Service API Latency",
+      "seriesCount": 7,
+      "file": "08-geo-geo-spectrum-service-api-latency.json",
+      "path": "core-configs/Core/08-geo-geo-spectrum-service-api-latency.json"
+    },
+    {
+      "index": 9,
+      "title": "Metrics Analytics Service API Latency",
+      "seriesCount": 9,
+      "file": "09-metrics-analytics-service-api-latency.json",
+      "path": "core-configs/Core/09-metrics-analytics-service-api-latency.json"
+    },
+    {
+      "index": 10,
+      "title": "Email Monitoring Service API Latency",
+      "seriesCount": 1,
+      "file": "10-email-monitoring-service-api-latency.json",
+      "path": "core-configs/Core/10-email-monitoring-service-api-latency.json"
+    },
+    {
+      "index": 11,
+      "title": "Apollo Service API Latency",
+      "seriesCount": 4,
+      "file": "11-apollo-service-api-latency.json",
+      "path": "core-configs/Core/11-apollo-service-api-latency.json"
+    }
+  ],
+  "generatedAt": "2026-04-18T05:11:15.214Z",
+  "sourceUrl": "Core_API_Performance"
+}

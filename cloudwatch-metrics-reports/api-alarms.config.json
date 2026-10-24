@@ -1,0 +1,77 @@
+{
+  "aws": {
+    "profile": "prod",
+    "region": "eu-west-1"
+  },
+  "metrics": {
+    "namespace": "DFG-Observability",
+    "environment": "production"
+  },
+  "services": [
+    "verification-workflow-engine",
+    "poi-service",
+    "verification-initiation-service",
+    "document-management-service",
+    "document-generation-service",
+    "client-contract-service",
+    "document-service",
+    "core-verification-data-structure-service",
+    "payment-service",
+    "alert-service",
+    "poi-consumer-verification-workflow-engine",
+    "rescue-consumer-verification-workflow-engine",
+    "migration-service",
+    "narada"
+  ],
+  "alarms": {
+    "fiveXxPercent": {
+      "enabled": false,
+      "namePrefix": "Critical",
+      "lookbackDays": 14,
+      "defaultThresholdPercent": 5,
+      "minThresholdPercent": 1,
+      "minimumRequestCount": 20,
+      "thresholdPercentile": 90,
+      "periodSeconds": 300,
+      "evaluationPeriods": 5,
+      "datapointsToAlarm": 3
+    },
+    "totalTrafficAnomaly": {
+      "enabled": true,
+      "namePrefix": "Warning",
+      "metricName": "API_COUNT",
+      "periodSeconds": 300,
+      "evaluationPeriods": 3,
+      "datapointsToAlarm": 3,
+      "anomalyThreshold": 3,
+      "statusCodes": [
+        "200",
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "409",
+        "412",
+        "500"
+      ]
+    }
+  },
+  "notifications": {
+    "alarmActionArn": "arn:aws:sns:eu-west-1:891377067284:GoAlerting_VerficationPlatform"
+  },
+  "tags": [
+    {
+      "Key": "Team",
+      "Value": "Verification Platform"
+    }
+  ],
+  "apiSelection": {
+    "mode": "top-apis",
+    "topN": 20,
+    "lookbackDays": 14,
+    "startISO": null,
+    "endISO": null,
+    "periodSeconds": 3600
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "dashboardName": "Core_Platform",
+  "dashboardArn": "arn:aws:cloudwatch::891377067284:dashboard/Core_Platform",
+  "region": "eu-west-1",
+  "profile": "df-prod-v2",
+  "folderName": "Core",
+  "totalWidgets": 44,
+  "exportedConfigs": 38,
+  "includeAllTypes": false,
+  "configs": [
+    {
+      "index": 1,
+      "title": "TrackCasesLiveDashboardLatency",
+      "seriesCount": 1,
+      "file": "01-trackcaseslivedashboardlatency.json",
+      "path": "core-configs/Core/01-trackcaseslivedashboardlatency.json"
+    },
+    {
+      "index": 2,
+      "title": "Authentication Service API Count",
+      "seriesCount": 14,
+      "file": "02-authentication-service-api-count.json",
+      "path": "core-configs/Core/02-authentication-service-api-count.json"
+    },
+    {
+      "index": 3,
+      "title": "User Service API Latency",
+      "seriesCount": 9,
+      "file": "03-user-service-api-latency.json",
+      "path": "core-configs/Core/03-user-service-api-latency.json"
+    },
+    {
+      "index": 4,
+      "title": "User Service API Errors",
+      "seriesCount": 5,
+      "file": "04-user-service-api-errors.json",
+      "path": "core-configs/Core/04-user-service-api-errors.json"
+    },
+    {
+      "index": 5,
+      "title": "User Service API Count",
+      "seriesCount": 9,
+      "file": "05-user-service-api-count.json",
+      "path": "core-configs/Core/05-user-service-api-count.json"
+    },
+    {
+      "index": 6,
+      "title": "Authorization Service API Latency",
+      "seriesCount": 2,
+      "file": "06-authorization-service-api-latency.json",
+      "path": "core-configs/Core/06-authorization-service-api-latency.json"
+    },
+    {
+      "index": 7,
+      "title": "Authorization Service API Count",
+      "seriesCount": 2,
+      "file": "07-authorization-service-api-count.json",
+      "path": "core-configs/Core/07-authorization-service-api-count.json"
+    },
+    {
+      "index": 8,
+      "title": "Authorization Service API Errors",
+      "seriesCount": 1,
+      "file": "08-authorization-service-api-errors.json",
+      "path": "core-configs/Core/08-authorization-service-api-errors.json"
+    },
+    {
+      "index": 9,
+      "title": "Notifications Service API Latency",
+      "seriesCount": 4,
+      "file": "09-notifications-service-api-latency.json",
+      "path": "core-configs/Core/09-notifications-service-api-latency.json"
+    },
+    {
+      "index": 10,
+      "title": "Notifications Service API Count",
+      "seriesCount": 4,
+      "file": "10-notifications-service-api-count.json",
+      "path": "core-configs/Core/10-notifications-service-api-count.json"
+    },
+    {
+      "index": 11,
+      "title": "Audit Service API Latency",
+      "seriesCount": 1,
+      "file": "11-audit-service-api-latency.json",
+      "path": "core-configs/Core/11-audit-service-api-latency.json"
+    },
+    {
+      "index": 12,
+      "title": "Audit Service API Count",
+      "seriesCount": 1,
+      "file": "12-audit-service-api-count.json",
+      "path": "core-configs/Core/12-audit-service-api-count.json"
+    },
+    {
+      "index": 13,
+      "title": "Geo & Geo Spectrum Service API Latency",
+      "seriesCount": 7,
+      "file": "13-geo-geo-spectrum-service-api-latency.json",
+      "path": "core-configs/Core/13-geo-geo-spectrum-service-api-latency.json"
+    },
+    {
+      "index": 14,
+      "title": "Geo & Geo Spectrum Service API Count",
+      "seriesCount": 7,
+      "file": "14-geo-geo-spectrum-service-api-count.json",
+      "path": "core-configs/Core/14-geo-geo-spectrum-service-api-count.json"
+    },
+    {
+      "index": 15,
+      "title": "Geo & Geo Spectrum Service API Errors",
+      "seriesCount": 3,
+      "file": "15-geo-geo-spectrum-service-api-errors.json",
+      "path": "core-configs/Core/15-geo-geo-spectrum-service-api-errors.json"
+    },
+    {
+      "index": 16,
+      "title": "Metrics Analytics Service API Latency",
+      "seriesCount": 9,
+      "file": "16-metrics-analytics-service-api-latency.json",
+      "path": "core-configs/Core/16-metrics-analytics-service-api-latency.json"
+    },
+    {
+      "index": 17,
+      "title": "Metrics Analytics Service API Count",
+      "seriesCount": 5,
+      "file": "17-metrics-analytics-service-api-count.json",
+      "path": "core-configs/Core/17-metrics-analytics-service-api-count.json"
+    },
+    {
+      "index": 18,
+      "title": "Metrics Analytics Service API Errors",
+      "seriesCount": 2,
+      "file": "18-metrics-analytics-service-api-errors.json",
+      "path": "core-configs/Core/18-metrics-analytics-service-api-errors.json"
+    },
+    {
+      "index": 19,
+      "title": "Email Monitoring Service API Latency",
+      "seriesCount": 1,
+      "file": "19-email-monitoring-service-api-latency.json",
+      "path": "core-configs/Core/19-email-monitoring-service-api-latency.json"
+    },
+    {
+      "index": 20,
+      "title": "Email Monitoring Service API Count",
+      "seriesCount": 1,
+      "file": "20-email-monitoring-service-api-count.json",
+      "path": "core-configs/Core/20-email-monitoring-service-api-count.json"
+    },
+    {
+      "index": 21,
+      "title": "Apollo Service API Latency",
+      "seriesCount": 4,
+      "file": "21-apollo-service-api-latency.json",
+      "path": "core-configs/Core/21-apollo-service-api-latency.json"
+    },
+    {
+      "index": 22,
+      "title": "Apollo Service API Count",
+      "seriesCount": 4,
+      "file": "22-apollo-service-api-count.json",
+      "path": "core-configs/Core/22-apollo-service-api-count.json"
+    },
+    {
+      "index": 23,
+      "title": "Communication Queue - Age of Oldest Message",
+      "seriesCount": 7,
+      "file": "23-communication-queue-age-of-oldest-message.json",
+      "path": "core-configs/Core/23-communication-queue-age-of-oldest-message.json"
+    },
+    {
+      "index": 24,
+      "title": "Communication Queue - Number of Messages Received",
+      "seriesCount": 7,
+      "file": "24-communication-queue-number-of-messages-received.json",
+      "path": "core-configs/Core/24-communication-queue-number-of-messages-received.json"
+    },
+    {
+      "index": 25,
+      "title": "MemoryUtilization of services",
+      "seriesCount": 13,
+      "file": "25-memoryutilization-of-services.json",
+      "path": "core-configs/Core/25-memoryutilization-of-services.json"
+    },
+    {
+      "index": 26,
+      "title": "Untitled Widget",
+      "seriesCount": 13,
+      "file": "26-metric-widget-26.json",
+      "path": "core-configs/Core/26-metric-widget-26.json"
+    },
+    {
+      "index": 27,
+      "title": "DynamoDB Core-platform-IndexReadCost",
+      "seriesCount": 52,
+      "file": "27-dynamodb-core-platform-indexreadcost.json",
+      "path": "core-configs/Core/27-dynamodb-core-platform-indexreadcost.json"
+    },
+    {
+      "index": 28,
+      "title": "DynamoDB Core-platform Table ConsumedReadCapacityUnits",
+      "seriesCount": 30,
+      "file": "28-dynamodb-core-platform-table-consumedreadcapacityunits.json",
+      "path": "core-configs/Core/28-dynamodb-core-platform-table-consumedreadcapacityunits.json"
+    },
+    {
+      "index": 29,
+      "title": "Untitled Widget",
+      "seriesCount": 30,
+      "file": "29-metric-widget-31.json",
+      "path": "core-configs/Core/29-metric-widget-31.json"
+    },
+    {
+      "index": 30,
+      "title": "SQS -Age of Oldest Message",
+      "seriesCount": 6,
+      "file": "30-sqs-age-of-oldest-message.json",
+      "path": "core-configs/Core/30-sqs-age-of-oldest-message.json"
+    },
+    {
+      "index": 31,
+      "title": "Dynamo Scan latency",
+      "seriesCount": 28,
+      "file": "31-dynamo-scan-latency.json",
+      "path": "core-configs/Core/31-dynamo-scan-latency.json"
+    },
+    {
+      "index": 32,
+      "title": "Order Service API Count",
+      "seriesCount": 28,
+      "file": "32-order-service-api-count.json",
+      "path": "core-configs/Core/32-order-service-api-count.json"
+    },
+    {
+      "index": 33,
+      "title": "Order Service Error Count",
+      "seriesCount": 3,
+      "file": "33-order-service-error-count.json",
+      "path": "core-configs/Core/33-order-service-error-count.json"
+    },
+    {
+      "index": 34,
+      "title": "sheet API COUNT list",
+      "seriesCount": 11,
+      "file": "34-sheet-api-count-list.json",
+      "path": "core-configs/Core/34-sheet-api-count-list.json"
+    },
+    {
+      "index": 35,
+      "title": "sheet API latency list",
+      "seriesCount": 11,
+      "file": "35-sheet-api-latency-list.json",
+      "path": "core-configs/Core/35-sheet-api-latency-list.json"
+    },
+    {
+      "index": 36,
+      "title": "Notifications Service API Errors",
+      "seriesCount": 6,
+      "file": "36-notifications-service-api-errors.json",
+      "path": "core-configs/Core/36-notifications-service-api-errors.json"
+    },
+    {
+      "index": 37,
+      "title": "Authentication Service API Latency",
+      "seriesCount": 17,
+      "file": "37-authentication-service-api-latency.json",
+      "path": "core-configs/Core/37-authentication-service-api-latency.json"
+    },
+    {
+      "index": 38,
+      "title": "Authentication Service API Errors",
+      "seriesCount": 25,
+      "file": "38-authentication-service-api-errors.json",
+      "path": "core-configs/Core/38-authentication-service-api-errors.json"
+    }
+  ],
+  "generatedAt": "2026-04-18T05:11:32.430Z",
+  "sourceUrl": "Core_Platform"
+}

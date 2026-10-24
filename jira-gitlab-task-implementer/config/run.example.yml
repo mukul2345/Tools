@@ -1,0 +1,94 @@
+# =============================================================================
+# jira-gitlab-task-implementer — per-run config
+# =============================================================================
+# Copy this file (e.g. to run.yml) and fill it in for one run. One run = one
+# Jira subtask + one task selection + one branch + (push | push+MR).
+#
+#   ./run-task-implementer.sh --config run.yml
+#
+# To produce MULTIPLE MRs for the same subtask, run the tool several times with
+# a different `branch_name` and a different task selection each time.
+#
+# NOTE: quote every task id ("15.4", not 15.4). Unquoted, YAML reads 15.4 as a
+# number and 15.10 silently becomes 15.1 — the loader will reject unquoted ids.
+# -----------------------------------------------------------------------------
+
+schema_version: 1
+
+# --- Target (all three required) ---------------------------------------------
+jira_id: "DT-46443" # the Jira SUBTASK id being implemented (mandatory)
+repo_url: "https://gitlab.com/dataflowgroup/dfg-product/verification-platform/verification-workflow-engine"
+source_branch: "develop" # branch to fork from (mandatory; must exist on origin)
+
+# --- Branch & MR target ------------------------------------------------------
+branch_name:
+  "auto" # "auto" => <jira_id>-<kebab-slug-of-summary>.
+  # Override to control the branch (and to make >1 MR per subtask).
+target_branch: "" # MR target branch; "" => same as source_branch
+
+# --- Spec location -----------------------------------------------------------
+# The Kiro spec folder holds requirements.md / design.md / tasks.md. By default
+# it is read FROM THE REPO (so the plan is versioned with the code). Use
+# location: local only when the spec lives on your disk and isn't committed yet.
+spec:
+  location: "repo" # "repo" (default) | "local"
+  path: ".kiro/specs/mohre-simulator" # repo-relative (repo) OR absolute path (local) to the spec dir
+  branch: "" # repo mode only: branch holding the spec; "" => use source_branch
+
+# --- Task selection ----------------------------------------------------------
+# Choose ONE of: (nothing) => all | range | list.  Precedence if >1 set: list > range > all.
+#   * all    : every task. Optional ([ ]*) tasks are included only if `optional: true`.
+#   * range  : the document-order span [from..to] inclusive. Optional tasks in the span ARE
+#              included (you chose the boundaries). Done ([x]) tasks are always skipped.
+#   * list   : exactly these ids, in THIS order. Selecting a parent (e.g. "15") auto-includes its
+#              children (15.1, 15.4, ...). Optional tasks named/covered ARE included.
+# Done ([x]) tasks are skipped in every mode.
+tasks:
+  optional: false # include optional tasks in the "all" selection
+  # range:                              # -- uncomment for a range --
+  #   from: "15.1"
+  #   to:   "15.6"
+  # list: ["15.4", "15.5"]              # -- uncomment for an explicit list (executed in order) --
+
+# --- References (READ-ONLY grounding context) -------------------------------
+# Extra material the agent consults to mirror real patterns/contracts instead of guessing.
+# The spine clones ref repos shallow + read-only and greps `keywords` across the sources,
+# distilling matched excerpts into references/reference-context.md (the agent reads that first;
+# full clones stay available for deeper reading). All references are read-only — never edited.
+# `keywords` here are global (applied to every source); each source may add its own.
+references:
+  keywords: [] # e.g. ["InsufficiencyFulfillment", "push model"]
+  repos: [] # e.g.
+    # - url: "https://gitlab.com/<group>/<reference-repo>"
+    #   branch: "develop"               # optional; default = repo's default branch
+    #   paths: ["src/clients"]          # optional; scope the scan (else whole repo, keyword-gated)
+    #   keywords: ["Fulfillment"]       # optional; merged with the global keywords
+  local: [] # local files/dirs on disk, e.g.
+    # - path: "/Users/me/notes/design.md"
+    # - path: "/Users/me/ref-service"
+    #   paths: ["src"]
+    #   keywords: ["Widget"]
+
+# --- Jira / Confluence context gather ---------------------------------------
+# The spine fetches the full ticket picture (this subtask + parent/child/sibling/linked tickets,
+# all comments, and the content of linked Confluence pages) into ticket-history.md for grounding.
+# Best-effort: a fetch failure is a warning, not a stop (the spec is the source of truth).
+jira:
+  gather: true # false => skip the Jira/Confluence gather entirely
+  max_depth: 3 # how far to follow the linked-issue graph
+  max_tickets: 40 # safety cap on tickets fetched
+  project_prefixes: [] # e.g. ["DT", "VP"] — restrict which ticket keys to follow
+  confluence: true # also fetch linked Confluence page content
+  max_confluence: 20 # cap on Confluence pages fetched
+
+# --- Behaviour ---------------------------------------------------------------
+unit_tests: true # default true. false => skip test-only tasks AND the coverage gate.
+create_mr: true # true => push + open MR; false => push the branch only (no MR)
+testing_artifacts: false # true => emit verification manifest + render Postman/OpenAPI pack
+test_command: "" # optional explicit test command; "" => repo default (pnpm exec jest --runInBand)
+
+# --- Model -------------------------------------------------------------------
+model: "opus" # opus (default) | sonnet | haiku | auto | exact id (e.g. claude-opus-4.8)
+
+# --- Reviewers (best-effort) -------------------------------------------------
+reviewers: [] # GitLab usernames -> reviewer_ids; unresolved names are listed in the MR

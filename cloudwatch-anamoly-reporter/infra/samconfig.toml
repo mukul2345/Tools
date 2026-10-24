@@ -1,0 +1,47 @@
+version = 0.1
+
+[default]
+[default.global.parameters]
+stack_name = "cloudwatch-anomaly-reporter"
+
+[default.build.parameters]
+cached = true
+parallel = true
+
+[default.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+region = "eu-west-1"
+parameter_overrides = "Stage=production AwsRegion=eu-west-1 ScheduleCron='cron(30 3,8,13 * * ? *)'"
+
+[staging]
+[staging.global.parameters]
+stack_name = "cloudwatch-anomaly-reporter-staging"
+
+[staging.build.parameters]
+cached = true
+parallel = true
+
+[staging.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+region = "eu-west-1"
+parameter_overrides = "Stage=staging AwsRegion=eu-west-1 ScheduleCron='cron(30 3,8,13 * * ? *)'"
+
+[production]
+[production.global.parameters]
+stack_name = "cloudwatch-anomaly-reporter-production"
+
+[production.build.parameters]
+cached = true
+parallel = true
+
+[production.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+resolve_s3 = true
+region = "eu-west-1"
+parameter_overrides = "Stage=production AwsRegion=eu-west-1 ScheduleCron='cron(30 3,8,13 * * ? *)'"
+

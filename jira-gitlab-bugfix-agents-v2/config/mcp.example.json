@@ -1,0 +1,102 @@
+{
+  "_comments": {
+    "security": "No secrets in this file. GITLAB_PERSONAL_ACCESS_TOKEN and KIRO_API_KEY are read from the environment (exported by run-bug-fixer.sh or your secret store). The GitLab PAT that was previously committed inline MUST be revoked in GitLab > Settings > Access Tokens.",
+    "changes": [
+      "Enabled the GitLab server (was disabled:true).",
+      "Moved the GitLab PAT to the GITLAB_PERSONAL_ACCESS_TOKEN env var (no inline secret).",
+      "Added the write tool create_merge_request to GitLab autoApprove (needed to raise the MR).",
+      "Added addCommentToJiraIssue / transitionJiraIssue to atlassian-rovo (needed to link the MR back and close the loop).",
+      "De-duplicated autoApprove entries."
+    ]
+  },
+  "mcpServers": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": []
+    },
+    "workflow-mcp-server": {
+      "command": "node",
+      "args": [
+        "/Users/ravitejag/my-projects/dev_lib/workflow-mcp-server/dist/index.js"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "get_entity",
+        "query_entities",
+        "search_cases",
+        "get_root_workflow",
+        "get_child_workflows",
+        "get_referenced_entities",
+        "get_execution_steps",
+        "get_workflow_run_logs",
+        "query_audit_trail",
+        "get_workflow_run_events",
+        "search_application_logs",
+        "get_sql_query_templates",
+        "execute_sql_log_query"
+      ]
+    },
+    "atlassian-rovo": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+      "disabled": false,
+      "autoApprove": [
+        "atlassianUserInfo",
+        "getAccessibleAtlassianResources",
+        "getJiraIssue",
+        "searchJiraIssuesUsingJql",
+        "getConfluencePage",
+        "addCommentToJiraIssue",
+        "transitionJiraIssue",
+        "createJiraIssue",
+        "getJiraProjectIssueTypesMetadata"
+      ]
+    },
+    "Gitlab": {
+      "command": "npx",
+      "args": ["-y", "@zereight/mcp-gitlab"],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "${GITLAB_PERSONAL_ACCESS_TOKEN}",
+        "GITLAB_API_URL": "https://gitlab.com/api/v4",
+        "GITLAB_READ_ONLY_MODE": "false",
+        "USE_GITLAB_WIKI": "false"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_file_contents",
+        "get_repository_tree",
+        "list_commits",
+        "get_commit",
+        "get_commit_diff",
+        "list_merge_request_diffs",
+        "get_merge_request",
+        "get_merge_request_diffs",
+        "list_merge_request_pipelines",
+        "create_merge_request",
+        "create_merge_request_thread"
+      ]
+    },
+    "awslabs.cloudwatch-mcp-server": {
+      "command": "/Users/ravitejag/.local/bin/uvx",
+      "args": ["awslabs.cloudwatch-mcp-server@latest"],
+      "env": {
+        "AWS_PROFILE": "df-preprod",
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "transportType": "stdio",
+      "disabled": false,
+      "autoApprove": [
+        "get_alarm_history",
+        "get_metric_data",
+        "describe_log_groups",
+        "execute_log_insights_query",
+        "get_active_alarms",
+        "get_logs_insight_query_results",
+        "analyze_log_group"
+      ]
+    }
+  }
+}

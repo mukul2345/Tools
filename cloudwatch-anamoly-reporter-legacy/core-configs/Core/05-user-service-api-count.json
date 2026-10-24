@@ -1,0 +1,122 @@
+{
+  "title": "User Service API Count",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "user-service [200] /external-user/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/external-user/",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /user-consent/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/user-consent/",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /userGroup/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/userGroup/",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /userGroup/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/userGroup/:id",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /users/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /users/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/:id",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /users/email/:email",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/email/:email",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /users/id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/id",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "user-service [200] /users/set-password",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/set-password",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

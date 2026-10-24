@@ -1,0 +1,77 @@
+{
+  "title": "Communication Queue - Number of Messages Received",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "applicant-communication"
+      }
+    },
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "email-notification.fifo"
+      }
+    },
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "notification.fifo"
+      }
+    },
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "ops-user-communication"
+      }
+    },
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "partner-communication"
+      }
+    },
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "push-notification.fifo"
+      }
+    },
+    {
+      "name": "AWS/SQS/NumberOfMessagesReceived",
+      "namespace": "AWS/SQS",
+      "metricName": "NumberOfMessagesReceived",
+      "stat": "Sum",
+      "dimensions": {
+        "QueueName": "sms-notification.fifo"
+      }
+    }
+  ]
+}

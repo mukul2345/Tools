@@ -1,0 +1,62 @@
+{
+  "title": "Apollo Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "apollo-service [200] /document-translate/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/document-translate/",
+        "environment": "production",
+        "serviceName": "apollo-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "apollo-service [200] /manual-translation/translate-multiple-objects",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/manual-translation/translate-multiple-objects",
+        "environment": "production",
+        "serviceName": "apollo-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "apollo-service [200] /translation/translateDocument",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/translation/translateDocument",
+        "environment": "production",
+        "serviceName": "apollo-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "apollo-service [200] /translation/translateObjectValue",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/translation/translateObjectValue",
+        "environment": "production",
+        "serviceName": "apollo-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

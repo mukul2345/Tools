@@ -1,0 +1,239 @@
+{
+  "aws": {
+    "region": "eu-west-1",
+    "profile": "prod"
+  },
+  "report": {
+    "periodSeconds": 900,
+    "windowMinutes": 300,
+    "baselineDays": 5,
+    "minSamples": 10,
+    "zThreshold": 3.0,
+    "pctThreshold": 40,
+    "timezone": "Asia/Kolkata",
+    "skipWeekends": true
+  },
+  "metricMappings": {
+    "DFG-Observability": {
+      "API_LATENCY": "latency",
+      "API_ERROR": "error",
+      "API_COUNT": "count",
+      "API_STATUS_CODE": "error",
+      "DEPENDENT_ENTITY_TERMINAL_UPDATE": "count",
+      "DFG_PAYMENT_METRICS": "count",
+      "FULL_QC_PERFORMANCE": "latency"
+    },
+    "AWS/Logs": {
+      "IncomingBytes": "processedBytes"
+    },
+    "AWS/ApiGateway": {
+      "Latency": "latency",
+      "5XXError": "error",
+      "4XXError": "error",
+      "Count": "count"
+    },
+    "AWS/RUM": {
+      "WebVitalsLargestContentfulPaint": "latency",
+      "JsErrorCountPerSession": "jsErrorCountPerSession",
+      "Http5xxCountPerPageView": "http5xxCountPerPageView",
+      "WebVitalsFirstInputDelay": "latency",
+      "WebVitalsCumulativeLayoutShift": "latency",
+      "WebVitalsInteractionToNextPaint": "latency"
+    },
+    "AWS/SQS": {
+      "ApproximateAgeOfOldestMessage": "approximateAgeOfOldestMessage",
+      "NumberOfMessagesReceived": "numberOfMessagesReceived",
+      "NumberOfMessagesSent": "numberOfMessagesSent",
+      "ApproximateNumberOfMessagesVisible": "approximateNumberOfMessagesVisible",
+      "NumberOfMessagesDeleted": "numberOfMessagesDeleted",
+      "ApproximateNumberOfMessagesNotVisible": "approximateNumberOfMessagesNotVisible"
+    },
+    "AWS/ECS": {
+      "CPUUtilization": "cpu",
+      "MemoryUtilization": "memory"
+    },
+    "AWS/DynamoDB": {
+      "ConsumedReadCapacityUnits": "consumedReadCapacity",
+      "ConsumedWriteCapacityUnits": "consumedWriteCapacity",
+      "ReadThrottleEvents": "readThrottleEvents",
+      "WriteThrottleEvents": "readThrottleEvents",
+      "ScanReturnedItemCount": "scanReturnedItemCount",
+      "SuccessfulRequestLatency": "successfulRequestLatency",
+      "ReturnedItemCount": "returnedItemCount"
+    },
+    "AWS/ES": {
+      "SearchLatency": "latency",
+      "ConcurrentSearchLatency": "latency",
+      "ReadLatency": "latency",
+      "IndexingLatency": "latency",
+      "WriteLatency": "latency",
+      "FreeStorageSpace": "storageSpace",
+      "MasterFreeStorageSpace": "storageSpace",
+      "CPUUtilization": "cpu",
+      "MasterCPUUtilization": "cpu",
+      "WriteThroughput": "writeThroughput",
+      "MaxProvisionedThroughput": "maxProvisionedThroughput",
+      "ReadThroughput": "readThroughput",
+      "ThroughputThrottle": "readThrottleEvents"
+    },
+    "AWS/Lambda": {
+      "Duration": "workflowLambdaDuration",
+      "Invocations": "workflowLambdaInvocations",
+      "Errors": "error",
+      "ConcurrentExecutions": "workflowconcurrentExecutions",
+      "Throttles": "readThrottleEvents"
+    },
+    "AWS/SNS": {
+      "NumberOfNotificationsFailed": "numberOfNotificationsFailed",
+      "NumberOfNotificationsDelivered": "numberOfNotificationsDelivered",
+      "NumberOfMessagesPublished": "numberOfMessagesPublished"
+    }
+  },
+  "metrics": {
+    "latency": {
+      "label": "latency",
+      "badIf": "pct>40",
+      "goodIf": "pct<-40"
+    },
+    "error": {
+      "label": "error",
+      "badIf": "pct>50",
+      "goodIf": "pct<-50"
+    },
+    "count": {
+      "label": "count",
+      "badIf": "pct>100 OR pct<-70",
+      "goodIf": "pct>-70 AND pct<100"
+    },
+    "approximateAgeOfOldestMessage": {
+      "label": "approximateAgeOfOldestMessage",
+      "badIf": "pct>100",
+      "goodIf": "pct<-50"
+    },
+    "cpu": {
+      "label": "cpu",
+      "badIf": "pct>30",
+      "goodIf": "pct<-30"
+    },
+    "memory": {
+      "label": "memory",
+      "badIf": "pct>30",
+      "goodIf": "pct<-30"
+    },
+    "consumedReadCapacity": {
+      "label": "consumedReadCapacity",
+      "badIf": "pct>50",
+      "goodIf": "pct<-50"
+    },
+    "consumedWriteCapacity": {
+      "label": "consumedWriteCapacity",
+      "badIf": "pct>60",
+      "goodIf": "pct<-60"
+    },
+    "readThrottleEvents": {
+      "label": "readThrottleEvents",
+      "badIf": "pct>0",
+      "goodIf": "pct<-50"
+    },
+    "jsErrorCountPerSession": {
+      "label": "jsErrorCountPerSession",
+      "badIf": "pct>50",
+      "goodIf": "pct<-50"
+    },
+    "http5xxCountPerPageView": {
+      "label": "http5xxCountPerPageView",
+      "badIf": "pct>50",
+      "goodIf": "pct<-50"
+    },
+    "workflowLambdaDuration": {
+      "label": "workflowLambdaDuration",
+      "badIf": "pct>40",
+      "goodIf": "pct<-40"
+    },
+    "workflowLambdaInvocations": {
+      "label": "workflowLambdaInvocations",
+      "badIf": "pct>100 OR pct<-70",
+      "goodIf": "pct>-70 AND pct<100"
+    },
+    "workflowconcurrentExecutions": {
+      "label": "workflowconcurrentExecutions",
+      "badIf": "pct>30",
+      "goodIf": "pct<-30"
+    },
+    "processedBytes": {
+      "label": "processedBytes",
+      "badIf": "pct>50 OR pct<-50",
+      "goodIf": "pct>-30 AND pct<30"
+    },
+    "scanReturnedItemCount": {
+      "label": "scanReturnedItemCount",
+      "badIf": "pct>50 OR pct<-50",
+      "goodIf": "pct>-25 AND pct<25"
+    },
+    "storageSpace": {
+      "label": "storageSpace",
+      "badIf": "pct<-20",
+      "goodIf": "pct>20"
+    },
+    "successfulRequestLatency": {
+      "label": "successfulRequestLatency",
+      "badIf": "pct>40",
+      "goodIf": "pct<-40"
+    },
+    "returnedItemCount": {
+      "label": "returnedItemCount",
+      "badIf": "pct>50 OR pct<-50",
+      "goodIf": "pct>-25 AND pct<25"
+    },
+    "writeThroughput": {
+      "label": "writeThroughput",
+      "badIf": "pct<-30",
+      "goodIf": "pct>30"
+    },
+    "readThroughput": {
+      "label": "readThroughput",
+      "badIf": "pct<-30",
+      "goodIf": "pct>30"
+    },
+    "numberOfNotificationsFailed": {
+      "label": "numberOfNotificationsFailed",
+      "badIf": "pct>0",
+      "goodIf": "pct<-50"
+    },
+    "numberOfNotificationsDelivered": {
+      "label": "numberOfNotificationsDelivered",
+      "badIf": "pct>100 OR pct<-50",
+      "goodIf": "pct>-50 AND pct<100"
+    },
+    "numberOfMessagesPublished": {
+      "label": "numberOfMessagesPublished",
+      "badIf": "pct>100 OR pct<-50",
+      "goodIf": "pct>-50 AND pct<100"
+    },
+    "numberOfMessagesReceived": {
+      "label": "numberOfMessagesReceived",
+      "badIf": "pct>100 OR pct<-70",
+      "goodIf": "pct>-70 AND pct<100"
+    },
+    "numberOfMessagesSent": {
+      "label": "numberOfMessagesSent",
+      "badIf": "pct>100 OR pct<-70",
+      "goodIf": "pct>-70 AND pct<100"
+    },
+    "approximateNumberOfMessagesVisible": {
+      "label": "approximateNumberOfMessagesVisible",
+      "badIf": "pct>100",
+      "goodIf": "pct<-50"
+    },
+    "numberOfMessagesDeleted": {
+      "label": "numberOfMessagesDeleted",
+      "badIf": "pct<-70",
+      "goodIf": "pct>-70"
+    },
+    "approximateNumberOfMessagesNotVisible": {
+      "label": "approximateNumberOfMessagesNotVisible",
+      "badIf": "pct>100",
+      "goodIf": "pct<-50"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "dt-webhook-transaction-backfill",
+  "version": "1.0.0",
+  "description": "Backfill WebhookTransaction (DynamoDB) records into the case_communication_events (PostgreSQL) table. Environment-specific and resumable.",
+  "scripts": {
+    "backfill": "node backfill-webhook-transactions.js",
+    "backfill:execute": "node backfill-webhook-transactions.js --execute"
+  },
+  "author": "Team DFG",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.744.0",
+    "@aws-sdk/client-secrets-manager": "^3.744.0",
+    "@aws-sdk/credential-providers": "^3.744.0",
+    "@aws-sdk/lib-dynamodb": "^3.744.0",
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  }
+}

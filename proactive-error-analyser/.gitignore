@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+.env
+# Runtime output dirs (root-anchored so src/autopilot source is NOT ignored)
+/logs
+/autopilot
+/output

@@ -1,0 +1,284 @@
+{
+  "title": "Untitled Widget",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "Acl",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Acl"
+      }
+    },
+    {
+      "name": "Address",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Address"
+      }
+    },
+    {
+      "name": "AnalyticsAggregatorCronRun",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "AnalyticsAggregatorCronRun"
+      }
+    },
+    {
+      "name": "AuthTokenInfo",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "AuthTokenInfo"
+      }
+    },
+    {
+      "name": "Captcha",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Captcha"
+      }
+    },
+    {
+      "name": "City",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "City"
+      }
+    },
+    {
+      "name": "Country",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Country"
+      }
+    },
+    {
+      "name": "CTA",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "CTA"
+      }
+    },
+    {
+      "name": "DeviceInfo",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "DeviceInfo"
+      }
+    },
+    {
+      "name": "DocumentTranslation",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "DocumentTranslation"
+      }
+    },
+    {
+      "name": "EmailResponse",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "EmailResponse"
+      }
+    },
+    {
+      "name": "EmailTransaction",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "EmailTransaction"
+      }
+    },
+    {
+      "name": "ExternalUser",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "ExternalUser"
+      }
+    },
+    {
+      "name": "Language",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Language"
+      }
+    },
+    {
+      "name": "LanguageMapping",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "LanguageMapping"
+      }
+    },
+    {
+      "name": "LoginAs",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "LoginAs"
+      }
+    },
+    {
+      "name": "ManualTranslation",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "ManualTranslation"
+      }
+    },
+    {
+      "name": "MetricAnalyticsExternalLocks",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "MetricAnalyticsExternalLocks"
+      }
+    },
+    {
+      "name": "OtpTransaction",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "OtpTransaction"
+      }
+    },
+    {
+      "name": "PushNotification",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "PushNotification"
+      }
+    },
+    {
+      "name": "Report",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Report"
+      }
+    },
+    {
+      "name": "ResourceAccess",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "ResourceAccess"
+      }
+    },
+    {
+      "name": "Role",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Role"
+      }
+    },
+    {
+      "name": "SmsTransaction",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "SmsTransaction"
+      }
+    },
+    {
+      "name": "StateProvince",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "StateProvince"
+      }
+    },
+    {
+      "name": "SubRegion",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "SubRegion"
+      }
+    },
+    {
+      "name": "TextTranslation",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "TextTranslation"
+      }
+    },
+    {
+      "name": "User",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "User"
+      }
+    },
+    {
+      "name": "UserConsent",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "UserConsent"
+      }
+    },
+    {
+      "name": "UserGroup",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedWriteCapacityUnits",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "UserGroup"
+      }
+    }
+  ]
+}

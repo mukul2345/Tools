@@ -1,0 +1,146 @@
+{
+  "title": "sheet API COUNT list",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "authentication-service [200] /login/issue_access_token",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/issue_access_token",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/credential",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/credential",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /state-province/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/state-province/",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/track-cases",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/track-cases",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /state-province/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/state-province/:id",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/applicant-pii",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/applicant-pii",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/otp",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/otp",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /oauth/google",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/oauth/google",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/reset_password",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/reset_password",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-service [200] /address/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/address/:id",
+        "environment": "production",
+        "serviceName": "geo-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

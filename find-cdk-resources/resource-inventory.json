@@ -1,0 +1,290 @@
+{
+  "rootPath": "/Users/ravitejag/my-projects",
+  "generatedAt": "2026-03-14T15:16:40.834Z",
+  "services": {
+    "verification-workflow-engine": {
+      "sqs": [
+        "agent-workflow-instance-dead-letter-queue",
+        "agent-workflow-instance-queue",
+        "poi-priority-workflow-dlq",
+        "poi-priority-workflow-instance-queue",
+        "poi-workflow-change-events-dlq",
+        "poi-workflow-change-events-queue",
+        "sit-out-workflow-instance-queue",
+        "troubled-workflow-events",
+        "troubled-workflow-events-dlq",
+        "workflow-instance-dead-letter-queue",
+        "workflow-instance-queue"
+      ],
+      "dynamodb": [
+        "Insufficiency",
+        "OpsUserTask",
+        "PreferredAssignee",
+        "QCAgentAnalysis",
+        "TaskHistory",
+        "Workflow",
+        "WorkflowDependency",
+        "WorkflowRun",
+        "WorkflowRunArchive",
+        "WorkflowSchedule"
+      ],
+      "lambda": [
+        "Allocation-Alert-For-No-Eligible-Ops-User-Found",
+        "SitOutWorkflowProducerCron",
+        "StuckWorkflowRecoveryHandler",
+        "WorkflowProducer",
+        "troubled-workflow-events-lamda"
+      ],
+      "sns": [
+        "allocation-alert",
+        "poi-workflow-change-events-topic",
+        "workflow",
+        "workflow-event-timeline"
+      ]
+    },
+    "poi-service": {
+      "sqs": [
+        "poi-entity-event-queue"
+      ],
+      "dynamodb": [],
+      "lambda": [],
+      "sns": []
+    },
+    "verification-request": {
+      "sqs": [
+        "force-majeure-detection-events",
+        "force-majeure-detection-events-dead-letter-queue",
+        "force-majeure-events",
+        "force-majeure-events-dead-letter-queue",
+        "force-majeure-sla-events",
+        "force-majeure-sla-events-dead-letter-queue",
+        "ia-payout-events-dead-letter-queue",
+        "ia-payout-events-queue",
+        "verification-request-audit-trail-events",
+        "verification-request-sla",
+        "verification-request-workflow-events"
+      ],
+      "dynamodb": [
+        "AdditionalComponentVerificationRequestMapping",
+        "Addon",
+        "AddonConfig",
+        "AddonContract",
+        "AddonInventory",
+        "AddonVerificationRequestMapping",
+        "AgentVerificationRequestAnalysis",
+        "AgentVerificationRequestResponse",
+        "ApplicantComponentVerificationRecord",
+        "ApproverQCResponse",
+        "CaseCreation",
+        "CaseDetailsInsufficiency",
+        "CaseDetailsMigrationRequest",
+        "CaseInternalComment",
+        "CaseRecord",
+        "ClaimItem",
+        "ClientRequirementListResponse",
+        "DailyCaseLimits",
+        "EvaluatorQCResponse",
+        "ExternalReference",
+        "FollowUp",
+        "FollowUpCommunicationConfiguration",
+        "FollowUpCommunicationTemplate",
+        "FollowUpEntityMapping",
+        "ForceMajeure",
+        "IAInsufficiency",
+        "IAPayout",
+        "IssuingAuthorityPayment",
+        "MigrationMapper",
+        "Overlap",
+        "PartnerAdminResponse",
+        "PreValidationResponse",
+        "RPAInitiationApproval",
+        "ReVerificationInvocationData",
+        "RefundPayout",
+        "Report",
+        "ReportQCResponse",
+        "ReportTranslation",
+        "ResponseInsufficiency",
+        "ReviewResponse",
+        "VRDocCreationRequest",
+        "ValidationResponse",
+        "VerificationAgentAnalysis",
+        "VerificationCommunicationConfiguration",
+        "VerificationCommunicationTemplate",
+        "VerificationCommunicationTransaction",
+        "VerificationQCResponse",
+        "VerificationRequest",
+        "VerificationRequestInsufficiency",
+        "VerificationRequestPayment",
+        "VerificationRequestResponse",
+        "VerificationResponse",
+        "VerificationResponseChangeRequest",
+        "VerificationResponseV2"
+      ],
+      "lambda": [
+        "DailyCaseLimitCounter",
+        "DailyCaseLimitMaxLimit",
+        "DailyInsufficencyEmail",
+        "RefundAgent"
+      ],
+      "sns": [
+        "force-majeure-events-topic",
+        "verification-request-events"
+      ]
+    },
+    "verification-initiation-service": {
+      "sqs": [
+        "email-response",
+        "email-response-dlq"
+      ],
+      "dynamodb": [
+        "ClaimVerificationCommunicationDetails",
+        "ClaimVerificationCommunicationRequest",
+        "ClaimVerificationCommunicationResponse",
+        "CvcdCvcrMapping",
+        "SupportingDocumentResponse",
+        "SupportingDocumentTemplate",
+        "VerificationInitiationCommunicationConfiguration",
+        "VerificationInitiationCommunicationTemplate"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "document-management-service": {
+      "sqs": [
+        "doc-extract-split",
+        "doc-extract-split-dead-letter-queue"
+      ],
+      "dynamodb": [
+        "Document",
+        "DocumentExtracts",
+        "DocumentTaskV2",
+        "ParsedDocumentData",
+        "VerificationProofDocumentExtracts"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "document-generation-service": {
+      "sqs": [
+        "doc-generation-task-queue",
+        "document-generation-queue"
+      ],
+      "dynamodb": [
+        "DocGenerationRequest",
+        "DocGenerationTask"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "client-contract-service": {
+      "sqs": [],
+      "dynamodb": [
+        "BundleConfiguration",
+        "Client",
+        "ClientCommunicationConfiguration",
+        "ClientCommunicationTemplate",
+        "ClientCommunicationTransaction",
+        "ClientRequirementDocument",
+        "ClientRequirementDocumentType",
+        "ClientRequirementList",
+        "ClientUser",
+        "ClientUserType",
+        "ClientVerificationContract",
+        "CommunicationTransaction",
+        "ComponentFilter",
+        "ComponentVerificationPrice",
+        "DuplicateDetectionPolicy",
+        "ReportConfig",
+        "Template"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "document-service": {
+      "sqs": [],
+      "dynamodb": [
+        "IssuingAuthorityDocument",
+        "VerificationDocument"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "core-verification-data-structure-service": {
+      "sqs": [],
+      "dynamodb": [
+        "Attribute",
+        "AttributeType",
+        "AttributeV2",
+        "CommunicationWindow",
+        "Component",
+        "ComponentType",
+        "ComponentTypeKeyConfig",
+        "Discrepancy",
+        "DocumentTypeV2",
+        "DuplicateDetectionAudit",
+        "EntityType",
+        "Facet",
+        "IssuingAuthorityDocumentType",
+        "Item",
+        "PaymentContract",
+        "Purpose",
+        "PurposeCategory",
+        "RefundPaymentContract",
+        "SiteVisit",
+        "ToolTipAndInstructions",
+        "VerificationRequestPaymentContract"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "payment-service": {
+      "sqs": [
+        "payment-transactions",
+        "payment-transactions-dlq",
+        "refund-transactions",
+        "refund-transactions-dlq"
+      ],
+      "dynamodb": [
+        "CurrencyExchangeRate",
+        "DFGPaymentTransaction",
+        "PostPaymentDetails"
+      ],
+      "lambda": [],
+      "sns": []
+    },
+    "alert-service": {
+      "sqs": [],
+      "dynamodb": [
+        "AlertCommunicationTransaction",
+        "AlertMonitor"
+      ],
+      "lambda": [
+        "AlertServiceTriggerAlertCron"
+      ],
+      "sns": []
+    },
+    "migration-service": {
+      "sqs": [],
+      "dynamodb": [
+        "CaseRecordDocument",
+        "CaseRecordTracker"
+      ],
+      "lambda": [
+        "VeriflowMigrationCron"
+      ],
+      "sns": []
+    },
+    "narada": {
+      "sqs": [
+        "client-integrations-async-events",
+        "webhook-communication",
+        "webhook-communication-dlq"
+      ],
+      "dynamodb": [],
+      "lambda": [
+        "clientIntegrationRestApiAuthorizer"
+      ],
+      "sns": []
+    }
+  }
+}

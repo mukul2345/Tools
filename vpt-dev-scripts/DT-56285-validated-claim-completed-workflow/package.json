@@ -1,0 +1,17 @@
+{
+  "name": "dt-56285-validated-claim-completed-workflow",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Analyze and restore the lost terminal claimStatus on claims stuck at VALIDATED with a COMPLETED claim workflow (DT-56285)",
+  "scripts": {
+    "analyze": "node analyze.mjs",
+    "mitigate": "node mitigate.mjs",
+    "mitigate:execute": "node mitigate.mjs --execute"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.18.1"
+  }
+}

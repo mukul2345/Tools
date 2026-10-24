@@ -1,0 +1,74 @@
+{
+  "title": "Metrics Analytics Service API Count",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "metrics-analytics-service [200] /dashboard/track-cases",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/track-cases",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/applicant-pii",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/applicant-pii",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /metrics/critical-metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/metrics/critical-metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /analytics-cron/trigger",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/analytics-cron/trigger",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

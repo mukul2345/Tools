@@ -1,0 +1,38 @@
+{
+  "title": "Metrics Analytics Service API Errors",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "metrics-analytics-service [500] /dashboard/metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/dashboard/metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [400] /metrics/critical-metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/metrics/critical-metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "400"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "aws": {
+    "region": "eu-west-1",
+    "profile": "df-prod-v2"
+  },
+  "report": {
+    "periodSeconds": 900,
+    "windowMinutes": 1440,
+    "baselineDays": 7,
+    "minSamples": 10,
+    "zThreshold": 3.0,
+    "pctThreshold": 40,
+    "timezone": "Asia/Kolkata",
+    "skipWeekends": true
+  },
+  "metrics": {
+    "latency": {
+      "label": "Latency",
+      "badIf": "pct>40",
+      "goodIf": "pct<-40"
+    },
+    "error": {
+      "label": "Error Count",
+      "badIf": "pct>50",
+      "goodIf": "pct<-50"
+    },
+    "count": {
+      "label": "API Count",
+      "badIf": "pct<-40",
+      "goodIf": "pct>40"
+    },
+    "age": {
+      "label": "Age of Oldest Message",
+      "badIf": "pct>100",
+      "goodIf": "pct<-100"
+    },
+    "cpu": {
+      "label": "CPU Utilization",
+      "badIf": "pct > 30",
+      "goodIf": "pct < -30"
+    },
+    "memory": {
+      "label": "Memory Utilization",
+      "badIf": "pct > 30",
+      "goodIf": "pct < -30"
+    }
+  }
+}

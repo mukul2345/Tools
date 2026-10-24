@@ -1,0 +1,294 @@
+{
+  "title": "Dynamo Scan latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "Acl (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Acl",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "Address (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Address",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "AnalyticsAggregatorCronRun (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "AnalyticsAggregatorCronRun",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "AuthTokenInfo (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "AuthTokenInfo",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "Captcha (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Captcha",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "City (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "City",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "Country (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Country",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "CTA (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "CTA",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "DeviceInfo (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "DeviceInfo",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "DocumentTranslation (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "DocumentTranslation",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "EmailResponse (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "EmailResponse",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "EmailTransaction (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "EmailTransaction",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "Language (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Language",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "LanguageMapping (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "LanguageMapping",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "LoginAs (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "LoginAs",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "ManualTranslation (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "ManualTranslation",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "MetricAnalyticsExternalLocks (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "MetricAnalyticsExternalLocks",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "OtpTransaction (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "OtpTransaction",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "PushNotification (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "PushNotification",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "Region (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Region",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "ResourceAccess (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "ResourceAccess",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "Role (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "Role",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "SmsTransaction (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "SmsTransaction",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "TextTranslation (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "TextTranslation",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "User (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "User",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "UserConsent (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "UserConsent",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "UserGroup (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "UserGroup",
+        "Operation": "Scan"
+      }
+    },
+    {
+      "name": "WebhookTransaction (Scan)",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "SuccessfulRequestLatency",
+      "stat": "Average",
+      "dimensions": {
+        "TableName": "WebhookTransaction",
+        "Operation": "Scan"
+      }
+    }
+  ]
+}

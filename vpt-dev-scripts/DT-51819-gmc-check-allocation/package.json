@@ -1,0 +1,13 @@
+{
+  "name": "dt-51819-gmc-check-allocation",
+  "version": "1.0.0",
+  "description": "GMC Check round-robin allocation to OpsUsers",
+  "type": "module",
+  "scripts": {
+    "dry-run": "node assign.mjs",
+    "execute": "node assign.mjs --execute"
+  },
+  "dependencies": {
+    "axios": "^1.7.2"
+  }
+}

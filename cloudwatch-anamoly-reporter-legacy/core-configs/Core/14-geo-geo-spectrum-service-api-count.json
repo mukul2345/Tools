@@ -1,0 +1,98 @@
+{
+  "title": "Geo & Geo Spectrum Service API Count",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "geo-service [200] /address/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/address/",
+        "environment": "production",
+        "serviceName": "geo-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-service [200] /address/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/address/:id",
+        "environment": "production",
+        "serviceName": "geo-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /city/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/city/",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /city/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/city/:id",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /country/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/country/",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /state-province/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/state-province/",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "geo-spectrum-service [200] /state-province/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/state-province/:id",
+        "environment": "production",
+        "serviceName": "geo-spectrum-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

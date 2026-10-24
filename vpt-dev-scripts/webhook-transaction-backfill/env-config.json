@@ -1,0 +1,49 @@
+{
+  "_comment": "Per-environment config for the WebhookTransaction -> case_communication_events backfill. Fill in the correct VERIFICATION_DB_HOST / DB_SECRET_NAME for each environment before running. The DynamoDB table name is the same across environments ('WebhookTransaction').",
+  "environments": {
+    "780917974971": {
+      "name": "development",
+      "region": "ap-south-1",
+      "dynamoTableName": "WebhookTransaction",
+      "db": {
+        "host": "**",
+        "port": 5432,
+        "database": "verification_details",
+        "secretName": "**"
+      }
+    },
+    "471112785275": {
+      "name": "staging",
+      "region": "ap-south-1",
+      "dynamoTableName": "WebhookTransaction",
+      "db": {
+        "host": "***",
+        "port": 5432,
+        "database": "verification_details",
+        "secretName": "***"
+      }
+    },
+    "058264398403": {
+      "name": "preprod",
+      "region": "ap-south-1",
+      "dynamoTableName": "WebhookTransaction",
+      "db": {
+        "host": "REPLACE_WITH_PREPROD_VERIFICATION_DB_HOST",
+        "port": 5432,
+        "database": "verification_details",
+        "secretName": "REPLACE_WITH_PREPROD_DB_SECRET_NAME"
+      }
+    },
+    "891377067284": {
+      "name": "production",
+      "region": "eu-west-1",
+      "dynamoTableName": "WebhookTransaction",
+      "db": {
+        "host": "REPLACE_WITH_PROD_VERIFICATION_DB_HOST",
+        "port": 5432,
+        "database": "verification_details",
+        "secretName": "REPLACE_WITH_PROD_DB_SECRET_NAME"
+      }
+    }
+  }
+}

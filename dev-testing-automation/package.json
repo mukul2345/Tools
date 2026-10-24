@@ -1,0 +1,24 @@
+{
+  "name": "dev-testing-automation",
+  "version": "1.0.0",
+  "description": "Automated API testing with Newman and screenshot generation",
+  "main": "newman-screenshot-runner.js",
+  "scripts": {
+    "test": "node newman-screenshot-runner.js",
+    "start": "node newman-screenshot-runner.js"
+  },
+  "keywords": [
+    "newman",
+    "postman",
+    "api-testing",
+    "screenshots",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "locate-chrome": "^0.1.1",
+    "newman": "^6.1.0",
+    "puppeteer": "^21.0.0"
+  }
+}

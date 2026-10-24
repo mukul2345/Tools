@@ -1,0 +1,171 @@
+{
+  "signedUrlExpirySeconds": 86400,
+  "googleChatWebhookSsmKey": "/cw-anom/staging/google-chat-webhook",
+  "dashboards": [
+    {
+      "name": "Verification_Platform_Performance",
+      "enabled": true,
+      "groups": [
+        "DFG_Verification_Platform",
+        "Verification Platform Performance"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Workflow_Performance",
+      "enabled": true,
+      "groups": [
+        "DFG_Verification_Platform",
+        "Workflow Performance"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "TruProfile",
+      "enabled": true,
+      "groups": [
+        "DFG_TruProfile",
+        "TruProfile"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "ECS_Observability_Dashboard",
+      "enabled": true,
+      "groups": [
+        "DFG_ECS",
+        "ECS Observability Dashboard"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Core_platform",
+      "enabled": true,
+      "groups": [
+        "DFG_Core",
+        "Core Services Dashboard"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Consumer_Apps_Services",
+      "enabled": true,
+      "groups": [
+        "DFG_Consumer",
+        "Consumer Apps Services"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Client_API_Integration",
+      "enabled": true,
+      "groups": [
+        "DFG_Client",
+        "Client API Integration"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Cloudwatch_Bytes_Ingested",
+      "enabled": true,
+      "groups": [
+        "DFG_Consumer",
+        "Cloudwatch Bytes Ingested"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Core_API_Performance",
+      "enabled": true,
+      "groups": [
+        "DFG_Core",
+        "Core API Performance"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Core_Platform",
+      "enabled": true,
+      "groups": [
+        "DFG_Core",
+        "Core Platform"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "DynamoDB_Dashboard",
+      "enabled": true,
+      "groups": [
+        "DFG_Verification_Platform",
+        "DynamoDB Dashboard"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Garuda_Imp_Page_Level_Routes",
+      "enabled": true,
+      "groups": [
+        "DFG_Internal",
+        "Garuda Imp Page Level Routes"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Internal_Tools_Dashboard",
+      "enabled": true,
+      "groups": [
+        "DFG_Internal",
+        "Internal Tools Dashboard"
+      ],
+      "detectionWindowMinutes": 15,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Migration_Related_Services_Dashboard",
+      "enabled": true,
+      "groups": [
+        "DFG_Verification_Platform",
+        "Migration Related Services Dashboard"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    },
+    {
+      "name": "Cloudwatch_Logs_Size",
+      "enabled": true,
+      "groups": [
+        "DFG_Verification_Platform",
+        "Cloudwatch Logs Size"
+      ],
+      "detectionWindowMinutes": 5,
+      "baselineWindowMinutes": 300,
+      "anomalySensitivity": 0.8
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+[
+  {
+    "vrId": "VerificationRequest@f0061ae6-0d5b-4d08-9b9f-0a78b779176d",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-250926-4B6E9",
+    "existingWorkflowId": "NDOH-250430-25751",
+    "parentVrId": "VerificationRequest@ef37fcd2-7b46-4276-a543-f08ef273fea4",
+    "originalStatus": "VERIFIED_REJECTED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@1664bcdc-083b-4c03-982c-fb92d88e0e32"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@c15a0645-03b8-4c99-b6b9-44742fafbab3"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@3202311a-30d9-4107-9e2d-d79c329ab430",
+    "status": "COMPLETED",
+    "newWorkflowId": "NMCG-260121-C5AC9",
+    "existingWorkflowId": "NMCG-251111-3643C",
+    "parentVrId": "VerificationRequest@da8b3cd2-d0c5-48ad-b0b6-a277ba8cf8c0",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@b9922269-880f-4b8c-8079-c90274faa192"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@afe050f9-2bb3-4458-974e-817e57074a96"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d7f58c3c-8304-42ea-a0fc-18435e6026d6",
+    "status": "COMPLETED",
+    "newWorkflowId": "O002-260208-71BCB",
+    "existingWorkflowId": "O002-251203-0CD79",
+    "parentVrId": "VerificationRequest@fc1c4d26-3c52-4144-8b72-4376905d3a30",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@7700d955-83e0-419b-8f3d-a02b4eb9ee3d"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@2e4c4bba-c270-40bc-8e5f-d933f62e10e4"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@ae7505a9-0a7a-476a-a918-0c7e1d911b61",
+    "status": "COMPLETED",
+    "newWorkflowId": "M006-260122-63DA9",
+    "existingWorkflowId": "M006-251106-C3D08",
+    "parentVrId": "VerificationRequest@9ce866c8-6c9d-440e-b532-3c51d04331d4",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@4f7e426d-0460-4119-99ab-63e51292f041"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@b26bde68-0602-4996-bfe6-cf6f518ad6af"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@d9b0ff33-d1a2-4073-a3d2-e44ade590559",
+    "status": "COMPLETED",
+    "newWorkflowId": "O002-260301-DFB0E",
+    "existingWorkflowId": "O002-251008-7136A",
+    "parentVrId": "VerificationRequest@36352cb0-298b-405a-9cdf-2f6ef5ec3b74",
+    "originalStatus": "VERIFIED_REJECTED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@58c233ec-59cb-4270-ad73-2b9d08a5c08e"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@d2550154-bf14-470f-b729-fca28cdfb7cc"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@4d96783f-764c-4ab0-921d-99c461275792",
+    "status": "COMPLETED",
+    "newWorkflowId": "O002-260313-96F46",
+    "existingWorkflowId": "O002-251214-52DA9",
+    "parentVrId": "VerificationRequest@c582e843-6ca3-4657-8303-bc1486c6b728",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@fc0e3d68-6cb1-4753-a4a3-556b2b3aa5fc"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@9c3c4583-8aa7-40f0-9fb3-68e62ddaa588"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@1f320c7d-1ac5-4f05-9919-599f8a79486f",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260122-313A1",
+    "existingWorkflowId": "NDOH-250926-2E256",
+    "parentVrId": "VerificationRequest@b68c1c94-491b-4938-9d3d-247ad95bfbb8",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@c3b56973-fbda-471b-8780-a8f8f9a3291e"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@cfd5522d-a0d9-43ff-86e8-0e6fd988da71"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@0bb80221-85b0-4167-a960-eabcdd10e500",
+    "status": "COMPLETED",
+    "newWorkflowId": "NMCG-260330-5E404",
+    "existingWorkflowId": "NMCG-251023-662F7",
+    "parentVrId": "VerificationRequest@aafd4fd7-780b-48f1-967f-161755b499b7",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@7e4cc852-2e07-47c9-9a44-4fccfa566b20"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@47dbb182-07f8-4d99-9e44-2d638a5ab753"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@e67b6bf7-3a03-42c0-ad5f-2c6f6acaa19c",
+    "status": "COMPLETED",
+    "newWorkflowId": "C001-260401-4D7A4",
+    "existingWorkflowId": "C001-260214-C1BB3",
+    "parentVrId": "VerificationRequest@d0d2f0d5-7cdd-421d-8d94-819e72d81de2",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@5b2035fc-c4c6-4dec-b94d-dc5e0c793e1e"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@7ff69130-71f7-4807-a2f4-c0bd6dab4804"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@1bb3e7d8-e53d-46d5-9cae-15f21413debf",
+    "status": "COMPLETED",
+    "newWorkflowId": "H002-260408-0FFD1",
+    "existingWorkflowId": "H002-260203-D89AB",
+    "parentVrId": "VerificationRequest@9bd48d66-6bcd-46f0-87ee-dd966d45a07c",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@224ba0e0-00a8-4084-859e-97ab7ed03e71"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@75916984-2341-4613-b7b7-f263a8082ef7"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@ab8d73bf-8aa5-45ee-b81b-866ade32ab08",
+    "status": "COMPLETED",
+    "newWorkflowId": "H002-260327-B87AE",
+    "existingWorkflowId": "H002-260208-D358A",
+    "parentVrId": "VerificationRequest@0b40f3df-ce2d-463f-80fd-2f0aee168d37",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@714ef604-e7a2-4895-ac21-d6ddc7bd5128"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@cc651839-de54-4413-b33e-e194398f2f44"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@921ca749-7fd1-485c-9883-0742453a2937",
+    "status": "COMPLETED",
+    "newWorkflowId": "M006-260407-1524B",
+    "existingWorkflowId": "M006-250912-35106",
+    "parentVrId": "VerificationRequest@49400b79-2f99-43dd-a281-0fc0e4e6c1d3",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@af227745-4103-49b3-8f34-37ca456726c0"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@bf9e721f-0086-4971-8b55-57e6fcfa0738"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@77758a11-c314-4b31-9cf6-b1d935557939",
+    "status": "COMPLETED",
+    "newWorkflowId": "NDOH-260219-4C45C",
+    "existingWorkflowId": "NDOH-260112-62A91",
+    "parentVrId": "VerificationRequest@309965da-6135-4393-8964-41dec2685cf8",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@2a65de2e-f53f-4acb-97ab-dbd0b68dcb80"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@f5bf6ef4-6fe6-4342-af1f-d8d6cb13a3fc"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@cfc8f5ae-9c8b-46d1-9d73-35209534a25d",
+    "status": "COMPLETED",
+    "newWorkflowId": "N006-260422-1DDBD",
+    "existingWorkflowId": "N006-260217-24242",
+    "parentVrId": "VerificationRequest@32ab9a04-842a-4795-99d6-8a00409acd97",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@6e8c0355-78d6-457e-8f09-d47010198b3b"
+    ],
+    "childInvocationsDeleted": 2,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@d888ac01-355a-4903-8227-c5b5be3a0713",
+      "ReVerificationInvocationData@7a4f4394-12aa-4fd8-86d6-d3208ee847e1"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@3b56eeca-3dd3-4c5d-b17d-b11b5df456a1",
+    "status": "COMPLETED",
+    "newWorkflowId": "O002-260415-4EA53",
+    "existingWorkflowId": "O002-251203-0CD79",
+    "parentVrId": "VerificationRequest@fc1c4d26-3c52-4144-8b72-4376905d3a30",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@aaff865d-a020-419a-82c4-687746ff9db8"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@a30ff97d-e745-463d-b8ce-16c5c66ca3ed"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@728e6eba-d50a-4d87-b80c-8c01b5343fec",
+    "status": "COMPLETED",
+    "newWorkflowId": "B003-260517-4A203",
+    "existingWorkflowId": "B003-260113-D0F05",
+    "parentVrId": "VerificationRequest@65abd933-98cd-440f-8217-b7b2f5bef1a9",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@b365573b-7263-4e2e-b87b-7a772535ac21"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@004e7406-8b0b-4f56-8edd-5d04ca42c72b"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@77ed7d93-c146-4326-860b-e3aa57024e1b",
+    "status": "COMPLETED",
+    "newWorkflowId": "S003-260602-92857",
+    "existingWorkflowId": "S003-260310-3C7A7",
+    "parentVrId": "VerificationRequest@47338428-2220-40a0-86ad-da6fcabfa987",
+    "originalStatus": "VERIFIED_REJECTED",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@074ac991-5483-463b-8e35-77bac1348b27"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@f5d2bcbb-13f2-492d-a60b-23551079f4f5"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@b3ed331c-8ff7-4025-977d-c6ea68d3a678",
+    "status": "SKIPPED",
+    "reason": "No workflow found"
+  },
+  {
+    "vrId": "VerificationRequest@012aa4b5-7210-4b8c-84f8-cc3fa252e792",
+    "status": "ERROR",
+    "reason": "err is not defined"
+  },
+  {
+    "vrId": "VerificationRequest@6ae03760-135e-4a9f-8f56-d43a39cd7b4a",
+    "status": "COMPLETED",
+    "newWorkflowId": "O001-251225-4A406",
+    "existingWorkflowId": "O001-251029-1AE74",
+    "parentVrId": "VerificationRequest@07f8d7c5-e5e7-4a4f-8d0f-98dd30198234",
+    "originalStatus": "UNABLE_TO_VERIFY",
+    "parentInvocationsDeleted": 1,
+    "parentInvocationIds": [
+      "ReVerificationInvocationData@53c70771-84a4-4d38-becd-1092d35493ec"
+    ],
+    "childInvocationsDeleted": 1,
+    "childInvocationIds": [
+      "ReVerificationInvocationData@8b37edb3-9643-4152-8709-cfede1084216"
+    ]
+  },
+  {
+    "vrId": "VerificationRequest@a4164a4a-b633-4be6-90d3-d7b9450aeb9a",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  },
+  {
+    "vrId": "VerificationRequest@97ff99bd-d620-43b6-9fa8-826896111305",
+    "status": "SKIPPED_NEXT_STEPS",
+    "reason": "Parent is already deleted, not required to go to further steps and above we have already deleted remaining child workflow's reverification invocation data"
+  }
+]

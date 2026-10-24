@@ -1,0 +1,36 @@
+{
+  "name": "jira-bugfix-orchestrator",
+  "description": "Thin coordinator that runs the whole bug-fix pipeline in ONE session: delegates to the jira-bug-analyzer subagent, gates on the implementation brief, and (only if aligned) delegates to the jira-bug-fixer subagent. Does no analysis or coding itself.",
+  "prompt": "file://__KIRO_HOME__/agents/jira-bugfix-orchestrator-prompt.md",
+  "model": "claude-haiku-4.5",
+  "tools": [
+    "read",
+    "shell",
+    "subagent"
+  ],
+  "allowedTools": [
+    "read",
+    "shell",
+    "subagent"
+  ],
+  "toolsSettings": {
+    "subagent": {
+      "availableAgents": ["jira-bug-analyzer", "jira-bug-fixer"],
+      "trustedAgents": ["jira-bug-analyzer", "jira-bug-fixer"]
+    },
+    "shell": {
+      "autoAllowReadonly": true,
+      "deniedCommands": [
+        "rm -rf /( |$|\\*)",
+        "rm -rf ~",
+        "rm -rf \\$HOME",
+        "rm -rf /(bin|etc|usr|var|lib|opt|sbin|System|Library|Users|home|private|Applications)(/| |$)"
+      ]
+    }
+  },
+  "hooks": {
+    "agentSpawn": [
+      { "command": "echo \"[jira-bugfix-orchestrator] spawned at $(date -u)\" >> /tmp/jira-bug-fixer.log" }
+    ]
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "title": "Authentication Service API Errors",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "authentication-service [500] /otp/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/otp/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [500] /login/generate_reset_password_link",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/generate_reset_password_link",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [500] /login/issue_access_token",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/issue_access_token",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [500] /captcha/verify",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/captcha/verify",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [404] /oauth/google",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/oauth/google",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "404"
+      }
+    },
+    {
+      "name": "authentication-service [404] 403",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "403",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "404"
+      }
+    },
+    {
+      "name": "authentication-service [401] /login/issue_access_token",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/issue_access_token",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "401"
+      }
+    },
+    {
+      "name": "authentication-service [401] /login/otp",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/otp",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "401"
+      }
+    },
+    {
+      "name": "authentication-service [401] /login/credential",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/credential",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "401"
+      }
+    },
+    {
+      "name": "authentication-service [400] /login/otp",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/otp",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [400] /otp/verify",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/otp/verify",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [400] /otp/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/otp/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [400] /login/generate-login-tokens",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/generate-login-tokens",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [400] /login/issue_access_token",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/issue_access_token",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [500] /oauth/uae-pass",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/oauth/uae-pass",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [400] /captcha/verify",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/captcha/verify",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [401] /login/generate_reset_password_link",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/generate_reset_password_link",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "401"
+      }
+    },
+    {
+      "name": "authentication-service [500] /login/generate-login-tokens",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/generate-login-tokens",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [500] 403",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "403",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [500] /login/otp",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/otp",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [500] /login/reset_password",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/login/reset_password",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "authentication-service [400] /oauth/uae-pass",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/oauth/uae-pass",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [429] /otp/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/otp/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "429"
+      }
+    },
+    {
+      "name": "authentication-service [400] /otp/mobile/verify",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/otp/mobile/verify",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "authentication-service [400] /resource-access/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/resource-access/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "400"
+      }
+    }
+  ]
+}

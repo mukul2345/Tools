@@ -1,0 +1,1588 @@
+{
+  "id": "Report@1356c0ff-943b-421c-ac7b-56bb16237220",
+  "alternateID": "Report@1356c0ff-943b-421c-ac7b-56bb16237220",
+  "createdAt": 1778169243638,
+  "createdBy": "system@dataflowgroup.com",
+  "entityId": "VerificationRequest@cb0ab2c0-1a69-4137-8b42-e65839126eb9",
+  "reportPublishedDate": 1779125409793,
+  "reportState": "FINAL",
+  "reportStatus": "PUBLISHED",
+  "reportTypeAndIdMap": {
+    "APPLICANT": "Document@f54e319a-d4c0-4989-95f9-330c7e005bcc",
+    "APPLICANT_UNSECURED": "Document@2061c41f-8880-438a-8da7-668f3614091d",
+    "CLIENT": "Document@0912d351-2430-4248-8419-fe9118aa2d71",
+    "CLIENT_ANNEXED": "Document@53bbc738-8b4b-4d41-bed4-a9b4230b1dee"
+  },
+  "reportTypeVsReportDataMap": {
+    "APPLICANT": {
+      "evidenceDocument": [],
+      "reportData": {
+        "applicantDateOfBirth": "1989-10-24",
+        "applicantName": "RINI ABRAHAM THOMAS",
+        "approverResult": "POSITIVE",
+        "caseInitiateDate": "01 DECEMBER 2025",
+        "clientName": "Oman Medical Specialty Board",
+        "clientReference": "O001-251201-77F66",
+        "components": [
+          {
+            "accreditationStatus": "ACCREDITED",
+            "attributes": [
+              {
+                "attributeName": "Institute Name",
+                "attributeTypeId": "AttributeType@universityName",
+                "attributeVal": "RAJIV GANDHI UNIVERSITY OF HEALTH SCIENCES",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KARNATAKA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Qualification Attained",
+                "attributeTypeId": "AttributeType@courseName",
+                "attributeVal": "BACHELOR OF SCIENCE IN NURSING (BASIC)",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Mode of Study",
+                "attributeTypeId": "AttributeType@modeOfStudy",
+                "attributeVal": "FULL TIME",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Course Start Date",
+                "attributeTypeId": "AttributeType@startDate",
+                "attributeVal": "AUGUST 2008",
+                "remark": "Unavailable",
+                "status": "CANNOT_CONFIRM"
+              },
+              {
+                "attributeName": "Course End Date",
+                "attributeTypeId": "AttributeType@completionDate",
+                "attributeVal": "AUGUST 2012",
+                "remark": "Unavailable",
+                "status": "CANNOT_CONFIRM"
+              },
+              {
+                "attributeName": "Examination Date",
+                "attributeTypeId": "AttributeType@examinationDate",
+                "attributeVal": "-",
+                "status": "AUGUST 2012"
+              },
+              {
+                "attributeName": "Degree / Course is Completed",
+                "attributeTypeId": "AttributeType@isEducationCompleted",
+                "attributeVal": "-",
+                "status": "YES"
+              }
+            ],
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from the Digital Portal of issuing authority"
+            ],
+            "claimItemId": "ClaimItem@4f15a14b-2b53-4cbb-b386-da0ca5e4d1f8",
+            "componentId": "Component@5f2cf21d-f120-4cf0-92d4-a206c8a5f989",
+            "componentName": "Education",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@collegeEducation",
+            "courseDetails": [],
+            "iaAttribution": "AttributeType@universityName",
+            "IADetails": [],
+            "issuingAuthority": "Rajiv Gandhi University Of Health Sciences",
+            "otherVerifierDetails": [
+              {
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from the Digital Portal of issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from the Digital Portal of issuing authority",
+            "overallRemarksCode": "SUCCESS-DIGITAL-PORTAL-IA",
+            "remarks": "Verification obtained from the Digital Portal of issuing authority",
+            "responseReceivedAt": "08 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive"
+          },
+          {
+            "accreditationStatus": "NOT_APPLICABLE",
+            "attributes": [
+              {
+                "attributeName": "Licensing Authority",
+                "attributeTypeId": "AttributeType@licenseIssuedBy",
+                "attributeVal": "KERALA NURSES AND MIDWIVES COUNCIL",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KERALA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Attained",
+                "attributeTypeId": "AttributeType@licenseName",
+                "attributeVal": "NURSE AND MIDWIFE",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Valid From",
+                "attributeTypeId": "AttributeType@licenseValidFrom",
+                "attributeVal": "4 SEPTEMBER 2019",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Expiry Date",
+                "attributeTypeId": "AttributeType@licenseExpiryDate",
+                "attributeVal": "3 SEPTEMBER 2029",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Number",
+                "attributeTypeId": "AttributeType@licenseNumberId",
+                "attributeVal": "KL04201902075",
+                "status": "CORRECT"
+              }
+            ],
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from issuing authority"
+            ],
+            "claimItemId": "ClaimItem@57835d4a-b2c8-4a26-b389-752767246d9b",
+            "componentId": "Component@7ef81b32-8fdd-4c15-a9fb-c9195f793748",
+            "componentName": "Health License",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@license",
+            "courseDetails": [],
+            "iaAccreditationStatus": "NOT_APPLICABLE",
+            "iaAttribution": "AttributeType@licenseIssuedBy",
+            "iaCourseAccreditationStatus": "NOT_APPLICABLE",
+            "IADetails": [],
+            "issuingAuthority": "Kerala Nurses And Midwives Council",
+            "otherVerifierDetails": [
+              {
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from issuing authority",
+            "psvStatus": "Positive",
+            "remarks": "Verification obtained from issuing authority",
+            "responseReceivedAt": "13 March 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive"
+          },
+          {
+            "accreditationStatus": "Not Applicable",
+            "attributes": [
+              {
+                "attributeName": "Name of the Organization",
+                "attributeTypeId": "AttributeType@employerName",
+                "attributeVal": "MOUNT ZION MEDICAL COLLEGE HOSPITAL",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KERALA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Last Designation",
+                "attributeTypeId": "AttributeType@lastDesignation",
+                "attributeVal": "STAFF NURSE",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Start Date",
+                "attributeTypeId": "AttributeType@employmentStartDate",
+                "attributeVal": "15 MARCH 2022",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "End Date",
+                "attributeTypeId": "AttributeType@employmentEndDate",
+                "attributeVal": "CURRENTLY WORKING",
+                "status": "CORRECT"
+              }
+            ],
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from issuing authority"
+            ],
+            "claimItemId": "ClaimItem@2e919113-0576-471a-a5f1-a12ae82df40d",
+            "componentId": "Component@fad56b2a-d5ef-4ed5-af12-e5a1c4e63bd2",
+            "componentName": "Employment - 1",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@employment",
+            "courseDetails": [],
+            "iaAttribution": "AttributeType@employerName",
+            "IADetails": [],
+            "issuingAuthority": "Mount Zion Medical College Hospital",
+            "otherVerifierDetails": [
+              {
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from issuing authority",
+            "remarks": "Verification obtained from issuing authority",
+            "responseReceivedAt": "03 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive"
+          },
+          {
+            "accreditationStatus": "Not Applicable",
+            "attributes": [
+              {
+                "attributeName": "Name of the Organization",
+                "attributeTypeId": "AttributeType@employerName",
+                "attributeVal": "MOUNT ZION MEDICAL COLLEGE HOSPITAL",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KERALA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Last Designation",
+                "attributeTypeId": "AttributeType@lastDesignation",
+                "attributeVal": "STAFF NURSE",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Start Date",
+                "attributeTypeId": "AttributeType@employmentStartDate",
+                "attributeVal": "3 MARCH 2018",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "End Date",
+                "attributeTypeId": "AttributeType@employmentEndDate",
+                "attributeVal": "31 DECEMBER 2021",
+                "status": "CORRECT"
+              }
+            ],
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from issuing authority"
+            ],
+            "claimItemId": "ClaimItem@60011067-f8c5-4817-9657-88cf5c0946a8",
+            "componentId": "Component@a09e86a0-f677-433b-924e-760c04f7dd5c",
+            "componentName": "Employment - 2",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@employment",
+            "courseDetails": [],
+            "iaAttribution": "AttributeType@employerName",
+            "IADetails": [],
+            "issuingAuthority": "Mount Zion Medical College Hospital",
+            "otherVerifierDetails": [
+              {
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from issuing authority",
+            "overallRemarksCode": "SUCCESS-DIRECT-CONFIRMATION-IA",
+            "remarks": "Verification obtained from issuing authority",
+            "responseReceivedAt": "03 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive"
+          },
+          {
+            "accreditationStatus": "Not Applicable",
+            "attributes": [],
+            "attributesOverallRemarks": ["No derogatory records found"],
+            "claimItemId": "ClaimItem@eaa42b6e-66e4-4ac6-987e-a3897ef57aef",
+            "componentId": "Component@31c6cdd9-6bb0-4017-8bd6-4ef589dfe3af",
+            "componentName": "Risk Dataset",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@riskDataset",
+            "courseDetails": [],
+            "iaAttribution": "ATTACHED_DOCUMENTS",
+            "IADetails": [],
+            "issuingAuthority": "CROSSCHECK TECHNOLOGY SERVICES",
+            "otherVerifierDetails": [
+              {
+                "methodOfVerification": null,
+                "remarks": "No derogatory records found",
+                "verificationStatus": "No Derogatory Records Found"
+              }
+            ],
+            "overallRemarks": "No derogatory records found",
+            "overallRemarksCode": "RISK-DATASET-POSITIVE",
+            "remarks": "No derogatory records found",
+            "responseReceivedAt": "21 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "No Derogatory Records Found"
+          }
+        ],
+        "config": {
+          "id": "ReportConfig@91b51b74-e156-4392-a8d2-dde414e401f9",
+          "allowedAttributesForComponent": {
+            "ComponentType@collegeEducation": {
+              "AttributeType@completionDate": "Course End Date",
+              "AttributeType@conferredDate": "Conferred Date",
+              "AttributeType@courseName": "Qualification Attained",
+              "AttributeType@examinationDate": "Examination Date",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@modeOfStudy": "Mode of Study",
+              "AttributeType@startDate": "Course Start Date",
+              "AttributeType@universityName": "Institute Name"
+            },
+            "ComponentType@continuedProfessionalDevelopment": {
+              "AttributeType@certificateIssuedBy": "Certificate Issued By",
+              "AttributeType@endDate": "End Date",
+              "AttributeType@programName": "Program Name",
+              "AttributeType@startDate": "Start Date"
+            },
+            "ComponentType@employment": {
+              "AttributeType@employerName": "Name of the Organization",
+              "AttributeType@employmentEndDate": "End Date",
+              "AttributeType@employmentStartDate": "Start Date",
+              "AttributeType@lastDesignation": "Last Designation"
+            },
+            "ComponentType@examBasedQualification": {
+              "AttributeType@completionDate": "Course End Date",
+              "AttributeType@conferredDate": "Conferred Date",
+              "AttributeType@courseName": "Qualification Attained",
+              "AttributeType@examinationDate": "Examination Date",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@modeOfStudy": "Mode of Study",
+              "AttributeType@startDate": "Course Start Date",
+              "AttributeType@universityName": "Institute Name"
+            },
+            "ComponentType@internship": {
+              "AttributeType@employerName": "Name of the Organization",
+              "AttributeType@endDate": "End Date",
+              "AttributeType@lastDesignation": "Designation",
+              "AttributeType@startDate": "Start Date"
+            },
+            "ComponentType@license": {
+              "AttributeType@licenseExpiryDate": "License Expiry Date",
+              "AttributeType@licenseIssuedBy": "Licensing Authority",
+              "AttributeType@licenseName": "License Attained",
+              "AttributeType@licenseNumberId": "License Number",
+              "AttributeType@licenseValidFrom": "License Valid From"
+            },
+            "ComponentType@residency": {
+              "AttributeType@institutionName": "Institution Name",
+              "AttributeType@lastDesignation": "Last Designation",
+              "AttributeType@residencyCompletionDate": "Residency Completion Date",
+              "AttributeType@residencyStartDate": "Residency Start Date"
+            },
+            "ComponentType@riskDataset": {},
+            "ComponentType@schoolEducation": {
+              "AttributeType@certifyingBody": "Certifying Body",
+              "AttributeType@completedDate": "Completion Date",
+              "AttributeType@conferredDate": "Conferred Date",
+              "AttributeType@examinationDate": "Examination Date",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@schoolName": "School Name"
+            },
+            "ComponentType@specialization": {
+              "AttributeType@completionDate": "Course End Date",
+              "AttributeType@courseName": "Qualification Attained",
+              "AttributeType@fellowshipTitle": "Fellowship Title",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@issuedDate": "Issued Date",
+              "AttributeType@issuingAuthority": "Institute Name",
+              "AttributeType@modeOfStudy": "Mode of Study",
+              "AttributeType@programDuration": "Duration of Program (in years)",
+              "AttributeType@startDate": "Course Start Date"
+            },
+            "ComponentType@training": {
+              "AttributeType@lastDesignation": "Last Designation",
+              "AttributeType@organizationName": "Organization Name",
+              "AttributeType@trainingEndDate": "Training End Date",
+              "AttributeType@trainingStartDate": "Training Start Date"
+            }
+          },
+          "allowedComponentTypes": {
+            "ComponentType@collegeEducation": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 1,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@continuedProfessionalDevelopment": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 4,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@employment": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 7,
+              "displayLabel": "Employment",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@examBasedQualification": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 3,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@internship": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 10,
+              "displayLabel": "Internship",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@license": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 6,
+              "displayLabel": "Health License",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@residency": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 8,
+              "displayLabel": "Employment",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@riskDataset": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 11,
+              "displayLabel": "Risk Dataset",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@schoolEducation": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 5,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@specialization": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 2,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            },
+            "ComponentType@training": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 9,
+              "displayLabel": "Employment",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false
+            }
+          },
+          "alternateID": "ReportConfig@91b51b74-e156-4392-a8d2-dde414e401f9",
+          "coveringPageLogo": "https://dfg-frontend-web.s3.ap-southeast-1.amazonaws.com/static/images/DFGLogoWatermark.png",
+          "createdAt": 1773322582076,
+          "createdBy": "system@dataflowgroup.com",
+          "isClientLogoRequired": false,
+          "owner": "system@dataflowgroup.com",
+          "reportPageConfig": {
+            "1": "ComponentType@collegeEducation",
+            "2": "ComponentType@specialization",
+            "3": "ComponentType@examBasedQualification",
+            "4": "ComponentType@continuedProfessionalDevelopment",
+            "5": "ComponentType@schoolEducation",
+            "6": "ComponentType@license",
+            "7": "ComponentType@employment",
+            "8": "ComponentType@residency",
+            "9": "ComponentType@training",
+            "10": "ComponentType@internship",
+            "11": "ComponentType@riskDataset"
+          },
+          "updatedAt": 1773322582076
+        },
+        "coveringPageLogo": "https://dfg-frontend-web.s3.ap-southeast-1.amazonaws.com/static/images/DFGLogoWatermark.png",
+        "dataflowCaseReference": "O001-251201-77F66",
+        "issueCategory": "Nurse (Bachelor Holder)",
+        "issuedOn": "18 MAY 2026",
+        "issuedTo": "OMAN MEDICAL SPECIALTY BOARD\nP.O.BOX: 1422; P.C.:132 ; MUSCAT ; SULTANATE OF OMAN",
+        "passportNumber": "AH513260",
+        "purpose": "New License",
+        "purposeCategory": "Nurse (Bachelor Holder)",
+        "qrCode": "data:image/png;base64,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",
+        "reportType": "FINAL",
+        "result": "POSITIVE",
+        "verificationRequestId": "VerificationRequest@cb0ab2c0-1a69-4137-8b42-e65839126eb9"
+      },
+      "userId": "User@2e302f15-c902-4672-ba9d-098c128e85c0"
+    },
+    "CLIENT": {
+      "evidenceDocument": [],
+      "reportData": {
+        "additionalDocumentsForAnnexure": [
+          {
+            "documentId": "Document@82e03835-592d-4478-9b50-434606b98ada",
+            "documentLabel": "Previously completed case of Applicant - O001-251201-77F66",
+            "documentSourceId": "VerificationRequest@cb0ab2c0-1a69-4137-8b42-e65839126eb9",
+            "userId": "User@2e302f15-c902-4672-ba9d-098c128e85c0"
+          }
+        ],
+        "applicantDateOfBirth": "1989-10-24",
+        "applicantName": "RINI ABRAHAM THOMAS",
+        "approverResult": "POSITIVE",
+        "caseInitiateDate": "01 DECEMBER 2025",
+        "clientName": "Oman Medical Specialty Board",
+        "clientReference": "O001-251201-77F66",
+        "components": [
+          {
+            "accreditationStatus": "ACCREDITED",
+            "attributes": [
+              {
+                "attributeName": "Institute Name",
+                "attributeTypeId": "AttributeType@universityName",
+                "attributeVal": "RAJIV GANDHI UNIVERSITY OF HEALTH SCIENCES",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KARNATAKA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Qualification Attained",
+                "attributeTypeId": "AttributeType@courseName",
+                "attributeVal": "BACHELOR OF SCIENCE IN NURSING (BASIC)",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Mode of Study",
+                "attributeTypeId": "AttributeType@modeOfStudy",
+                "attributeVal": "FULL TIME",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Course Start Date",
+                "attributeTypeId": "AttributeType@startDate",
+                "attributeVal": "AUGUST 2008",
+                "remark": "Unavailable",
+                "status": "CANNOT_CONFIRM"
+              },
+              {
+                "attributeName": "Course End Date",
+                "attributeTypeId": "AttributeType@completionDate",
+                "attributeVal": "AUGUST 2012",
+                "remark": "Unavailable",
+                "status": "CANNOT_CONFIRM"
+              },
+              {
+                "attributeName": "Examination Date",
+                "attributeTypeId": "AttributeType@examinationDate",
+                "attributeVal": "-",
+                "status": "AUGUST 2012"
+              },
+              {
+                "attributeName": "Degree / Course is Completed",
+                "attributeTypeId": "AttributeType@isEducationCompleted",
+                "attributeVal": "-",
+                "status": "YES"
+              }
+            ],
+            "attributesOverallReference": "Please refer to annexure below for Education",
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from the Digital Portal of issuing authority",
+              null,
+              null,
+              "Authorized contact stated that the applicant's period of study is from 2008-2012."
+            ],
+            "autoEvidenceDocumentIds": [],
+            "claimItemId": "ClaimItem@4f15a14b-2b53-4cbb-b386-da0ca5e4d1f8",
+            "componentId": "Component@5f2cf21d-f120-4cf0-92d4-a206c8a5f989",
+            "componentName": "Education",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@collegeEducation",
+            "courseDetails": [],
+            "iaAttribution": "AttributeType@universityName",
+            "IADetails": [],
+            "issuingAuthority": "Rajiv Gandhi University Of Health Sciences",
+            "otherVerifierDetails": [
+              {
+                "additionalRemarks": "Authorized contact stated that the applicant's period of study is from 2008-2012.",
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from the Digital Portal of issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from the Digital Portal of issuing authority",
+            "overallRemarksCode": "SUCCESS-DIGITAL-PORTAL-IA",
+            "proofObtainedMethod": "WRITTEN",
+            "proofOfIAVerificationList": [
+              "Document@dd3eb195-6c1f-47de-a55e-90e9a16d4d91"
+            ],
+            "remarks": "Verification obtained from the Digital Portal of issuing authority",
+            "responseReceivedAt": "08 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive",
+            "verifierDetails": [
+              {
+                "contactNo": "123456789",
+                "dateOfVerificationRecieved": "13 January 2026",
+                "designation": "Not Applicable",
+                "emailId": "donotusethis@dataflowgroup.com",
+                "name": "Digital Facility",
+                "organisationName": null
+              }
+            ]
+          },
+          {
+            "accreditationStatus": "NOT_APPLICABLE",
+            "attributes": [
+              {
+                "attributeName": "Licensing Authority",
+                "attributeTypeId": "AttributeType@licenseIssuedBy",
+                "attributeVal": "KERALA NURSES AND MIDWIVES COUNCIL",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KERALA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Attained",
+                "attributeTypeId": "AttributeType@licenseName",
+                "attributeVal": "NURSE AND MIDWIFE",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Valid From",
+                "attributeTypeId": "AttributeType@licenseValidFrom",
+                "attributeVal": "4 SEPTEMBER 2019",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Expiry Date",
+                "attributeTypeId": "AttributeType@licenseExpiryDate",
+                "attributeVal": "3 SEPTEMBER 2029",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "License Number",
+                "attributeTypeId": "AttributeType@licenseNumberId",
+                "attributeVal": "KL04201902075",
+                "status": "CORRECT"
+              }
+            ],
+            "attributesOverallReference": "Please refer to annexure below for Health License",
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from issuing authority"
+            ],
+            "autoEvidenceDocumentIds": [],
+            "claimItemId": "ClaimItem@57835d4a-b2c8-4a26-b389-752767246d9b",
+            "componentId": "Component@7ef81b32-8fdd-4c15-a9fb-c9195f793748",
+            "componentName": "Health License",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@license",
+            "courseDetails": [],
+            "iaAccreditationStatus": "NOT_APPLICABLE",
+            "iaAttribution": "AttributeType@licenseIssuedBy",
+            "iaCourseAccreditationStatus": "NOT_APPLICABLE",
+            "IADetails": [],
+            "issuingAuthority": "Kerala Nurses And Midwives Council",
+            "otherVerifierDetails": [
+              {
+                "additionalRemarks": "Not Provided",
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from issuing authority",
+            "proofObtainedMethod": "WRITTEN",
+            "proofOfIAVerificationList": [
+              "Document@ea32411f-373b-4fdf-8f6b-f9cdf71b16f5"
+            ],
+            "psvStatus": "Positive",
+            "remarks": "Verification obtained from issuing authority",
+            "responseReceivedAt": "13 March 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive",
+            "verifierDetails": [
+              {
+                "contactNo": "+919495510555",
+                "dateOfVerificationRecieved": "07 May 2026",
+                "designation": "Registrar",
+                "emailId": "knmcgsc3@gmail.com",
+                "name": "Dr Sona P S",
+                "organisationName": null
+              }
+            ]
+          },
+          {
+            "accreditationStatus": "Not Applicable",
+            "attributes": [
+              {
+                "attributeName": "Name of the Organization",
+                "attributeTypeId": "AttributeType@employerName",
+                "attributeVal": "MOUNT ZION MEDICAL COLLEGE HOSPITAL",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KERALA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Last Designation",
+                "attributeTypeId": "AttributeType@lastDesignation",
+                "attributeVal": "STAFF NURSE",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Start Date",
+                "attributeTypeId": "AttributeType@employmentStartDate",
+                "attributeVal": "15 MARCH 2022",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "End Date",
+                "attributeTypeId": "AttributeType@employmentEndDate",
+                "attributeVal": "CURRENTLY WORKING",
+                "status": "CORRECT"
+              }
+            ],
+            "attributesOverallReference": "Please refer to annexure below for Employment",
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from issuing authority"
+            ],
+            "autoEvidenceDocumentIds": [
+              "Document@770621bf-5d6e-4561-9a86-0c9a2bc0c607"
+            ],
+            "claimItemId": "ClaimItem@2e919113-0576-471a-a5f1-a12ae82df40d",
+            "componentId": "Component@fad56b2a-d5ef-4ed5-af12-e5a1c4e63bd2",
+            "componentName": "Employment - 1",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@employment",
+            "courseDetails": [],
+            "iaAttribution": "AttributeType@employerName",
+            "IADetails": [],
+            "issuingAuthority": "Mount Zion Medical College Hospital",
+            "otherVerifierDetails": [
+              {
+                "additionalRemarks": "Not Provided",
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from issuing authority",
+            "proofObtainedMethod": "WRITTEN",
+            "proofOfIAVerificationList": [],
+            "remarks": "Verification obtained from issuing authority",
+            "responseReceivedAt": "03 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive",
+            "verifierDetails": [
+              {
+                "contactNo": "+919497713071",
+                "dateOfVerificationRecieved": "03 January 2026",
+                "designation": "Administrator,Administration",
+                "emailId": "mzmcadm20@gmail.com",
+                "name": "Mr Siby Varghese",
+                "organisationName": null
+              }
+            ]
+          },
+          {
+            "accreditationStatus": "Not Applicable",
+            "attributes": [
+              {
+                "attributeName": "Name of the Organization",
+                "attributeTypeId": "AttributeType@employerName",
+                "attributeVal": "MOUNT ZION MEDICAL COLLEGE HOSPITAL",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Location",
+                "attributeVal": "KERALA, INDIA",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Last Designation",
+                "attributeTypeId": "AttributeType@lastDesignation",
+                "attributeVal": "STAFF NURSE",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "Start Date",
+                "attributeTypeId": "AttributeType@employmentStartDate",
+                "attributeVal": "3 MARCH 2018",
+                "status": "CORRECT"
+              },
+              {
+                "attributeName": "End Date",
+                "attributeTypeId": "AttributeType@employmentEndDate",
+                "attributeVal": "31 DECEMBER 2021",
+                "status": "CORRECT"
+              }
+            ],
+            "attributesOverallReference": "Please refer to annexure below for Employment",
+            "attributesOverallRemarks": [
+              "Verified. Verification obtained from issuing authority",
+              null,
+              null,
+              "The applicant commenced employment prior to acquiring the necessary health license."
+            ],
+            "autoEvidenceDocumentIds": [
+              "Document@d21685aa-725c-4392-8eaa-af3c56f1c24c"
+            ],
+            "claimItemId": "ClaimItem@60011067-f8c5-4817-9657-88cf5c0946a8",
+            "componentId": "Component@a09e86a0-f677-433b-924e-760c04f7dd5c",
+            "componentName": "Employment - 2",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@employment",
+            "courseDetails": [],
+            "iaAttribution": "AttributeType@employerName",
+            "IADetails": [],
+            "issuingAuthority": "Mount Zion Medical College Hospital",
+            "otherVerifierDetails": [
+              {
+                "additionalRemarks": "The applicant commenced employment prior to acquiring the necessary health license.",
+                "methodOfVerification": null,
+                "remarks": "Verification obtained from issuing authority",
+                "verificationStatus": "Verified"
+              }
+            ],
+            "overallRemarks": "Verification obtained from issuing authority",
+            "overallRemarksCode": "SUCCESS-DIRECT-CONFIRMATION-IA",
+            "proofObtainedMethod": "WRITTEN",
+            "proofOfIAVerificationList": [],
+            "remarks": "Verification obtained from issuing authority",
+            "responseReceivedAt": "03 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "Positive",
+            "verifierDetails": [
+              {
+                "contactNo": "+911234567890",
+                "dateOfVerificationRecieved": "12 January 2026",
+                "designation": "Official, Administration",
+                "emailId": "mzmcadm20@gmail.com",
+                "name": "Mr Siby Varghese",
+                "organisationName": null
+              }
+            ]
+          },
+          {
+            "accreditationStatus": "Not Applicable",
+            "attributes": [],
+            "attributesOverallRemarks": ["No derogatory records found"],
+            "claimItemId": "ClaimItem@eaa42b6e-66e4-4ac6-987e-a3897ef57aef",
+            "componentId": "Component@31c6cdd9-6bb0-4017-8bd6-4ef589dfe3af",
+            "componentName": "Risk Dataset",
+            "componentStatus": "VERIFIED_APPROVED",
+            "componentTypeId": "ComponentType@riskDataset",
+            "courseDetails": [],
+            "iaAttribution": "ATTACHED_DOCUMENTS",
+            "IADetails": [],
+            "issuingAuthority": "CROSSCHECK TECHNOLOGY SERVICES",
+            "otherVerifierDetails": [
+              {
+                "additionalRemarks": "Not Provided",
+                "methodOfVerification": null,
+                "remarks": "No derogatory records found",
+                "verificationStatus": "No Derogatory Records Found"
+              }
+            ],
+            "overallRemarks": "No derogatory records found",
+            "overallRemarksCode": "RISK-DATASET-POSITIVE",
+            "remarks": "No derogatory records found",
+            "responseReceivedAt": "21 January 2026",
+            "typeOfComponent": "PSV",
+            "verificationStatus": "No Derogatory Records Found"
+          }
+        ],
+        "config": {
+          "id": "ReportConfig@0e294cd1-226f-45c8-a818-fee16246c2f5",
+          "allowedAttributesForComponent": {
+            "ComponentType@collegeEducation": {
+              "AttributeType@completionDate": "Course End Date",
+              "AttributeType@conferredDate": "Conferred Date",
+              "AttributeType@courseName": "Qualification Attained",
+              "AttributeType@examinationDate": "Examination Date",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@modeOfStudy": "Mode of Study",
+              "AttributeType@startDate": "Course Start Date",
+              "AttributeType@universityName": "Institute Name"
+            },
+            "ComponentType@continuedProfessionalDevelopment": {
+              "AttributeType@certificateIssuedBy": "Certificate Issued By",
+              "AttributeType@endDate": "End Date",
+              "AttributeType@programName": "Program Name",
+              "AttributeType@startDate": "Start Date"
+            },
+            "ComponentType@employment": {
+              "AttributeType@employerName": "Name of the Organization",
+              "AttributeType@employmentEndDate": "End Date",
+              "AttributeType@employmentStartDate": "Start Date",
+              "AttributeType@lastDesignation": "Last Designation"
+            },
+            "ComponentType@examBasedQualification": {
+              "AttributeType@completionDate": "Course End Date",
+              "AttributeType@conferredDate": "Conferred Date",
+              "AttributeType@courseName": "Qualification Attained",
+              "AttributeType@examinationDate": "Examination Date",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@modeOfStudy": "Mode of Study",
+              "AttributeType@startDate": "Course Start Date",
+              "AttributeType@universityName": "Institute Name"
+            },
+            "ComponentType@internship": {
+              "AttributeType@employerName": "Name of the Organization",
+              "AttributeType@endDate": "End Date",
+              "AttributeType@lastDesignation": "Designation",
+              "AttributeType@startDate": "Start Date"
+            },
+            "ComponentType@license": {
+              "AttributeType@licenseExpiryDate": "License Expiry Date",
+              "AttributeType@licenseIssuedBy": "Licensing Authority",
+              "AttributeType@licenseName": "License Attained",
+              "AttributeType@licenseNumberId": "License Number",
+              "AttributeType@licenseValidFrom": "License Valid From"
+            },
+            "ComponentType@residency": {
+              "AttributeType@institutionName": "Institution Name",
+              "AttributeType@lastDesignation": "Last Designation",
+              "AttributeType@residencyCompletionDate": "Residency Completion Date",
+              "AttributeType@residencyStartDate": "Residency Start Date"
+            },
+            "ComponentType@riskDataset": {},
+            "ComponentType@schoolEducation": {
+              "AttributeType@certifyingBody": "Certifying Body",
+              "AttributeType@completedDate": "Completion Date",
+              "AttributeType@conferredDate": "Conferred Date",
+              "AttributeType@examinationDate": "Examination Date",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@schoolName": "School Name"
+            },
+            "ComponentType@specialization": {
+              "AttributeType@completionDate": "Course End Date",
+              "AttributeType@courseName": "Qualification Attained",
+              "AttributeType@fellowshipTitle": "Fellowship Title",
+              "AttributeType@isEducationCompleted": "Degree / Course is Completed",
+              "AttributeType@issuedDate": "Issued Date",
+              "AttributeType@issuingAuthority": "Institute Name",
+              "AttributeType@modeOfStudy": "Mode of Study",
+              "AttributeType@programDuration": "Duration of Program (in years)",
+              "AttributeType@startDate": "Course Start Date"
+            },
+            "ComponentType@training": {
+              "AttributeType@lastDesignation": "Last Designation",
+              "AttributeType@organizationName": "Organization Name",
+              "AttributeType@trainingEndDate": "Training End Date",
+              "AttributeType@trainingStartDate": "Training Start Date"
+            }
+          },
+          "allowedComponentTypes": {
+            "ComponentType@collegeEducation": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 1,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@continuedProfessionalDevelopment": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 4,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@employment": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 7,
+              "displayLabel": "Employment",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@examBasedQualification": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 3,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@internship": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 10,
+              "displayLabel": "Internship",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@license": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 6,
+              "displayLabel": "Health License",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@residency": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 8,
+              "displayLabel": "Employment",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@riskDataset": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 11,
+              "displayLabel": "Risk Dataset",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": false,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": false,
+              "isVerifierDetailsRequired": false,
+              "statusBasedDocumentsConfig": {
+                "VERIFIED_APPROVED": {
+                  "isVerificationProofDocumentRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isVerificationProofDocumentRequired": true
+                }
+              }
+            },
+            "ComponentType@schoolEducation": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 5,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@specialization": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 2,
+              "displayLabel": "Education",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            },
+            "ComponentType@training": {
+              "allowedCourseAccreditationDetailsForComponent": {
+                "isCourseAccreditationDetailsRequired": false,
+                "isProofOfCourseAccreditationDocumentRequired": false
+              },
+              "allowedIAAccreditationDetailsForComponent": {
+                "isIAAccreditationDetailsRequired": false,
+                "isProofOfIAAccreditationDocumentRequired": false
+              },
+              "componentDisplaySequence": 9,
+              "displayLabel": "Employment",
+              "isAdditionalDetailsRequired": false,
+              "isClaimDocumentRequired": false,
+              "isEvidenceRequired": true,
+              "isIaExistenceProofRequired": false,
+              "isIaSiteVisitProofRequired": false,
+              "isMethodOfVerificationRequired": false,
+              "isModeOfVerificationRequired": false,
+              "isVerificationProofDocumentRequired": true,
+              "isVerifierDetailsRequired": true,
+              "statusBasedDocumentsConfig": {
+                "UNABLE_TO_VERIFY": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_APPROVED": {
+                  "isClaimDocumentRequired": false,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                },
+                "VERIFIED_REJECTED": {
+                  "isClaimDocumentRequired": true,
+                  "isIaExistenceProofRequired": false,
+                  "isIaSiteVisitProofRequired": false
+                }
+              }
+            }
+          },
+          "alternateID": "ReportConfig@0e294cd1-226f-45c8-a818-fee16246c2f5",
+          "coveringPageLogo": "https://dfg-frontend-web.s3.ap-southeast-1.amazonaws.com/static/images/DFGLogoWatermark.png",
+          "createdAt": 1773321855852,
+          "createdBy": "system@dataflowgroup.com",
+          "isClientLogoRequired": false,
+          "owner": "system@dataflowgroup.com",
+          "previousReportAttachmentConfig": {
+            "allowedReportStatus": "ALL",
+            "isEnable": true,
+            "reportSource": "SAME_CLIENT"
+          },
+          "reportPageConfig": {
+            "1": "ComponentType@collegeEducation",
+            "2": "ComponentType@specialization",
+            "3": "ComponentType@examBasedQualification",
+            "4": "ComponentType@continuedProfessionalDevelopment",
+            "5": "ComponentType@schoolEducation",
+            "6": "ComponentType@license",
+            "7": "ComponentType@employment",
+            "8": "ComponentType@residency",
+            "9": "ComponentType@training",
+            "10": "ComponentType@internship",
+            "11": "ComponentType@riskDataset"
+          },
+          "updatedAt": 1773321855852
+        },
+        "coveringPageLogo": "https://dfg-frontend-web.s3.ap-southeast-1.amazonaws.com/static/images/DFGLogoWatermark.png",
+        "dataflowCaseReference": "O001-251201-77F66",
+        "issueCategory": "Nurse (Bachelor Holder)",
+        "issuedOn": "18 MAY 2026",
+        "issuedTo": "OMAN MEDICAL SPECIALTY BOARD\nP.O.BOX: 1422; P.C.:132 ; MUSCAT ; SULTANATE OF OMAN",
+        "passportNumber": "AH513260",
+        "purpose": "New License",
+        "purposeCategory": "Nurse (Bachelor Holder)",
+        "qrCode": "data:image/png;base64,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",
+        "reportType": "FINAL",
+        "result": "POSITIVE",
+        "verificationRequestId": "VerificationRequest@cb0ab2c0-1a69-4137-8b42-e65839126eb9"
+      },
+      "userId": "User@2e302f15-c902-4672-ba9d-098c128e85c0"
+    }
+  },
+  "updatedAt": 1779125410334,
+  "updatedBy": "User@d6b5a928-c210-4b54-a5d8-8fbd11f2ac20"
+}

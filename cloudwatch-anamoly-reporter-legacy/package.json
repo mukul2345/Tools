@@ -1,0 +1,37 @@
+{
+  "name": "cw-compare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vpt-charts": "node run-optimized-charts.mjs configs/Verification VPT-charts-report.html",
+    "workflow-charts": "node run-optimized-charts.mjs configs/Workflow Workflow-charts-report.html",
+    "ecs-charts": "node run-optimized-charts.mjs configs/ECS ECS-charts-report.html",
+    "internal-tools-anomalies": "node run-all.mjs configs/Internal Internal_Tools-anomalies-report.html",
+    "internal-tools-charts": "node run-optimized-charts.mjs configs/Internal Internal_Tools-charts-report.html",
+    "consumer-apps-services-anomalies": "node run-all.mjs configs/Consumer Consumer_Apps_Services-anomalies-report.html",
+    "consumer-apps-services-charts": "node run-optimized-charts.mjs configs/Consumer Consumer_Apps_Services-charts-report.html",
+    "download-vpt-configs": "node dashboard-to-configs.mjs \"Verification_Platform_Performance\" -- --profile=df-prod-v2 --region=eu-west-1",
+    "download-workflow-configs": "node dashboard-to-configs.mjs \"Workflow_Performance\" -- --profile=df-prod-v2 --region=eu-west-1",
+    "download-dynamo-configs": "node dashboard-to-configs.mjs \"DynamoDB_Dashboard\" -- --profile=df-prod-v2 --region=eu-west-1",
+    "download-sdk-configs": "node dashboard-to-configs.mjs \"Client_API_Integration\" -- --profile=df-prod-v2 --region=eu-west-1",
+    "download-ecs-configs": "node dashboard-to-configs.mjs \"ECS_Observability_Dashboard\" -- --profile=df-prod-v2 --region=eu-west-1",
+    "vpt-anomalies": "node run-all.mjs configs/Verification verification-anomalies-report-30thoct08pm.html  --end=2025-10-30T14:30:00.000Z",
+    "workflow-anomalies": "node run-all.mjs configs/Workflow workflow-anomalies-report-30thoct08pm.html  --end=2025-10-30T14:30:00.000Z",
+    "dynamo-anomalies": "node run-all.mjs configs/DynamoDB dynamo-anomalies-report-30thoct08pm.html  --end=2025-10-30T14:30:00.000Z",
+    "sdk-anomalies": "node run-all.mjs configs/Client-API-Integration sdk-anomalies-report-30thoct08pm.html  --end=2025-10-30T14:30:00.000Z",
+    "ecs-anomalies": "node run-all.mjs configs/ECS ecs-anomalies-report-30thoct08pm.html  --end=2025-10-30T14:30:00.000Z",
+    "download-core-api-performance-configs": "node dashboard-to-configs.mjs \"Core_API_Performance\" -- --profile=df-prod-v2 --region=eu-west-1",
+    "download-core-platform-configs": "node dashboard-to-configs.mjs \"Core_Platform\" -- --profile=df-prod-v2 --region=eu-west-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.879.0",
+    "@aws-sdk/credential-providers": "^3.883.0",
+    "cli-table3": "^0.6.5"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "title": "Untitled Widget",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "apollo-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "apollo-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "authentication-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "authentication-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "authorization-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "authorization-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "cta-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "cta-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "data-refinement-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "data-refinement-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "email-monitoring-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "email-monitoring-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "geo-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "geo-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "geo-spectrum-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "geo-spectrum-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "metric-consumer-metrics-analytics-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "metric-consumer-metrics-analytics-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "metrics-analytics-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "metrics-analytics-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "notifications-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "notifications-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "reporting-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "reporting-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    },
+    {
+      "name": "user-service-production-common",
+      "namespace": "AWS/ECS",
+      "metricName": "CPUUtilization",
+      "stat": "Average",
+      "dimensions": {
+        "ServiceName": "user-service-production-common",
+        "ClusterName": "cluster-production-common"
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: CloudWatch Anomaly Reporter - Orchestrates and processes dashboard reports
+
+Parameters:
+  Stage:
+    Type: String
+    Default: production
+    Description: Deployment stage (production)
+
+  ScheduleCron:
+    Type: String
+    Default: cron(30 3,7,13 * * ? *)
+    Description: EventBridge schedule expression for orchestrator (daily at 9:00 AM IST, 2:00 PM IST, 7:00 PM IST)
+
+Globals:
+  Function:
+    Runtime: nodejs20.x
+    Timeout: 300
+    MemorySize: 2048
+    Environment:
+      Variables:
+        STAGE: !Ref Stage
+        S3_BUCKET: !Ref ReportsBucket
+        S3_CONFIG_BUCKET: !Ref ConfigBucket
+        S3_REPORTS_PREFIX: reports
+        S3_SIGNED_URL_EXPIRY_SECONDS: "86400"
+        # SSM parameter path (you must create this in SSM or Secrets Manager)
+        GOOGLE_CHAT_WEBHOOK_SSM_KEY: /cw-anom/google-chat-webhook
+        REPORT_PERIOD_SECONDS: "900"
+        REPORT_WINDOW_MINUTES: "360"
+        REPORT_BASELINE_DAYS: "5"
+        REPORT_MIN_SAMPLES: "10"
+        REPORT_Z_THRESHOLD: "3.0"
+        REPORT_PCT_THRESHOLD: "40"
+        REPORT_TIMEZONE: Asia/Kolkata
+        REPORT_SKIP_WEEKENDS: "true"
+        GOOGLE_CHAT_WEBHOOK_URL: "{{resolve:ssm:/cw-anom/google-chat-webhook}}"
+
+Resources:
+  OrchestratorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub cw-anom-orchestrator-${Stage}
+      Handler: src/lambdas/orchestratorHandler.handler
+      CodeUri: ../
+      Description: Orchestrates dashboard processing from S3 config
+      Events:
+        ScheduledEvent:
+          Type: Schedule
+          Properties:
+            Schedule: !Ref ScheduleCron
+            Input: "{}"
+      Policies:
+        - Statement:
+            - Sid: CloudWatchAccess
+              Effect: Allow
+              Action:
+                - cloudwatch:GetDashboard
+                - cloudwatch:GetMetricData
+                - cloudwatch:ListDashboards
+              Resource: "*"
+            - Sid: S3AccessReports
+              Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:PutObject
+              Resource:
+                - !Sub arn:aws:s3:::${ReportsBucket}/*
+            - Sid: S3AccessConfig
+              Effect: Allow
+              Action:
+                - s3:GetObject
+              Resource:
+                - !Sub arn:aws:s3:::${ConfigBucket}/*
+            - Sid: SSMAndSecretsAccess
+              Effect: Allow
+              Action:
+                - ssm:GetParameter
+                - secretsmanager:GetSecretValue
+              Resource:
+                - !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/cw-anom/*
+                - !Sub arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:cw-anom/*
+            - Sid: LogsAccess
+              Effect: Allow
+              Action:
+                - logs:CreateLogStream
+                - logs:PutLogEvents
+              Resource: "*"
+
+  WorkerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub cw-anom-worker-${Stage}
+      Handler: src/lambdas/workerHandler.handler
+      CodeUri: ../
+      Description: Processes a single dashboard report
+      Policies:
+        - Statement:
+            - Sid: CloudWatchAccess
+              Effect: Allow
+              Action:
+                - cloudwatch:GetDashboard
+                - cloudwatch:GetMetricData
+                - cloudwatch:ListDashboards
+              Resource: "*"
+            - Sid: S3AccessReports
+              Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:PutObject
+              Resource:
+                - !Sub arn:aws:s3:::${ReportsBucket}/*
+            - Sid: S3AccessConfig
+              Effect: Allow
+              Action:
+                - s3:GetObject
+              Resource:
+                - !Sub arn:aws:s3:::${ConfigBucket}/*
+            - Sid: SSMAndSecretsAccess
+              Effect: Allow
+              Action:
+                - ssm:GetParameter
+                - secretsmanager:GetSecretValue
+              Resource:
+                - !Sub arn:aws:ssm:${AWS::Region}:${AWS::AccountId}:parameter/cw-anom/*
+                - !Sub arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:cw-anom/*
+            - Sid: LogsAccess
+              Effect: Allow
+              Action:
+                - logs:CreateLogStream
+                - logs:PutLogEvents
+              Resource: "*"
+
+  ReportsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub cw-dashboard-anomoly-report-${AWS::AccountId}-${AWS::Region}-${Stage}
+      LifecycleConfiguration:
+        Rules:
+          - Id: DeleteOldReports
+            Status: Enabled
+            Prefix: reports/
+            ExpirationInDays: 7
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  ConfigBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub cw-dashboard-anomoly-config-${AWS::AccountId}-${AWS::Region}-${Stage}
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+Outputs:
+  OrchestratorFunctionArn:
+    Description: ARN of the orchestrator Lambda function
+    Value: !GetAtt OrchestratorFunction.Arn
+    Export:
+      Name: !Sub ${AWS::StackName}-OrchestratorArn
+
+  WorkerFunctionArn:
+    Description: ARN of the worker Lambda function
+    Value: !GetAtt WorkerFunction.Arn
+    Export:
+      Name: !Sub ${AWS::StackName}-WorkerArn
+
+  ReportsBucketName:
+    Description: Name of the S3 bucket for reports
+    Value: !Ref ReportsBucket
+    Export:
+      Name: !Sub ${AWS::StackName}-ReportsBucket
+
+  ConfigBucketName:
+    Description: Name of the S3 bucket for configuration
+    Value: !Ref ConfigBucket
+    Export:
+      Name: !Sub ${AWS::StackName}-ConfigBucket

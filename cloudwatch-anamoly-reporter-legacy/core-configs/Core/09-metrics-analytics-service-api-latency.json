@@ -1,0 +1,122 @@
+{
+  "title": "Metrics Analytics Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "metrics-analytics-service [200] /analytics-cron/trigger",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/analytics-cron/trigger",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "garuda [200] /analytics-ops/claims-metrics",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/analytics-ops/claims-metrics",
+        "environment": "production",
+        "serviceName": "garuda",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "garuda [200] /analytics-ops/process-specific-metrics",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/analytics-ops/process-specific-metrics",
+        "environment": "production",
+        "serviceName": "garuda",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "garuda [200] /client-dashboard/cases-trend-metrics",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/client-dashboard/cases-trend-metrics",
+        "environment": "production",
+        "serviceName": "garuda",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/applicant-pii",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/dashboard/applicant-pii",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/dashboard/metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /dashboard/track-cases",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/dashboard/track-cases",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "garuda [200] /finance-dashboard/finance-dashboard-metrics",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/finance-dashboard/finance-dashboard-metrics",
+        "environment": "production",
+        "serviceName": "garuda",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "metrics-analytics-service [200] /metrics/critical-metric",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/metrics/critical-metric",
+        "environment": "production",
+        "serviceName": "metrics-analytics-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

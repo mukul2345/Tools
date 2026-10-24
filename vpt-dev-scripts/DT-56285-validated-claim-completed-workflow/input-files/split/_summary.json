@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-10-13T06:26:21.176Z",
+  "sourceFile": "DT-56285-oct-13.csv",
+  "totalClaims": 1452,
+  "buckets": [
+    {
+      "file": "VALIDATED__COMPLETED.json",
+      "claimStatus": "VALIDATED",
+      "currentStage": "COMPLETED",
+      "claims": 1048,
+      "cases": 610,
+      "workflowStateAndStatus": {
+        "COMPLETED/COMPLETED": 1048
+      },
+      "progressEvidence": {
+        "REACHED_REPORT_QC": 657,
+        "HAS_VERIFICATION_RESPONSE": 391
+      }
+    },
+    {
+      "file": "VALIDATED__REPORT_QC.json",
+      "claimStatus": "VALIDATED",
+      "currentStage": "REPORT_QC",
+      "claims": 372,
+      "cases": 205,
+      "workflowStateAndStatus": {
+        "IN_PROGRESS/ACTIVE": 372
+      },
+      "progressEvidence": {
+        "HAS_VERIFICATION_RESPONSE": 168,
+        "NO_PROGRESS_EVIDENCE": 153,
+        "REACHED_REPORT_QC": 51
+      }
+    },
+    {
+      "file": "INTERNAL_ISSUES__COMPLETED.json",
+      "claimStatus": "INTERNAL_ISSUES",
+      "currentStage": "COMPLETED",
+      "claims": 13,
+      "cases": 13,
+      "workflowStateAndStatus": {
+        "COMPLETED/COMPLETED": 13
+      },
+      "progressEvidence": {
+        "HAS_VERIFICATION_RESPONSE": 13
+      }
+    },
+    {
+      "file": "READY_WITH_IA__COMPLETED.json",
+      "claimStatus": "READY_WITH_IA",
+      "currentStage": "COMPLETED",
+      "claims": 9,
+      "cases": 3,
+      "workflowStateAndStatus": {
+        "COMPLETED/COMPLETED": 9
+      },
+      "progressEvidence": {
+        "REACHED_REPORT_QC": 4,
+        "HAS_VERIFICATION_RESPONSE": 4,
+        "NO_PROGRESS_EVIDENCE": 1
+      }
+    },
+    {
+      "file": "ISSUES__COMPLETED.json",
+      "claimStatus": "ISSUES",
+      "currentStage": "COMPLETED",
+      "claims": 3,
+      "cases": 1,
+      "workflowStateAndStatus": {
+        "COMPLETED/COMPLETED": 3
+      },
+      "progressEvidence": {
+        "HAS_VERIFICATION_RESPONSE": 3
+      }
+    },
+    {
+      "file": "DRAFT__REPORT_QC.json",
+      "claimStatus": "DRAFT",
+      "currentStage": "REPORT_QC",
+      "claims": 3,
+      "cases": 1,
+      "workflowStateAndStatus": {
+        "IN_PROGRESS/SIT_OUT": 3
+      },
+      "progressEvidence": {
+        "NO_PROGRESS_EVIDENCE": 3
+      }
+    },
+    {
+      "file": "READY__COMPLETED.json",
+      "claimStatus": "READY",
+      "currentStage": "COMPLETED",
+      "claims": 1,
+      "cases": 1,
+      "workflowStateAndStatus": {
+        "COMPLETED/COMPLETED": 1
+      },
+      "progressEvidence": {
+        "REACHED_REPORT_QC": 1
+      }
+    },
+    {
+      "file": "READY_WITH_IA__REPORT_QC.json",
+      "claimStatus": "READY_WITH_IA",
+      "currentStage": "REPORT_QC",
+      "claims": 1,
+      "cases": 1,
+      "workflowStateAndStatus": {
+        "IN_PROGRESS/SIT_OUT": 1
+      },
+      "progressEvidence": {
+        "HAS_VERIFICATION_RESPONSE": 1
+      }
+    },
+    {
+      "file": "INTERNAL_ISSUES__VERIFICATION_QC.json",
+      "claimStatus": "INTERNAL_ISSUES",
+      "currentStage": "VERIFICATION_QC",
+      "claims": 1,
+      "cases": 1,
+      "workflowStateAndStatus": {
+        "WAITING/ACTIVE": 1
+      },
+      "progressEvidence": {
+        "HAS_VERIFICATION_RESPONSE": 1
+      }
+    },
+    {
+      "file": "VALIDATED__VERIFICATION_QC.json",
+      "claimStatus": "VALIDATED",
+      "currentStage": "VERIFICATION_QC",
+      "claims": 1,
+      "cases": 1,
+      "workflowStateAndStatus": {
+        "IN_PROGRESS/ACTIVE": 1
+      },
+      "progressEvidence": {
+        "HAS_VERIFICATION_RESPONSE": 1
+      }
+    }
+  ]
+}

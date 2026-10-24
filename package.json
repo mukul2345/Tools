@@ -1,0 +1,22 @@
+{
+  "name": "dev-scripts",
+  "version": "1.0.0",
+  "description": "Development utility scripts",
+  "scripts": {
+    "prepare": "husky install",
+    "lint:secrets": "node credential-scanner-husky-hook/credential-scanner.js",
+    "test:secrets": "node credential-scanner-husky-hook/test-credential-scanner.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.840.0",
+    "@aws-sdk/lib-dynamodb": "^3.840.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:secrets"
+    }
+  }
+}

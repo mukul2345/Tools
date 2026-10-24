@@ -1,0 +1,4 @@
+node_modules/
+alarms.config.json
+*.log
+.DS_Store

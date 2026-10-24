@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Local per-run configs (copy run.example.yml -> run.yml and fill in). Never commit secrets.
+config/run.yml
+config/*.local.yml
+
+# macOS
+.DS_Store

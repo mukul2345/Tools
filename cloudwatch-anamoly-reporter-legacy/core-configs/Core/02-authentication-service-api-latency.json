@@ -1,0 +1,182 @@
+{
+  "title": "Authentication Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "authentication-service [200] /auth-token-info/:userid",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/auth-token-info/:userid",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /captcha/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/captcha/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /captcha/verify",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/captcha/verify",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/credential",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/login/credential",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/generate_reset_password_link",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/login/generate_reset_password_link",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/generate-login-tokens",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/login/generate-login-tokens",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/issue_access_token",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/login/issue_access_token",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/otp",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/login/otp",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /login/reset_password",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/login/reset_password",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /oauth/authorize/url",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/oauth/authorize/url",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /oauth/google",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/oauth/google",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /otp/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/otp/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /resource-access/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/resource-access/",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "authentication-service [200] /resource-access/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/resource-access/:id",
+        "environment": "production",
+        "serviceName": "authentication-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

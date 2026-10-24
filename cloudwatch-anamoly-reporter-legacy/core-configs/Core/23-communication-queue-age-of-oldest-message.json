@@ -1,0 +1,77 @@
+{
+  "title": "Communication Queue - Age of Oldest Message",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "applicant-communication"
+      }
+    },
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "email-notification.fifo"
+      }
+    },
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "ops-user-communication"
+      }
+    },
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "notification.fifo"
+      }
+    },
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "partner-communication"
+      }
+    },
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "push-notification.fifo"
+      }
+    },
+    {
+      "name": "AWS/SQS/ApproximateAgeOfOldestMessage",
+      "namespace": "AWS/SQS",
+      "metricName": "ApproximateAgeOfOldestMessage",
+      "stat": "Maximum",
+      "dimensions": {
+        "QueueName": "sms-notification.fifo"
+      }
+    }
+  ]
+}

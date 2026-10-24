@@ -1,0 +1,67 @@
+{
+  "_comments": {
+    "security": "No secrets in this file. GITLAB_PERSONAL_ACCESS_TOKEN, JIRA_URL, JIRA_USERNAME and JIRA_API_TOKEN are inherited from the environment exported by the runner scripts (which read them from the macOS keychain). Never inline a PAT or API token here.",
+    "jira": "Single Jira server via mcp-atlassian (token auth, no OAuth browser step). The agents call jira_get_issue / jira_search / jira_add_comment / jira_create_issue, so those must NOT be in disabledTools.",
+    "gitlab": "Top-level server named 'Gitlab' — the agents reference it as @Gitlab. A GitLab server registered under the IDE 'powers' block is NOT addressable by kiro-cli agents, so this entry is required even if you already use the GitLab power.",
+    "merging": "If you already have an mcp.json, deploy.sh will NOT overwrite it. Merge these entries into your existing mcpServers instead of adding duplicate Jira/GitLab servers."
+  },
+  "mcpServers": {
+    "workflow-mcp-server": {
+      "command": "node",
+      "args": ["/CHANGE/ME/workflow-mcp-server/dist/index.js"],
+      "disabled": false,
+      "autoApprove": [
+        "get_entity",
+        "query_entities",
+        "search_cases",
+        "get_root_workflow",
+        "get_child_workflows",
+        "get_referenced_entities",
+        "get_execution_steps",
+        "get_workflow_run_logs",
+        "query_audit_trail",
+        "get_workflow_run_events",
+        "search_application_logs",
+        "get_sql_query_templates",
+        "execute_sql_log_query"
+      ]
+    },
+    "jira": {
+      "command": "uvx",
+      "args": ["mcp-atlassian"],
+      "disabled": false,
+      "autoApprove": [
+        "jira_get_issue",
+        "jira_search",
+        "jira_add_comment",
+        "jira_create_issue",
+        "jira_transition_issue",
+        "jira_get_transitions"
+      ]
+    },
+    "Gitlab": {
+      "command": "npx",
+      "args": ["-y", "@zereight/mcp-gitlab"],
+      "env": {
+        "GITLAB_API_URL": "https://gitlab.com/api/v4",
+        "GITLAB_READ_ONLY_MODE": "false",
+        "USE_GITLAB_WIKI": "false"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_file_contents",
+        "get_repository_tree",
+        "list_commits",
+        "get_commit",
+        "get_commit_diff",
+        "list_merge_request_diffs",
+        "get_merge_request",
+        "get_merge_request_diffs",
+        "list_merge_request_pipelines",
+        "get_users",
+        "create_merge_request",
+        "create_merge_request_thread"
+      ]
+    }
+  }
+}

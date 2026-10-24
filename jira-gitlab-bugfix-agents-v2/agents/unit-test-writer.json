@@ -1,0 +1,57 @@
+{
+  "name": "unit-test-writer",
+  "description": "Given a source file (or a set of files), clones the repo, reads the implementation, and writes comprehensive unit tests following VPT unit-test guidelines. Optionally opens an MR with the new tests and reports coverage.",
+  "prompt": "file://__KIRO_HOME__/agents/unit-test-writer-prompt.md",
+  "model": "claude-sonnet-4.6",
+  "includeMcpJson": true,
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "@Gitlab",
+    "@fetch"
+  ],
+  "allowedTools": [
+    "read",
+    "write",
+    "shell",
+    "@Gitlab/get_file_contents",
+    "@Gitlab/get_repository_tree",
+    "@Gitlab/list_commits",
+    "@Gitlab/get_merge_request",
+    "@Gitlab/get_users",
+    "@Gitlab/create_merge_request"
+  ],
+  "toolsSettings": {
+    "write": {
+      "allowedPaths": ["/tmp/kiro-tests/**", "./**"]
+    },
+    "shell": {
+      "autoAllowReadonly": true,
+      "deniedCommands": [
+        "git push .*--force.*",
+        "git push .*--force-with-lease.*",
+        "git push( .*)? -f( |$)",
+        "git reset --hard.*",
+        "git merge .*",
+        "rm -rf /( |$|\\*)",
+        "rm -rf ~",
+        "rm -rf \\$HOME",
+        "rm -rf /(bin|etc|usr|var|lib|opt|sbin|System|Library|Users|home|private|Applications)(/| |$)"
+      ]
+    }
+  },
+  "resources": [
+    "file://__KIRO_HOME__/agents/component-repo-mapping-kiro.md",
+    "file://__KIRO_HOME__/steering/unit-test-guidelines.md",
+    "file://__KIRO_HOME__/steering/coding-guideline.md"
+  ],
+  "hooks": {
+    "agentSpawn": [
+      { "command": "echo \"[unit-test-writer] spawned at $(date -u) in $(pwd)\" >> /tmp/unit-test-writer.log" }
+    ],
+    "preToolUse": [
+      { "matcher": "execute_bash", "command": "{ echo \"$(date -u) - shell:\"; cat; echo; } >> /tmp/unit-test-writer.log" }
+    ]
+  }
+}

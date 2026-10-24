@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment files (may contain secrets) — keep examples only
+.env
+.env.*
+!.env.example
+!*.env.example
+!.env.*.example
+
+# AWS SAM build artifacts
+.aws-sam/
+**/.aws-sam/
+
+# Build output
+dist/
+build/
+**/dist/
+**/build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor junk
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets / credentials / certs
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa*
+*.keystore
+credentials.json
+
+# Coverage
+coverage/
+**/coverage/

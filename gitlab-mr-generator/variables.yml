@@ -1,0 +1,76 @@
+# CI/CD Variables Configuration Example
+# This file defines variables to be added to multiple GitLab projects
+
+# --- Global defaults (can be overridden per variable) ---
+# These apply to all variables unless overridden in individual variable definitions
+
+# Variable type: 'env_var' (environment variable) or 'file' (file type)
+variable_type: env_var
+
+# Whether the variable is protected (only available on protected branches/tags)
+protected: false
+
+# Whether the variable is masked (hidden in job logs)
+masked: false
+
+# Whether the variable is raw (no variable expansion)
+raw: false
+
+# Environment scope: '*' for all environments, or specific environment name
+environment_scope:
+  - "develop"
+  - "staging"
+  - "preprod"
+  - "training"
+  - "production"
+
+# --- Variables to add/update/delete ---
+# Each variable must have a 'key' and optionally 'value'
+# Individual variables can override any global setting
+variables:
+  # --- MTLS_MAIN_BUCKET ---
+  - key: "LOA_DOCUMENT_ID"
+    value: "Document@bf956414-eb80-45b4-9c6b-efaae2121c27"
+    environment_scope: "staging"
+  - key: "LOA_DOCUMENT_USER_ID"
+    value: "User@fe234151-ca87-4f02-958f-421b62a4938f"
+    environment_scope: "staging"
+
+  - key: "LOA_DOCUMENT_ID"
+    value: "Document@e5c3cdf7-1a71-4912-9652-17de7db7b70b"
+    environment_scope: "develop"
+  - key: "LOA_DOCUMENT_USER_ID"
+    value: "User@60be5e82-1d4c-459a-8c5f-7a84b85ff100"
+    environment_scope: "develop"
+
+  - key: "LOA_DOCUMENT_ID"
+    value: "Document@c9a69fed-b1b5-4dda-88b9-3540a004c24f"
+    environment_scope: "preprod"
+  - key: "LOA_DOCUMENT_USER_ID"
+    value: "User@60be5e82-1d4c-459a-8c5f-7a84b85ff100"
+    environment_scope: "preprod"
+
+  - key: "LOA_DOCUMENT_ID"
+    value: "Document@235c4a9d-e658-4e4a-838b-1835e54b5b9a"
+    environment_scope: "production"
+  - key: "LOA_DOCUMENT_USER_ID"
+    value: "User@1175c0a9-269f-4d22-a3ba-b0fb262f61a5"
+    environment_scope: "production"
+# --- Projects to apply variables to ---
+# Uses the same format as mrs.yml
+projects:
+  # - project: "dataflowgroup/dfg-product/verification-platform/verification-search-service" # required
+  # - project: "dataflowgroup/dfg-product/verification-platform/verification-request"
+  # - project: "dataflowgroup/dfg-product/verification-platform/core-verification-data-structure-service"
+  # - project: "dataflowgroup/dfg-product/verification-platform/verification-initiation-service"
+  # - project: "dataflowgroup/dfg-product/core-platform/document-generation-service"
+  # - project: "dataflowgroup/dfg-product/core-platform/document-management-service"
+  # - project: "dataflowgroup/dfg-product/verification-platform/client-contract-service"
+  # - project: "dataflowgroup/dfg-product/core-platform/payment-service"
+  # - project: "dataflowgroup/dfg-product/verification-platform/document-service"
+  # - project: "dataflowgroup/dfg-product/verification-platform/poi-service"
+  # - project: "dataflowgroup/dfg-product/commons/migration-service"
+  # - project: "dataflowgroup/dfg-product/core-platform/alert-service"
+  - project: "dataflowgroup/dfg-product/nexus/narada"
+  # - project: "dataflowgroup/dfg-product/nexus/chhaya-service"
+  # - project: "dataflowgroup/dfg-product/commons/workflow-tools-service"

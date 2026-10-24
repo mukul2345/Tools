@@ -1,0 +1,18 @@
+{
+  "startedAt": "2026-10-09T13:44:51.947Z",
+  "finishedAt": "2026-10-09T13:46:19.950Z",
+  "durationSeconds": 86,
+  "inputFile": "test.json",
+  "baseUrl": "http://nginx--nlbC3-sn7vKMsxDDMK-3360319dfff3cca3.elb.eu-west-1.amazonaws.com",
+  "requestId": "DT-56285-validated-claim-analyze-script",
+  "claimsChecked": 5,
+  "counts": {
+    "readyToMitigate": 0,
+    "needsManualReview": 0,
+    "noAuditEvidence": 0,
+    "alreadyRepaired": 0,
+    "excludedLegacy": 0,
+    "fetchErrors": 5
+  },
+  "recoveryValueBreakdown": {}
+}

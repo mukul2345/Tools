@@ -1,0 +1,51 @@
+{
+  "_comments": {
+    "security": "NO secrets in this file. GITLAB_PERSONAL_ACCESS_TOKEN is read from the environment (exported by bin/mr-review.js from the macOS keychain). IMPORTANT: the GitLab PAT currently committed inline in kiro-powers/gitlab-mr-review/mcp.json MUST be revoked in GitLab > Settings > Access Tokens and replaced with a least-privilege (read_api + api-for-comments) token stored in the keychain.",
+    "guardrail": "The mr-reviewer agent's allowedTools list grants ONLY read tools + the two comment-post tools (create_merge_request_thread / create_merge_request_note). create_merge_request, merge, and approve are intentionally NOT granted. autoApprove below still lists only comment/read tools so nothing else can auto-run.",
+    "copy_to": "Merge these entries into ~/.kiro/settings/mcp.json.",
+    "loading": "Posting does NOT use MCP — review_post.py posts over REST+PAT. The GitLab MCP server is now optional: the agent uses its READ tools only to pull sibling-service MRs during a review, and falls back to the Jira context if they're absent. If you do want it, the server runs 'npx -y @zereight/mcp-gitlab', so node+npx must be on the PATH of the launching process (verify 'command -v npx node'; a GUI-launched session often differs from your terminal). Keep the server name 'GitLab' matching the agent's @GitLab/* grants, and reference ${GITLAB_PERSONAL_ACCESS_TOKEN} rather than an inline token."
+  },
+  "mcpServers": {
+    "GitLab": {
+      "command": "npx",
+      "args": ["-y", "@zereight/mcp-gitlab"],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "${GITLAB_PERSONAL_ACCESS_TOKEN}",
+        "GITLAB_API_URL": "https://gitlab.com/api/v4",
+        "USE_GITLAB_WIKI": "false"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_merge_request",
+        "get_merge_request_diffs",
+        "list_merge_request_diffs",
+        "list_merge_request_changed_files",
+        "get_merge_request_file_diff",
+        "list_merge_request_pipelines",
+        "list_commits",
+        "get_file_contents",
+        "create_merge_request_thread",
+        "create_merge_request_note"
+      ]
+    },
+    "atlassian-rovo": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2",
+      "disabled": false,
+      "autoApprove": [
+        "atlassianUserInfo",
+        "getAccessibleAtlassianResources",
+        "getJiraIssue",
+        "searchJiraIssuesUsingJql",
+        "getConfluencePage"
+      ]
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

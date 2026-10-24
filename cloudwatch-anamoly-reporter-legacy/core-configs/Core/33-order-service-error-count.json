@@ -1,0 +1,50 @@
+{
+  "title": "Order Service Error Count",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "order-service [500] /order-item/leads/download/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/order-item/leads/download/:id",
+        "environment": "production",
+        "serviceName": "order-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "order-service [500] /order/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/order/",
+        "environment": "production",
+        "serviceName": "order-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "order-service [500] 400",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "400",
+        "environment": "production",
+        "serviceName": "order-service",
+        "statusCode": "500"
+      }
+    }
+  ]
+}

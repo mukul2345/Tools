@@ -1,0 +1,70 @@
+{
+  "name": "jira-bug-fixer",
+  "description": "Reads a Jira bug, resolves the GitLab repo(s) from the component map, fixes the code on a local clone, runs tests, and (per ticket autonomy) opens an MR and reports back on the ticket.",
+  "prompt": "file://__KIRO_HOME__/agents/jira-bug-fixer-prompt.md",
+  "model": "claude-sonnet-4.6",
+  "includeMcpJson": true,
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "@atlassian-rovo",
+    "@Gitlab",
+    "@workflow-mcp-server",
+    "@fetch"
+  ],
+  "allowedTools": [
+    "read",
+    "write",
+    "shell",
+    "@atlassian-rovo/getJiraIssue",
+    "@atlassian-rovo/searchJiraIssuesUsingJql",
+    "@atlassian-rovo/getAccessibleAtlassianResources",
+    "@atlassian-rovo/addCommentToJiraIssue",
+    "@atlassian-rovo/createJiraIssue",
+    "@atlassian-rovo/getJiraProjectIssueTypesMetadata",
+    "@Gitlab/get_file_contents",
+    "@Gitlab/get_repository_tree",
+    "@Gitlab/list_commits",
+    "@Gitlab/get_merge_request",
+    "@Gitlab/get_users",
+    "@Gitlab/create_merge_request",
+    "@workflow-mcp-server/query_audit_trail",
+    "@workflow-mcp-server/search_application_logs",
+    "@workflow-mcp-server/execute_sql_log_query"
+  ],
+  "toolsSettings": {
+    "write": {
+      "allowedPaths": ["/tmp/kiro-bugfix/**", "./**"]
+    },
+    "shell": {
+      "autoAllowReadonly": true,
+      "deniedCommands": [
+        "git push .*--force.*",
+        "git push .*--force-with-lease.*",
+        "git push( .*)? -f( |$)",
+        "git reset --hard.*",
+        "git merge .*",
+        "rm -rf /( |$|\\*)",
+        "rm -rf ~",
+        "rm -rf \\$HOME",
+        "rm -rf /(bin|etc|usr|var|lib|opt|sbin|System|Library|Users|home|private|Applications)(/| |$)"
+      ]
+    }
+  },
+  "resources": [
+    "file://__KIRO_HOME__/agents/jira-bug-template-kiro.md",
+    "file://__KIRO_HOME__/agents/component-repo-mapping-kiro.md",
+    "file://__KIRO_HOME__/agents/merge-request-process-vpt.md",
+    "file://__KIRO_HOME__/steering/coding-guideline.md",
+    "file://__KIRO_HOME__/steering/unit-test-guidelines.md"
+  ],
+  "hooks": {
+    "agentSpawn": [
+      { "command": "echo \"[jira-bug-fixer] spawned at $(date -u) in $(pwd)\" >> /tmp/jira-bug-fixer.log" }
+    ],
+    "preToolUse": [
+      { "matcher": "execute_bash", "command": "{ echo \"$(date -u) - shell:\"; cat; echo; } >> /tmp/jira-bug-fixer.log" }
+    ]
+  }
+}

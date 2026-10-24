@@ -1,0 +1,18 @@
+{
+  "name": "p1-ticket-builder-mcp",
+  "version": "1.0.0",
+  "description": "MCP that builds P1 bug-ticket payloads (summary + templated description + KIRO-EXEC block) to be created via the Jira MCP",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  }
+}

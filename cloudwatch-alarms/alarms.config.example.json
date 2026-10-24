@@ -1,0 +1,379 @@
+{
+  "aws": {
+    "profile": "df-prod-ravi",
+    "region": "eu-west-1"
+  },
+  "tags": [
+    {
+      "Key": "Team",
+      "Value": "Verification Platform"
+    },
+    {
+      "Key": "Environment",
+      "Value": "production"
+    }
+  ],
+  "modules": {
+    "ecs": false,
+    "api-5xx": true,
+    "api-traffic": false,
+    "sqs": false
+  },
+  "resources": {
+    "ecs": {
+      "clusterName": "cluster-production-common",
+      "serviceNames": [
+        "alert-service-production-common",
+        "client-contract-service-production-common",
+        "consumer-verification-request-production-common",
+        "core-verification-data-structure-service-production-common",
+        "document-generation-service-production-common",
+        "document-management-service-production-common",
+        "document-service-production-common",
+        "migration-service-production-common",
+        "narada-production-common",
+        "payment-service-production-common",
+        "poi-consumer-verification-workflow-engine-production-common",
+        "poi-service-production-common",
+        "rescue-consumer-verification-workflow-engine-production-common",
+        "verification-initiation-service-production-common",
+        "verification-request-production-common",
+        "verification-workflow-engine-production-common"
+      ]
+    },
+    "api-5xx": {
+      "services": [
+        "verification-workflow-engine",
+        "poi-service",
+        "verification-request",
+        "verification-initiation-service",
+        "document-management-service",
+        "document-generation-service",
+        "client-contract-service",
+        "document-service",
+        "core-verification-data-structure-service",
+        "payment-service",
+        "alert-service",
+        "poi-consumer-verification-workflow-engine",
+        "rescue-consumer-verification-workflow-engine",
+        "migration-service",
+        "narada"
+      ],
+      "apiSelection": {
+        "mode": "top-apis",
+        "topN": 20,
+        "lookbackDays": 14
+      }
+    },
+    "api-traffic": {
+      "services": [
+        "verification-workflow-engine",
+        "poi-service",
+        "verification-request",
+        "verification-initiation-service",
+        "document-management-service",
+        "document-generation-service",
+        "client-contract-service",
+        "document-service",
+        "core-verification-data-structure-service",
+        "payment-service",
+        "alert-service",
+        "poi-consumer-verification-workflow-engine",
+        "rescue-consumer-verification-workflow-engine",
+        "migration-service",
+        "narada"
+      ],
+      "apiSelection": {
+        "mode": "top-apis",
+        "topN": 20,
+        "lookbackDays": 14
+      }
+    },
+    "sqs": {
+      "queues": [
+        {
+          "queueName": "workflow-instance-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "workflow-instance-dlq",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "agent-workflow-instance-dead-letter-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "agent-workflow-instance-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "poi-priority-workflow-dlq",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "poi-priority-workflow-instance-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "poi-workflow-change-events-dlq",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "poi-workflow-change-events-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "priority-workflow-instance-dead-letter-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "priority-workflow-instance-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "sit-out-workflow-instance-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "troubled-workflow-events",
+          "serviceName": "verification-workflow-engine",
+          "kind": "source"
+        },
+        {
+          "queueName": "troubled-workflow-events-dlq",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "workflow-instance-dead-letter-queue",
+          "serviceName": "verification-workflow-engine",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "poi-entity-event-queue",
+          "serviceName": "poi-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "force-majeure-detection-events",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "force-majeure-detection-events-dead-letter-queue",
+          "serviceName": "verification-request",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "force-majeure-events",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "force-majeure-events-dead-letter-queue",
+          "serviceName": "verification-request",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "force-majeure-sla-events",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "force-majeure-sla-events-dead-letter-queue",
+          "serviceName": "verification-request",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "ia-payout-events-dead-letter-queue",
+          "serviceName": "verification-request",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "ia-payout-events-queue",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "verification-request-audit-trail-events",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "verification-request-sla",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "verification-request-workflow-events",
+          "serviceName": "verification-request",
+          "kind": "source"
+        },
+        {
+          "queueName": "email-response",
+          "serviceName": "verification-initiation-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "email-response-dlq",
+          "serviceName": "verification-initiation-service",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "doc-extract-split",
+          "serviceName": "document-management-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "doc-extract-split-dead-letter-queue",
+          "serviceName": "document-management-service",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "doc-generation-task-queue",
+          "serviceName": "document-generation-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "document-generation-queue",
+          "serviceName": "document-generation-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "payment-transactions",
+          "serviceName": "payment-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "payment-transactions-dlq",
+          "serviceName": "payment-service",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "refund-transactions",
+          "serviceName": "payment-service",
+          "kind": "source"
+        },
+        {
+          "queueName": "refund-transactions-dlq",
+          "serviceName": "payment-service",
+          "kind": "dlq"
+        },
+        {
+          "queueName": "client-integrations-async-events",
+          "serviceName": "narada",
+          "kind": "source"
+        },
+        {
+          "queueName": "webhook-communication",
+          "serviceName": "narada",
+          "kind": "source"
+        },
+        {
+          "queueName": "webhook-communication-dlq",
+          "serviceName": "narada",
+          "kind": "dlq"
+        }
+      ]
+    }
+  },
+  "alarms": {
+    "ecs": {
+      "alarmActionArn": "arn:aws:sns:eu-west-1:891377067284:GoAlerting_VerficationPlatform",
+      "evaluationPeriods": 3,
+      "datapointsToAlarm": 3,
+      "periodSeconds": 300,
+      "anomalyThreshold": 2,
+      "cpuStaticThresholdPercent": 70,
+      "memoryStaticThresholdPercent": 60,
+      "severityPrefix": "Critical"
+    },
+    "api-5xx": {
+      "namePrefix": "Critical",
+      "alarmActionArn": "arn:aws:sns:eu-west-1:891377067284:GoAlerting_VerficationPlatform",
+      "namespace": "DFG-Observability",
+      "environment": "production",
+      "lookbackDays": 14,
+      "defaultThresholdPercent": 5,
+      "minThresholdPercent": 1,
+      "maxThresholdPercent": 20,
+      "minimumRequestCount": 20,
+      "thresholdPercentile": 90,
+      "periodSeconds": 300,
+      "evaluationPeriods": 3,
+      "datapointsToAlarm": 3
+    },
+    "api-traffic": {
+      "namePrefix": "Warning",
+      "alarmActionArn": "arn:aws:sns:eu-west-1:891377067284:GoAlerting_VerficationPlatform",
+      "namespace": "DFG-Observability",
+      "environment": "production",
+      "metricName": "API_COUNT",
+      "statusCodes": [
+        "200",
+        "201",
+        "400",
+        "401",
+        "403",
+        "404",
+        "409",
+        "412",
+        "500"
+      ],
+      "periodSeconds": 300,
+      "evaluationPeriods": 3,
+      "datapointsToAlarm": 3,
+      "anomalyThreshold": 2
+    },
+    "sqs": {
+      "alarmActionArn": "arn:aws:sns:eu-west-1:891377067284:GoAlerting_VerficationPlatform",
+      "source": {
+        "enabled": true,
+        "namePrefix": "Critical",
+        "periodSeconds": 300,
+        "evaluationPeriods": 3,
+        "datapointsToAlarm": 3,
+        "ageAlarmEnabled": true,
+        "visibleAlarmEnabled": true,
+        "ageThresholdSeconds": 900,
+        "visibleThresholdCount": 500,
+        "treatMissingData": "notBreaching"
+      },
+      "dlq": {
+        "enabled": true,
+        "namePrefix": "Warning",
+        "periodSeconds": 60,
+        "evaluationPeriods": 1,
+        "datapointsToAlarm": 1,
+        "visibleAlarmEnabled": true,
+        "visibleThresholdCount": 1,
+        "treatMissingData": "notBreaching"
+      },
+      "overrides": {
+        "workflow-instance-queue": {
+          "ageThresholdSeconds": 600
+        },
+        "workflow-instance-dlq": {
+          "namePrefix": "Critical",
+          "visibleThresholdCount": 5
+        }
+      }
+    }
+  },
+  "deleteFilters": {
+    "Team": "Verification Platform",
+    "AlarmType": null
+  }
+}

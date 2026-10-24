@@ -1,0 +1,17 @@
+{
+  "name": "dt-49771-reverification-cleanup-for-rt",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Analyze and cleanup stale RT ReVerification Invocations (DT-49771)",
+  "scripts": {
+    "analyze": "node analyze.mjs",
+    "cleanup": "node cleanup.mjs",
+    "cleanup:execute": "node cleanup.mjs --execute"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.18.1"
+  }
+}

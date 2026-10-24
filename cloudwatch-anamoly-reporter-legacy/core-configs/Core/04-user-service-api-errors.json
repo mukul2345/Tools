@@ -1,0 +1,74 @@
+{
+  "title": "User Service API Errors",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "user-service [500] /users/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/:id",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "500"
+      }
+    },
+    {
+      "name": "user-service [404] /users/email/:email",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/email/:email",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "404"
+      }
+    },
+    {
+      "name": "user-service [404] /users/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/:id",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "404"
+      }
+    },
+    {
+      "name": "user-service [400] /users/email/:email",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/email/:email",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "400"
+      }
+    },
+    {
+      "name": "user-service [400] /users/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_COUNT",
+      "stat": "Sum",
+      "dimensions": {
+        "endpoint": "/users/:id",
+        "environment": "production",
+        "serviceName": "user-service",
+        "statusCode": "400"
+      }
+    }
+  ]
+}

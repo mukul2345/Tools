@@ -1,0 +1,28 @@
+{
+  "name": "report-size-identifier",
+  "version": "1.0.0",
+  "description": "Script to identify large documents in DynamoDB and S3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "compress": "node pdf-compressor.js",
+    "test": "node test.js",
+    "test-config": "node test.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.600.0",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/util-dynamodb": "^3.600.0",
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": [
+    "aws",
+    "dynamodb",
+    "s3",
+    "reporting"
+  ],
+  "author": "",
+  "license": "ISC"
+}

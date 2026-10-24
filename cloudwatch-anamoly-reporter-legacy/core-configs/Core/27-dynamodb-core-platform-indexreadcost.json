@@ -1,0 +1,534 @@
+{
+  "title": "DynamoDB Core-platform-IndexReadCost",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "DocumentTranslation",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "DocumentTranslation",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "originalDocumentId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "originalDocumentId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "originalDocumentId-translatedDocumentLanguageCode-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "originalDocumentId-translatedDocumentLanguageCode-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "ManualTranslation",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "ManualTranslation",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "originalText-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "originalText-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "sourceLanguageCode-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "sourceLanguageCode-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "targetLanguageCode-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "targetLanguageCode-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "TextTranslation",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "TextTranslation",
+        "GlobalSecondaryIndexName": "originalText-index"
+      }
+    },
+    {
+      "name": "AuthTokenInfo",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "AuthTokenInfo",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "userId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "userId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "DeviceInfo",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "DeviceInfo",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "userId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "userId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "LoginAs",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "LoginAs",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "OtpTransaction",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "OtpTransaction",
+        "GlobalSecondaryIndexName": "loginInput-index"
+      }
+    },
+    {
+      "name": "ResourceAccess",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "ResourceAccess",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "resourceId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "resourceId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "Acl",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "Acl",
+        "GlobalSecondaryIndexName": "accessorId-index"
+      }
+    },
+    {
+      "name": "alternateID-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "alternateID-index",
+        "GlobalSecondaryIndexName": "accessorId-index"
+      }
+    },
+    {
+      "name": "entityId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "entityId-index",
+        "GlobalSecondaryIndexName": "accessorId-index"
+      }
+    },
+    {
+      "name": "Role",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "Role",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "status-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "status-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "CTA",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "CTA",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "entityId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "entityId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "EmailResponse",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "EmailResponse",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "entityId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "entityId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "messageId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "messageId-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "senderEmail-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "senderEmail-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "IssuingAuthorityVerifierDetails",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "IssuingAuthorityVerifierDetails",
+        "GlobalSecondaryIndexName": "addressId-index"
+      }
+    },
+    {
+      "name": "Address",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "Address",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "City",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "City",
+        "GlobalSecondaryIndexName": "countryId-index"
+      }
+    },
+    {
+      "name": "stateId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "stateId-index",
+        "GlobalSecondaryIndexName": "countryId-index"
+      }
+    },
+    {
+      "name": "Country",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "Country",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "Language",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "Language",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "LanguageMapping",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "LanguageMapping",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "regionType-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "regionType-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "StateProvince",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "StateProvince",
+        "GlobalSecondaryIndexName": "countryId-index"
+      }
+    },
+    {
+      "name": "AnalyticsAggregatorCronRun",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "AnalyticsAggregatorCronRun",
+        "GlobalSecondaryIndexName": "calenderDate-index"
+      }
+    },
+    {
+      "name": "EmailTransaction",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "EmailTransaction",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "createdAt-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "createdAt-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "deliveryStatus-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "deliveryStatus-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "sender-createdAt-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "sender-createdAt-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "PushNotification",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "PushNotification",
+        "GlobalSecondaryIndexName": "userId-index"
+      }
+    },
+    {
+      "name": "WebhookTransaction",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "WebhookTransaction",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "ExternalUser",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "ExternalUser",
+        "GlobalSecondaryIndexName": "clientUserReferenceId-index"
+      }
+    },
+    {
+      "name": "userId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "userId-index",
+        "GlobalSecondaryIndexName": "clientUserReferenceId-index"
+      }
+    },
+    {
+      "name": "User",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "User",
+        "GlobalSecondaryIndexName": "email-index"
+      }
+    },
+    {
+      "name": "phoneNumber-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "phoneNumber-index",
+        "GlobalSecondaryIndexName": "email-index"
+      }
+    },
+    {
+      "name": "status-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "status-index",
+        "GlobalSecondaryIndexName": "email-index"
+      }
+    },
+    {
+      "name": "UserConsent",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "UserConsent",
+        "GlobalSecondaryIndexName": "entityId-index"
+      }
+    },
+    {
+      "name": "userId-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "userId-index",
+        "GlobalSecondaryIndexName": "entityId-index"
+      }
+    },
+    {
+      "name": "UserGroup",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "UserGroup",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    },
+    {
+      "name": "status-index",
+      "namespace": "AWS/DynamoDB",
+      "metricName": "ConsumedReadCapacityUnits",
+      "stat": "Sum",
+      "dimensions": {
+        "TableName": "status-index",
+        "GlobalSecondaryIndexName": "alternateID-index"
+      }
+    }
+  ]
+}

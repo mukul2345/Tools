@@ -1,0 +1,51 @@
+# --- global defaults (can be overridden per project) ---
+source_branch: "release"
+target_branch: "master"
+
+# Either fixed title OR a template:
+# title: "Login v2: add OTP flow"
+title_template: "[VPT] Release to Master - 02Jun2026 FixVersion"
+
+description: |
+  Merges from release to master - 02Jun2026 FixVersion release.
+labels: []
+remove_source_branch: false
+squash: false
+draft: false
+
+# Resolve by email (cached once per run)
+assignee_emails:
+  - "rajanalahari@dataflowgroup.com"
+reviewer_emails:
+  - "ravitejag@dataflowgroup.com"
+
+# Fallbacks if emails aren’t public:
+email_username_overrides:
+  "ravitejag@dataflowgroup.com": "ravitejag1"
+  "rajanalahari@dataflowgroup.com": "rajanalahari"
+# Optional: narrows group member search (best-effort)
+group_path: "dataflowgroup"
+
+# If true, fail the whole repo task when a user lookup fails.
+# If false (default), continue without unresolved users.
+fail_on_user_lookup_error: true
+
+# Optional: skip MR if there’s no diff (default: true)
+skip_when_no_diff: true
+
+# The list of repositories
+projects:
+  - project: "dataflowgroup/dfg-product/verification-platform/verification-workflow-engine" # required
+  - project: "dataflowgroup/dfg-product/verification-platform/verification-request"
+  - project: "dataflowgroup/dfg-product/verification-platform/core-verification-data-structure-service"
+  - project: "dataflowgroup/dfg-product/verification-platform/verification-initiation-service"
+  - project: "dataflowgroup/dfg-product/core-platform/document-generation-service"
+  - project: "dataflowgroup/dfg-product/core-platform/document-management-service"
+  - project: "dataflowgroup/dfg-product/verification-platform/client-contract-service"
+  - project: "dataflowgroup/dfg-product/core-platform/payment-service"
+  - project: "dataflowgroup/dfg-product/verification-platform/document-service"
+  - project: "dataflowgroup/dfg-product/verification-platform/poi-service"
+  - project: "dataflowgroup/dfg-product/commons/migration-service"
+  - project: "dataflowgroup/dfg-product/core-platform/alert-service"
+  - project: "dataflowgroup/dfg-product/nexus/narada"
+  - project: "dataflowgroup/dfg-product/verification-platform/verification-search-service"

@@ -1,0 +1,87 @@
+{
+  "name": "mr-reviewer",
+  "description": "Reviews a GitLab merge request at the SEMANTIC level only (business-logic vs acceptance criteria, regression judgment, design/logic bugs a linter cannot see). All mechanical checks (lint, types, coverage, greps, diff fetching, Jira/Confluence context) are done by the deterministic spine BEFORE this agent runs and handed over as files. This agent NEVER fixes, pushes, merges, approves, or POSTS — it writes review.md, runs the finalize script to produce post-plan.json, and hands off. Posting is a separate deterministic spine step (review_post.py, REST+PAT).",
+  "prompt": "file://__KIRO_HOME__/agents/mr-reviewer-prompt.md",
+  "model": "claude-sonnet-4.6",
+  "//mcpServers": "Scoped deliberately: this agent boots ONLY these three servers, so unrelated ones (jira, workflow-mcp-server, s3-log-downloader) never start for a review run. includeMcpJson is false so ~/.kiro/settings/mcp.json is NOT pulled in wholesale. GITLAB_PERSONAL_ACCESS_TOKEN is inherited from the env that bin/run-mr-review.sh exports from the macOS keychain — never inlined here.",
+  "includeMcpJson": false,
+  "mcpServers": {
+    "Gitlab": {
+      "command": "npx",
+      "args": ["-y", "@zereight/mcp-gitlab"],
+      "env": {
+        "GITLAB_API_URL": "https://gitlab.com/api/v4",
+        "GITLAB_READ_ONLY_MODE": "false",
+        "USE_GITLAB_WIKI": "false"
+      }
+    },
+    "atlassian-rovo": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["--with", "mcp==1.9.4", "mcp-server-fetch"]
+    }
+  },
+  "tools": [
+    "read",
+    "write",
+    "shell",
+    "@Gitlab",
+    "@atlassian-rovo",
+    "@fetch"
+  ],
+  "allowedTools": [
+    "read",
+    "@Gitlab/get_merge_request",
+    "@Gitlab/get_merge_request_diffs",
+    "@Gitlab/list_merge_request_diffs",
+    "@Gitlab/list_merge_request_changed_files",
+    "@Gitlab/get_merge_request_file_diff",
+    "@Gitlab/list_merge_request_pipelines",
+    "@Gitlab/list_commits",
+    "@Gitlab/get_file_contents",
+    "@Gitlab/create_merge_request_thread",
+    "@Gitlab/create_merge_request_note",
+    "@atlassian-rovo/getJiraIssue",
+    "@atlassian-rovo/searchJiraIssuesUsingJql",
+    "@atlassian-rovo/getConfluencePage",
+    "@atlassian-rovo/getAccessibleAtlassianResources",
+    "@fetch/fetch"
+  ],
+  "toolsSettings": {
+    "write": {
+      "allowedPaths": ["/tmp/kiro-mr-review/**", "/private/tmp/kiro-mr-review/**"]
+    },
+    "shell": {
+      "autoAllowReadonly": true,
+      "allowedCommands": ["cat .*", "ls .*", "head .*", "tail .*", "grep .*", "rg .*", "find .*",
+                          "wc .*", "sort .*", "uniq .*", "git log.*", "git show.*", "git diff.*",
+                          "git blame.*"],
+      "deniedCommands": [
+        ".*\\bsed\\b.* -i.*",
+        ".*\\bfind\\b.*-delete.*",
+        ".*\\bfind\\b.*-exec(dir)?\\b.*",
+        "git (push|commit|merge|reset|checkout|rebase|stash|clean)( .*)?",
+        "rm .*",
+        ".*\\bcurl\\b.*",
+        ".*\\bwget\\b.*",
+        ".*\\bnc\\b.*",
+        "python[0-9.]* .*",
+        "node .*",
+        ".*\\bPRIVATE-TOKEN\\b.*",
+        ".*/api/v4/.*"
+      ]
+    }
+  },
+  "permissions": {
+    "rules": [
+      { "capability": "fs_read", "effect": "allow" },
+      { "capability": "fs_write", "match": ["/tmp/kiro-mr-review/**", "/private/tmp/kiro-mr-review/**"], "effect": "allow" },
+      { "capability": "shell", "match": ["cat *", "ls *", "head *", "tail *", "grep *", "rg *", "find *", "wc *", "sort *", "uniq *", "git log*", "git show*", "git diff*", "git blame*"], "effect": "allow" },
+      { "capability": "shell", "match": ["*sed* -i*", "*find*-delete*", "*find*-exec*", "git push*", "git commit*", "git merge*", "git reset*", "git checkout*", "git rebase*", "git stash*", "git clean*", "rm *", "*curl*", "*wget*", "python*", "node *", "*PRIVATE-TOKEN*", "*/api/v4/*"], "effect": "deny" },
+      { "capability": "mcp", "match": ["GitLab/get_merge_request", "GitLab/get_merge_request_diffs", "GitLab/list_merge_request_diffs", "GitLab/list_merge_request_changed_files", "GitLab/get_merge_request_file_diff", "GitLab/get_file_contents", "code/*"], "effect": "allow" }
+    ]
+  }
+}

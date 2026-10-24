@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2026-10-13T06:42:15.344Z",
+  "baseUrl": "http://nginx--nlbC3-sn7vKMsxDDMK-3360319dfff3cca3.elb.eu-west-1.amazonaws.com",
+  "requestId": "DT-56285-add-component-status",
+  "limit": null,
+  "resume": false,
+  "preflight": {
+    "rows": 1452,
+    "uniqueComponentIds": 1452,
+    "missingComponentId": 0,
+    "duplicatedComponentIds": []
+  },
+  "claimStatusVsComponentStatus": {
+    "DRAFT": {
+      "VERIFIED_APPROVED": 3
+    },
+    "INTERNAL_ISSUES": {
+      "VERIFIED_APPROVED": 13,
+      "UNABLE_TO_VERIFY": 1
+    },
+    "ISSUES": {
+      "UNABLE_TO_VERIFY": 1,
+      "VERIFIED_APPROVED": 2
+    },
+    "READY_WITH_IA": {
+      "VERIFIED_APPROVED": 4,
+      "UNDER_REVIEW": 5,
+      "DRAFT": 1
+    },
+    "READY": {
+      "VERIFIED_APPROVED": 1
+    },
+    "VALIDATED": {
+      "VERIFIED_APPROVED": 1389,
+      "DRAFT": 1,
+      "UNABLE_TO_VERIFY": 26,
+      "VERIFIED_REJECTED": 1,
+      "UNDER_REVIEW": 4
+    }
+  },
+  "buckets": [
+    {
+      "file": "DRAFT__REPORT_QC.json",
+      "claimStatus": "DRAFT",
+      "currentStage": "REPORT_QC",
+      "claims": 3,
+      "recoverable": 3,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 3
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 3
+      }
+    },
+    {
+      "file": "INTERNAL_ISSUES__COMPLETED.json",
+      "claimStatus": "INTERNAL_ISSUES",
+      "currentStage": "COMPLETED",
+      "claims": 13,
+      "recoverable": 13,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 12,
+        "UNABLE_TO_VERIFY": 1
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 12,
+        "UNABLE_TO_VERIFY": 1
+      }
+    },
+    {
+      "file": "INTERNAL_ISSUES__VERIFICATION_QC.json",
+      "claimStatus": "INTERNAL_ISSUES",
+      "currentStage": "VERIFICATION_QC",
+      "claims": 1,
+      "recoverable": 1,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 1
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 1
+      }
+    },
+    {
+      "file": "ISSUES__COMPLETED.json",
+      "claimStatus": "ISSUES",
+      "currentStage": "COMPLETED",
+      "claims": 3,
+      "recoverable": 3,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "UNABLE_TO_VERIFY": 1,
+        "VERIFIED_APPROVED": 2
+      },
+      "recoveryValues": {
+        "UNABLE_TO_VERIFY": 1,
+        "VERIFIED_APPROVED": 2
+      }
+    },
+    {
+      "file": "READY_WITH_IA__COMPLETED.json",
+      "claimStatus": "READY_WITH_IA",
+      "currentStage": "COMPLETED",
+      "claims": 9,
+      "recoverable": 4,
+      "notRecoverable": 5,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 4,
+        "UNDER_REVIEW": 5
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 4
+      }
+    },
+    {
+      "file": "READY_WITH_IA__REPORT_QC.json",
+      "claimStatus": "READY_WITH_IA",
+      "currentStage": "REPORT_QC",
+      "claims": 1,
+      "recoverable": 0,
+      "notRecoverable": 1,
+      "byComponentStatus": {
+        "DRAFT": 1
+      },
+      "recoveryValues": {}
+    },
+    {
+      "file": "READY__COMPLETED.json",
+      "claimStatus": "READY",
+      "currentStage": "COMPLETED",
+      "claims": 1,
+      "recoverable": 1,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 1
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 1
+      }
+    },
+    {
+      "file": "VALIDATED__COMPLETED.json",
+      "claimStatus": "VALIDATED",
+      "currentStage": "COMPLETED",
+      "claims": 1048,
+      "recoverable": 1043,
+      "notRecoverable": 5,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 1022,
+        "DRAFT": 1,
+        "UNABLE_TO_VERIFY": 20,
+        "VERIFIED_REJECTED": 1,
+        "UNDER_REVIEW": 4
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 1022,
+        "UNABLE_TO_VERIFY": 20,
+        "VERIFIED_REJECTED": 1
+      }
+    },
+    {
+      "file": "VALIDATED__REPORT_QC.json",
+      "claimStatus": "VALIDATED",
+      "currentStage": "REPORT_QC",
+      "claims": 372,
+      "recoverable": 372,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 366,
+        "UNABLE_TO_VERIFY": 6
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 366,
+        "UNABLE_TO_VERIFY": 6
+      }
+    },
+    {
+      "file": "VALIDATED__VERIFICATION_QC.json",
+      "claimStatus": "VALIDATED",
+      "currentStage": "VERIFICATION_QC",
+      "claims": 1,
+      "recoverable": 1,
+      "notRecoverable": 0,
+      "byComponentStatus": {
+        "VERIFIED_APPROVED": 1
+      },
+      "recoveryValues": {
+        "VERIFIED_APPROVED": 1
+      }
+    }
+  ]
+}

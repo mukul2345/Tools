@@ -1,0 +1,86 @@
+{
+  "title": "Payment Service API Latency",
+  "region": "eu-west-1",
+  "periodSeconds": 900,
+  "windowMinutes": 1440,
+  "baselineDays": 7,
+  "minSamples": 10,
+  "zThreshold": 3,
+  "pctThreshold": 40,
+  "timezone": "Asia/Kolkata",
+  "skipWeekends": true,
+  "series": [
+    {
+      "name": "payment-service [200] /forex-exchange/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/forex-exchange/",
+        "environment": "production",
+        "serviceName": "payment-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "payment-service [200] /payments/ngenius/",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/payments/ngenius/",
+        "environment": "production",
+        "serviceName": "payment-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "payment-service [200] /payments/ngenius/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/payments/ngenius/:id",
+        "environment": "production",
+        "serviceName": "payment-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "payment-service [200] /payments/ngenius/initiate",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/payments/ngenius/initiate",
+        "environment": "production",
+        "serviceName": "payment-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "payment-service [200] /payments/ngenius/pg-status/:paymentTransactionId",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/payments/ngenius/pg-status/:paymentTransactionId",
+        "environment": "production",
+        "serviceName": "payment-service",
+        "statusCode": "200"
+      }
+    },
+    {
+      "name": "payment-service [200] /payments/ngenius/status/:id",
+      "namespace": "DFG-Observability",
+      "metricName": "API_LATENCY",
+      "stat": "p90",
+      "dimensions": {
+        "endpoint": "/payments/ngenius/status/:id",
+        "environment": "production",
+        "serviceName": "payment-service",
+        "statusCode": "200"
+      }
+    }
+  ]
+}

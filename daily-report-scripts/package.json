@@ -1,0 +1,26 @@
+{
+  "name": "daily-report-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "env-cmd -f .env tsx index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "@dfg/be-stdlib": "^5.0.3",
+    "@dfg/core-verification-data-structure-library": "^4.0.76",
+    "@dfg/entity-library": "^1.0.149",
+    "@dfg/verification-workflow-engine-entity": "^2.0.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2"
+  }
+}

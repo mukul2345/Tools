@@ -1,0 +1,162 @@
+{
+  "modules": [
+    "latency",
+    "errors",
+    "ecs-resources",
+    "sqs-age",
+    "lambda-performance",
+    "top-apis"
+  ],
+  "topApisLimit": 20,
+  "customNamespace": "DFG-Observability",
+  "services": [
+    "verification-workflow-engine",
+    "poi-service",
+    "verification-request",
+    "verification-initiation-service",
+    "document-management-service",
+    "document-generation-service",
+    "client-contract-service",
+    "document-service",
+    "core-verification-data-structure-service",
+    "payment-service",
+    "alert-service",
+    "poi-consumer-verification-workflow-engine",
+    "rescue-consumer-verification-workflow-engine",
+    "migration-service",
+    "narada"
+  ],
+  "statusCodesForLatency": ["200", "201"],
+  "statusCodesForErrors": ["500"],
+  "periodSeconds": 60,
+  "startISO": "2025-10-29T00:00:00+05:30",
+  "endISO": "2025-11-04T23:59:59+05:30",
+  "latencyThresholdMs": 1000,
+  "latencyFilterMode": "above",
+  "errorThreshold": 10,
+  "errorFilterMode": "above",
+  "ecsClusterName": "cluster-production-common",
+  "ecsPeriodSeconds": 300,
+  "sqsQueueNames": [
+    {
+      "queueName": "workflow-instance-queue",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "queueName": "agent-workflow-instance-queue",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "queueName": "poi-workflow-change-events-queue.fifo",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "queueName": "poi-priority-workflow-instance-queue.fifo",
+      "serviceName": "verification-workflow-engine"
+    },
+    { "queueName": "poi-entity-event-queue", "serviceName": "poi-service" },
+    {
+      "queueName": "verification-request-sla",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "ia-payout-events-queue",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "force-majeure-events",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "force-majeure-sla-events",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "force-majeure-detection-events",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "verification-request-workflow-events",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "verification-request-audit-trail-events",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "case-discovery-link-events",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "payment-batch-processing",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "payment-batch-completion",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "report-approval-batch-operations",
+      "serviceName": "verification-request"
+    },
+    {
+      "queueName": "email-response",
+      "serviceName": "verification-initiation-service"
+    },
+    {
+      "queueName": "document-generation-queue",
+      "serviceName": "document-generation-service"
+    },
+    { "queueName": "refund-transactions", "serviceName": "payment-service" },
+    { "queueName": "payment-transactions", "serviceName": "payment-service" },
+    {
+      "queueName": "webhook-communication",
+      "serviceName": "narada"
+    },
+    {
+      "queueName": "client-integrations-async-events.fifo",
+      "serviceName": "narada"
+    },
+    {
+      "queueName": "verification-search-primary-queue.fifo",
+      "serviceName": "verification-search-service"
+    }
+  ],
+  "sqsPeriodSeconds": 60,
+  "lambdaFunctionNames": [
+    {
+      "functionName": "Allocation-Alert-For-No-Eligible-Ops-User-Found",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "functionName": "WorkflowProducer",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "functionName": "StuckWorkflowRecoveryHandler",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "functionName": "ProcessWorkflowEvents",
+      "serviceName": "verification-workflow-engine"
+    },
+    {
+      "functionName": "AlertServiceTriggerAlertCron",
+      "serviceName": "alert-service"
+    },
+    {
+      "functionName": "VeriflowMigrationCron",
+      "serviceName": "migration-service"
+    },
+    {
+      "functionName": "clientIntegrationRestApiAuthorizer",
+      "serviceName": "narada"
+    }
+  ],
+  "lambdaPeriods": {
+    "invocationsPeriod": 3600,
+    "durationPeriod": 86400,
+    "errorsPeriod": 3600,
+    "throttlesPeriod": 3600
+  }
+}

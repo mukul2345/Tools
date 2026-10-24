@@ -1,0 +1,33 @@
+{
+  "name": "@dfg/mr-review",
+  "version": "2.0.1",
+  "description": "GitLab MR reviewer on Kiro CLI: deterministic gates + verified find/verify review across one or several related MRs",
+  "bin": {
+    "mr-review": "bin/mr-review.js"
+  },
+  "files": [
+    "bin/mr-review.js",
+    "scripts/*.py",
+    "scripts/node/impact_trace.mjs",
+    "agents/",
+    "prompts/",
+    "steering/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "python3 scripts/review_stages.py && python3 scripts/review_finalize.py && python3 scripts/review_static_gate.py && python3 scripts/review_post.py --selftest && python3 scripts/run_record.py"
+  },
+  "dependencies": {
+    "ts-morph": "24.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://gitlab.com/api/v4/projects/53412177/packages/npm/"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "darwin"
+  ],
+  "license": "UNLICENSED"
+}
